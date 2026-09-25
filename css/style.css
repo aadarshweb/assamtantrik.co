@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg-color: #0b121e; /* Deep dark blue from screenshot */
   --card-bg: #152033; /* Slightly lighter for cards */
   --primary-color: #ff6600; /* Vibrant orange */
@@ -39,7 +39,7 @@ body::before {
   background-image: url('../images/mandala.png');
   background-repeat: repeat;
   background-size: 450px;
-  opacity: 0.18; /* Increased visibility */
+  opacity: 0.35; /* Increased visibility */
   z-index: -1;
   pointer-events: none;
 }
@@ -182,7 +182,7 @@ header {
   content: '';
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(to bottom, rgba(11,18,30,0.6), rgba(11,18,30,0.95));
+  background: linear-gradient(to bottom, rgba(11,18,30,0.3), rgba(11,18,30,0.85));
 }
 
 .hero-content {
@@ -293,7 +293,8 @@ header {
   border-radius: 12px;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 102, 0, 0.15);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
@@ -301,8 +302,8 @@ header {
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  border-color: rgba(255, 102, 0, 0.3);
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.3);
+  border-color: rgba(255, 102, 0, 0.5);
 }
 
 .service-icon-wrapper {
@@ -425,7 +426,8 @@ header {
   padding: 40px;
   border-radius: 12px;
   position: relative;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 102, 0, 0.15);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.1);
   display: flex;
   flex-direction: column;
 }
