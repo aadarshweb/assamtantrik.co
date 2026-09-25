@@ -19,7 +19,9 @@
   <title>About Deepak Tantrik | Best Tantrik in Kamakhya &amp; Mayong Assam</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="./css/style.css">
 
   <!-- Local Business Schema Markup - SEO Critical -->
@@ -78,8 +80,7 @@
   <link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/about.html" />
 
   <!-- Preload performance hints -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  
   <link rel="preload" href="./images/logo.png" as="image">
 
   <!-- AggregateRating Schema - Shows Stars in Google Search Results -->
@@ -97,7 +98,7 @@
     }
   }
   </script>
-  <link rel="preload" as="image" href="./images/hero_bg.jpg">
+  <link rel="preload" as="image" href="./images/hero_bg.jpg" fetchpriority="high">
 </head>
 <body>
 
