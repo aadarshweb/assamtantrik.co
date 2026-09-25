@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg-color: #0b121e; /* Deep dark blue from screenshot */
   --card-bg: #152033; /* Slightly lighter for cards */
   --primary-color: #ff6600; /* Vibrant orange */
@@ -173,7 +173,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url('../images/hero_bg.png');
+  background-image: url('../images/hero_bg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -433,7 +433,7 @@ header {
 }
 
 .testimonial-card::before {
-  content: '❝';
+  content: 'â';
   position: absolute;
   top: 20px;
   right: 20px;
