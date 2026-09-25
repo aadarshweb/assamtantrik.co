@@ -51,7 +51,14 @@ const translations = {
     "guw.page.title": "Authentic Tantrik Baba in Guwahati", "guw.page.sub": "Consult Guwahati's most trusted spiritual guide for genuine, life-changing Vedic solutions.", "guw.page.h2": "Genuine Spiritual Healing in Guwahati", "guw.page.p1": "In a fast-paced city like Guwahati, stress, relationship breakups, and business failures are common. But when these problems persist despite your best efforts, it is time to seek spiritual intervention. Deepak Tantrik is widely recognized as the most effective Tantrik Baba in Guwahati.", "guw.page.p2": "Serving the people of Guwahati for over 25 years from the sacred grounds of the Kamakhya Temple, he offers profound astrological insights and powerful Tantrik remedies. Unlike many who make false promises, Deepak Tantrik's approach is deeply rooted in pure Vedic traditions, ensuring 100% safe and positive outcomes.", "guw.page.p3": "Whether you need a love problem solution, protection from negative energies, or guidance for your career, consult the trusted expert right here in Guwahati. Experience the peace and prosperity that comes from authentic spiritual healing.",
     
     // Mayong
-    "may.page.title": "Best Tantrik in Mayong, Assam", "may.page.sub": "Experience the ancient, authentic spiritual remedies of Mayong with the region's most trusted practitioner.", "may.page.h2": "The Ancient Power of Mayong", "may.page.p1": "Mayong, the historical capital of magic and mysticism in Assam, is renowned worldwide for its deep spiritual traditions. However, finding genuine guidance here can be challenging. Deepak Tantrik is widely regarded as the best tantrik in Mayong due to his deep ancestral roots and unparalleled expertise in these ancient sciences.", "may.page.p2": "Serving the people of Mayong and beyond for decades, Deepak Tantrik ensures that the sacred power of Mayong is used solely for the betterment of lives. Whether you are dealing with unsolvable relationship crises, sudden business downfalls, or the heavy burden of negative energies, his Mayong-specific rituals provide fast and permanent relief.", "may.page.p3": "Connect with the pure spiritual essence of Assam. Contact Deepak Tantrik today for a confidential consultation and step out of the darkness and into a peaceful, prosperous life.",
+    "may.page.title": "Best Tantrik in Mayong, Assam", "may.page.sub": "Experience the ancient, authentic spiritual remedies of Mayong with the region's most trusted practitioner.", "may.page.h2": "The Ancient Power of Mayong", "may.page.p1": "Mayong, the historical capital of magic and mysticism in Assam, is renowned worldwide for its deep spiritual traditions. However, finding genuine guidance here can be challenging. Deepak Tantrik is widely regarded as the best tantrik in Mayong due to his deep ancestral roots and unparalleled expertise in these ancient sciences.", "may.page.p2": "Serving the people of Mayong and beyond for decades, Deepak Tantrik ensures that the sacred power of Mayong is used solely for the betterment of lives. Whether you are dealing with unsolvable relationship crises, sudden business downfalls, or the heavy burden of negative energies, his Mayong-specific rituals provide fast and permanent relief.", "may.page.p3": "Connect with the pure spiritual essence of Assam. Contact Deepak Tantrik today for a confidential consultation and step out of the darkness and into a peaceful, prosperous life."",
+    "faq.q4": "मायोंग असम किस लिए प्रसिद्ध है?",
+    "faq.a4": "मायोंग, असम भारतीय काले जादू और तंत्र की प्राचीन राजधानी है, जिसे मायोंग असम काले जादू वीडियो और शैक्षणिक शोध में अमर कर दिया गया है। दीपक तांत्रिक का जन्म इसी परंपरा से हुआ है।",
+    "faq.q5": "मैं मायोंग तांत्रिक संपर्क नंबर कैसे प्राप्त करूं?",
+    "faq.a5": "मायोंग तांत्रिक संपर्क नंबर +91 9706801250 है। आप सीधे कॉल या व्हाट्सएप कर सकते हैं। दीपक तांत्रिक उनके कामाख्या मंदिर कार्यालय और मायोंग आश्रम में भी उपलब्ध हैं।",
+    "sub.seo.h1": "कामाख्या और मायोंग में सबसे प्रामाणिक तांत्रिक",
+    "sub.seo.p1": "चाहे आप <strong>कामाख्या में सर्वश्रेष्ठ तांत्रिक</strong> की तलाश कर रहे हों या <strong>सर्वश्रेष्ठ मायोंग तांत्रिक</strong> की, दीपक तांत्रिक दोनों पवित्र भूमि की प्राचीन शक्तियों को जोड़ते हैं। मायोंग की रहस्यमयी भूमि में जन्मे—अक्सर <strong>मायोंग असम काला जादू वीडियो</strong> वृत्तचित्रों में भारतीय जादू के दिल के रूप में दर्शाया गया है—उन्हें सदियों पुराने रहस्य विरासत में मिले हैं। बाद में उन्होंने कामाख्या मंदिर में अपना गहरा आध्यात्मिक अभ्यास स्थापित किया, जिससे वह <strong>कामाख्या मंदिर में सबसे अधिक मांग वाले तांत्रिक</strong> बन गए। दुनिया भर से लोग गारंटीशुदा परिणामों के लिए उनके <strong>मायोंग तांत्रिक संपर्क नंबर</strong> की तलाश करते हैं।",
+    "sub.seo.p2": "वह <strong>कामाख्या मंदिर काला जादू</strong> हटाने और सकारात्मक वशीकरण में माहिर हैं। जो लोग <strong>कामाख्या मंदिर के बारे में</strong> और इसके वास्तविक चिकित्सकों के बारे में जानना चाहते हैं, उनके लिए दीपक तांत्रिक प्रामाणिकता के स्तंभ के रूप में खड़े हैं। <strong>गुवाहाटी में अग्रणी तांत्रिक</strong> के रूप में, <strong>मायोंग असम तांत्रिक</strong> के रूप में उनकी दोहरी उपस्थिति यह सुनिश्चित करती है कि आपको सबसे शक्तिशाली उपचार प्राप्त हों। आज ही <strong>गुवाहाटी में सर्वश्रेष्ठ तांत्रिक</strong> से जुड़ें और अपना जीवन बदलें। यहाँ, हर <strong>असम तांत्रिक</strong> अनुष्ठान शुद्ध इरादे से किया जाता है।",
     "sub.seo.h1": "The Most Authentic Tantrik in Kamakhya &amp; Mayong",
     "sub.seo.p1": "Whether you are searching for the <strong>best tantrik in kamakhya</strong> or the ultimate <strong>best mayong tantrik</strong>, Deepak Tantrik bridges the ancient powers of both sacred lands. Born in the mystical lands of Mayong�often depicted in the <strong>mayong assam black magic video</strong> documentaries as the heart of Indian magic�he inherited centuries-old secrets. He later established his deep spiritual practice at the Kamakhya Temple, making him the most sought-after <strong>tantrik in kamakhya temple</strong>. People from all over the world seek his <strong>mayong tantrik contact number</strong> for guaranteed results.",
     "sub.seo.p2": "He specializes in <strong>kamakhya temple black magic</strong> removal and positive vashikaran. For those looking to learn <strong>about kamakhya temple</strong> and its genuine healers, Deepak Tantrik stands as the pillar of authenticity. As the leading <strong>tantrik in guwahati</strong>, his dual-presence as a <strong>mayong assam tantrik</strong> ensures that you receive the most potent remedies. Connect with the <strong>best tantrik in guwahati</strong> today and transform your life. Here, every <strong>assam tantrik</strong> ritual is performed with pure intent."
@@ -92,7 +99,14 @@ const translations = {
     
     "guw.page.title": "गुवाहाटी में प्रामाणिक तांत्रिक बाबा", "guw.page.sub": "वास्तविक, जीवन बदलने वाले वैदिक समाधानों के लिए गुवाहाटी के सबसे भरोसेमंद आध्यात्मिक मार्गदर्शक से परामर्श लें।", "guw.page.h2": "गुवाहाटी में वास्तविक आध्यात्मिक उपचार", "guw.page.p1": "गुवाहाटी जैसे शहर में, तनाव और रिश्ते टूटना आम है। दीपक तांत्रिक को गुवाहाटी में सबसे प्रभावी तांत्रिक बाबा के रूप में मान्यता प्राप्त है।", "guw.page.p2": "कामाख्या मंदिर के पवित्र मैदानों से 25 वर्षों से अधिक समय तक गुवाहाटी के लोगों की सेवा करते हुए, वह 100% सुरक्षित परिणाम सुनिश्चित करते हैं।", "guw.page.p3": "चाहे आपको प्रेम समस्या का समाधान चाहिए या नकारात्मक ऊर्जा से सुरक्षा, आज ही परामर्श लें।",
     
-    "may.page.title": "मायोंग, असम में सर्वश्रेष्ठ तांत्रिक", "may.page.sub": "क्षेत्र के सबसे भरोसेमंद चिकित्सक के साथ मायोंग के प्राचीन, प्रामाणिक आध्यात्मिक उपचार का अनुभव करें।", "may.page.h2": "मायोंग की प्राचीन शक्ति", "may.page.p1": "मायोंग अपने गहरे आध्यात्मिक परंपराओं के लिए दुनिया भर में प्रसिद्ध है। दीपक तांत्रिक को मायोंग में सर्वश्रेष्ठ तांत्रिक माना जाता है।", "may.page.p2": "दशकों तक मायोंग के लोगों की सेवा करते हुए, वह सुनिश्चित करते हैं कि मायोंग की पवित्र शक्ति का उपयोग केवल जीवन की भलाई के लिए किया जाए।", "may.page.p3": "असम के शुद्ध आध्यात्मिक सार से जुड़ें। गोपनीय परामर्श के लिए आज ही दीपक तांत्रिक से संपर्क करें।"
+    "may.page.title": "मायोंग, असम में सर्वश्रेष्ठ तांत्रिक", "may.page.sub": "क्षेत्र के सबसे भरोसेमंद चिकित्सक के साथ मायोंग के प्राचीन, प्रामाणिक आध्यात्मिक उपचार का अनुभव करें।", "may.page.h2": "मायोंग की प्राचीन शक्ति", "may.page.p1": "मायोंग अपने गहरे आध्यात्मिक परंपराओं के लिए दुनिया भर में प्रसिद्ध है। दीपक तांत्रिक को मायोंग में सर्वश्रेष्ठ तांत्रिक माना जाता है।", "may.page.p2": "दशकों तक मायोंग के लोगों की सेवा करते हुए, वह सुनिश्चित करते हैं कि मायोंग की पवित्र शक्ति का उपयोग केवल जीवन की भलाई के लिए किया जाए।", "may.page.p3": "असम के शुद्ध आध्यात्मिक सार से जुड़ें। गोपनीय परामर्श के लिए आज ही दीपक तांत्रिक से संपर्क करें।"",
+    "faq.q4": "মায়ং আসাম কিসের জন্য বিখ্যাত?",
+    "faq.a4": "মায়ং, আসাম হলো ভারতীয় কালো জাদু এবং তন্ত্রের প্রাচীন রাজধানী, যা মায়ং আসাম কালো জাদু ভিডিও এবং একাডেমিক গবেষণায় অমর হয়ে আছে। দীপক তান্ত্রিক এই ঐতিহ্য থেকেই জন্মগ্রহণ করেছেন।",
+    "faq.q5": "আমি মায়ং তান্ত্রিকের যোগাযোগ নম্বর কীভাবে পাব?",
+    "faq.a5": "মায়ং তান্ত্রিকের যোগাযোগ নম্বর হলো +91 9706801250। আপনি সরাসরি কল বা হোয়াটসঅ্যাপ করতে পারেন। দীপক তান্ত্রিক তার কামাখ্যা মন্দির অফিস এবং মায়ং আশ্রমেও উপলব্ধ।",
+    "sub.seo.h1": "কামাখ্যা এবং মায়ং-এ সবচেয়ে খাঁটি তান্ত্রিক",
+    "sub.seo.p1": "আপনি <strong>কামাখ্যায় সেরা তান্ত্রিক</strong> বা চূড়ান্ত <strong>সেরা মায়ং তান্ত্রিক</strong> খুঁজছেন কিনা, দীপক তান্ত্রিক দুটি পবিত্র ভূমির প্রাচীন শক্তিকে সংযুক্ত করেছেন। মায়ং-এর রহস্যময় ভূমিতে জন্মগ্রহণ করে—প্রায়শই <strong>মায়ং আসাম কালো জাদু ভিডিও</strong> তথ্যচিত্রে ভারতীয় জাদুর কেন্দ্রবিন্দু হিসেবে চিত্রিত—তিনি শতাব্দীর পুরোনো রহস্যের উত্তরাধিকারী হয়েছেন। পরে তিনি কামাখ্যা মন্দিরে তার গভীর আধ্যাত্মিক সাধনা প্রতিষ্ঠা করেন, যা তাকে <strong>কামাখ্যা মন্দিরে সর্বাধিক চাওয়া তান্ত্রিক</strong> করে তুলেছে। গ্যারান্টিযুক্ত ফলাফলের জন্য সারা বিশ্ব থেকে মানুষ তার <strong>মায়ং তান্ত্রিক যোগাযোগ নম্বর</strong> খোঁজে।",
+    "sub.seo.p2": "তিনি <strong>কামাখ্যা মন্দির কালো জাদু</strong> অপসারণ এবং ইতিবাচক বশীকরণে বিশেষজ্ঞ। যারা <strong>কামাখ্যা মন্দির সম্পর্কে</strong> এবং এর খাঁটি নিরাময়কারীদের সম্পর্কে জানতে চান, তাদের জন্য দীপক তান্ত্রিক সত্যতার স্তম্ভ হিসেবে দাঁড়িয়ে আছেন। <strong>গৌহাটিতে শীর্ষস্থানীয় তান্ত্রিক</strong> হিসেবে, <strong>মায়ং আসাম তান্ত্রিক</strong> হিসেবে তার দ্বৈত-উপস্থিতি নিশ্চিত করে যে আপনি সবচেয়ে শক্তিশালী প্রতিকার পাবেন। আজই <strong>গৌহাটিতে সেরা তান্ত্রিকের</strong> সাথে সংযুক্ত হন এবং আপনার জীবন পরিবর্তন করুন। এখানে, প্রতিটি <strong>আসাম তান্ত্রিক</strong> আচার বিশুদ্ধ উদ্দেশ্য নিয়ে করা হয়।"
   },
   bn: {
     "nav.home": "হোম", "nav.about": "সম্পর্কে", "nav.services": "পরিষেবা", "nav.contact": "যোগাযোগ",
@@ -130,64 +144,4 @@ const translations = {
     
     "guw.page.title": "গুয়াহাটিতে খাঁটি তান্ত্রিক বাবা", "guw.page.sub": "বাস্তব বৈদিক সমাধানের জন্য গুয়াহাটির সবচেয়ে বিশ্বস্ত আধ্যাত্মিক গাইড।", "guw.page.h2": "গুয়াহাটিতে প্রকৃত আধ্যাত্মিক নিরাময়", "guw.page.p1": "গুয়াহাটির মতো শহরে মানসিক চাপ এবং সম্পর্ক ভেঙে যাওয়া সাধারণ ব্যাপার। দীপক তান্ত্রিক গুয়াহাটির সবচেয়ে কার্যকর তান্ত্রিক বাবা হিসেবে স্বীকৃত।", "guw.page.p2": "কামাখ্যা মন্দিরের পবিত্র ভূমি থেকে ২৫ বছরেরও বেশি সময় ধরে গুয়াহাটির মানুষের সেবা করে তিনি ১০০% নিরাপদ ফলাফল নিশ্চিত করেন।", "guw.page.p3": "আপনার প্রেম সমস্যার সমাধান বা নেতিবাচক শক্তি থেকে সুরক্ষা প্রয়োজন হোকষ্ঠান, আজই পরামর্শ করুন।",
     
-    "may.page.title": "মায়ং, আসামে সেরা তান্ত্রিক", "may.page.sub": "অঞ্চলের সবচেয়ে বিশ্বস্ত অনুশীলনকারীর সাথে মায়ংয়ের প্রাচীন আধ্যাত্মিক নিরাময়ের অভিজ্ঞতা নিন।", "may.page.h2": "মায়ংয়ের প্রাচীন শক্তি", "may.page.p1": "মায়ং তার গভীর আধ্যাত্মিক ঐতিহ্যের জন্য বিশ্বব্যাপী পরিচিত। দীপক তান্ত্রিককে মায়ংয়ের সেরা তান্ত্রিক হিসাবে বিবেচনা করা হয়।", "may.page.p2": "কয়েক দশক ধরে মায়ংয়ের মানুষের সেবা করে তিনি নিশ্চিত করেন যে মায়ংয়ের পবিত্র শক্তি কেবল মানুষের কল্যাণে ব্যবহৃত হয়।", "may.page.p3": "আসামের খাঁটি আধ্যাত্মিক সারমর্মের সাথে সংযোগ করুন। গোপনীয় পরামর্শের জন্য আজই যোগাযোগ করুন।"
-  }
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  
-  if (hamburger) {
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-
-  // Language Switcher using Client-Side JS Dictionary (No reload required, works offline)
-  const langSelect = document.getElementById('language-select');
-  if (langSelect) {
-    const savedLang = localStorage.getItem('siteLang') || 'en';
-    langSelect.value = savedLang;
-    setLanguage(savedLang);
-
-    langSelect.addEventListener('change', (e) => {
-      setLanguage(e.target.value);
-    });
-  }
-
-  function setLanguage(lang) {
-    if (!translations[lang]) return;
-    localStorage.setItem('siteLang', lang);
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (translations[lang][key]) {
-        if(el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-            el.placeholder = translations[lang][key];
-        } else {
-            // Use innerHTML so that <strong> and other tags within translation strings parse correctly
-            el.innerHTML = translations[lang][key];
-        }
-      }
-    });
-  }
-
-  // FAQ Accordion
-  const faqItems = document.querySelectorAll('.faq-item');
-  faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
-    if (question) {
-      question.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        faqItems.forEach(faq => faq.classList.remove('active'));
-        if (!isActive) {
-          item.classList.add('active');
-        }
-      });
-    }
-  });
-});
-
-
-
+    "may.page.title": "মায়ং, আসামে সেরা তান্ত্রিক", "may.page.sub": "অঞ্চলের সবচেয়ে বিশ্বস্ত অনুশীলনকারীর সাথে মায়ংয়ের প্রাচীন আধ্যাত্মিক নিরাময়ের অভিজ্ঞতা নিন।", "may.page.h2": "মায়ংয়ের প্রাচীন শক্তি", "may.page.p1": "মায়ং তার গভীর আধ্যাত্মিক ঐতিহ্যের জন্য বিশ্বব্যাপী পরিচিত। দীপক তান্ত্রিককে মায়ংয়ের সেরা তান্ত্রিক হিসাবে বিবেচনা করা হয়।", "may.page.p2": "কয়েক দশক ধরে মায়ংয়ের মানুষের সেবা করে তিনি নিশ্চিত করেন যে মায়ংয়ের পবিত্র শক্তি কেবল মানুষের কল্যাণে ব্যবহৃত হয়।", 
