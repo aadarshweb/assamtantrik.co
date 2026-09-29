@@ -7,9 +7,17 @@
 
 const SITE = require('./site');
 const SERVICES = require('./services');
+const SERVICES_EXT = require('./services-extended');
 const LOCATIONS = require('./locations');
 const GUIDES = require('./guides');
+const GUIDES_EXT = require('./guides-extended');
 const CORE = require('./core');
+
+// All service pages, extended set included. The nav, the services hub, the
+// footer link grid, the related-links block and the ItemList schema are all
+// derived from these two arrays - nothing is maintained twice.
+const ALL_SERVICES = [...SERVICES, ...SERVICES_EXT];
+const ALL_GUIDES = [...GUIDES, ...GUIDES_EXT];
 
 // ---------------------------------------------------------------------------
 // Glyphs. HTML entities only, never raw Unicode (v4 Step 14 - the v3 postmortem
@@ -96,9 +104,10 @@ function allPages() {
   push(CORE.about, 'default');
   push(CORE.servicesPage, 'default');
   push(CORE.contact, 'default');
-  SERVICES.forEach((s) => push(s, 'default'));
+  push(CORE.verify, 'default');
+  ALL_SERVICES.forEach((s) => push(s, 'default'));
   LOCATIONS.forEach((l) => push(l, 'default'));
-  GUIDES.forEach((g) => push(g, 'article'));
+  ALL_GUIDES.forEach((g) => push(g, 'article'));
 
   return list;
 }
@@ -112,9 +121,10 @@ function sourceFor(slug) {
   if (plain === CORE.about.slug) return { kind: 'about', src: CORE.about };
   if (plain === CORE.servicesPage.slug) return { kind: 'services', src: CORE.servicesPage };
   if (plain === CORE.contact.slug) return { kind: 'contact', src: CORE.contact };
-  for (const s of SERVICES) if (s.slug === plain) return { kind: 'service', src: s };
+  if (plain === CORE.verify.slug) return { kind: 'verify', src: CORE.verify };
+  for (const s of ALL_SERVICES) if (s.slug === plain) return { kind: 'service', src: s };
   for (const l of LOCATIONS) if (l.slug === plain) return { kind: 'location', src: l };
-  for (const g of GUIDES) if (g.slug === plain) return { kind: 'article', src: g };
+  for (const g of ALL_GUIDES) if (g.slug === plain) return { kind: 'article', src: g };
   return null;
 }
 
@@ -282,7 +292,7 @@ function schemaItemList(slug) {
   const s = sourceFor(slug).src;
   const items = (s.cards || s.order || []).map((c, i) => {
     const slugOf = typeof c === 'string' ? c : c.slug;
-    const entry = [...SERVICES, ...LOCATIONS].find((x) => x.slug === slugOf);
+    const entry = [...ALL_SERVICES, ...LOCATIONS].find((x) => x.slug === slugOf);
     return {
       '@type': 'ListItem',
       position: i + 1,
@@ -299,6 +309,60 @@ function schemaItemList(slug) {
   });
 }
 
+// Service + OfferCatalog. Google uses this to understand what is actually being
+// sold, and it is the structured-data equivalent of the services hub in words.
+function schemaServiceCatalog() {
+  return ld({
+    '@context': 'https://schema.org',
+    '@type': 'OfferCatalog',
+    '@id': SITE.domain + '/services#catalog',
+    name: SITE.name + ' services',
+    itemListElement: ALL_SERVICES.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Service',
+        name: s.h1.replace(/&amp;/g, '&'),
+        serviceType: s.keywords[0],
+        description: s.desc,
+        url: SITE.url(s.slug),
+        provider: { '@id': SITE.ids.business },
+        areaServed: SITE.areaServed.map((a) => ({ '@type': 'Place', name: a })),
+        availableChannel: {
+          '@type': 'ServiceChannel',
+          serviceUrl: SITE.url('contact'),
+          servicePhone: SITE.phone,
+        },
+      },
+    })),
+  });
+}
+
+// Place for each of the two real locations. Google reads these for local
+// results, which is where the clicks in this niche actually are.
+function schemaPlaces() {
+  return SITE.addresses
+    .map((a, i) =>
+      ld({
+        '@context': 'https://schema.org',
+        '@type': 'Place',
+        '@id': SITE.domain + '/#location-' + (i + 1),
+        name: a.label,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: a.street,
+          addressLocality: a.locality,
+          addressRegion: a.region,
+          postalCode: a.postal,
+          addressCountry: a.country,
+        },
+        geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lng },
+        containedInPlace: { '@id': SITE.ids.business },
+      })
+    )
+    .join('\n');
+}
+
 // One call, one flag set. This is the whole point of the v4 architecture.
 function schemaFor(slug, kind) {
   const s = sourceFor(slug).src;
@@ -309,6 +373,11 @@ function schemaFor(slug, kind) {
   if (slug !== '') blocks.push(schemaBreadcrumb(slug));
   if (body.faqs && body.faqs.length) blocks.push(schemaFaqPage(body.faqs));
   if (kind === 'article' && !isHi(slug)) blocks.push(schemaArticle(slug));
+  // The service catalogue and both places go on every page: they describe the
+  // business, not the page, and a business described once on every page is
+  // more robustly understood than one described on a single hub.
+  blocks.push(schemaServiceCatalog());
+  blocks.push(schemaPlaces());
   const il = schemaItemList(slug);
   if (il) blocks.push(il);
   return blocks.join('\n');
@@ -384,14 +453,7 @@ function anchorFor(src, hi) {
 // The footer link grid is DERIVED from the registries, never hand-maintained.
 function linkIndex(slug) {
   const hi = isHi(slug);
-  const all = [
-    ...SERVICES,
-    ...LOCATIONS,
-    ...GUIDES,
-    CORE.about,
-    CORE.servicesPage,
-    CORE.contact,
-  ];
+  const all = LINK_INDEX_SOURCES();
   return all
     .map((src) => {
       const text = anchorFor(src, hi);
@@ -401,6 +463,15 @@ function linkIndex(slug) {
     .filter(Boolean)
     .join('\n        ');
 }
+const LINK_INDEX_SOURCES = () => [
+  ...ALL_SERVICES,
+  ...LOCATIONS,
+  ...ALL_GUIDES,
+  CORE.about,
+  CORE.servicesPage,
+  CORE.contact,
+  CORE.verify,
+];
 
 function footer(slug) {
   const hi = isHi(slug);
@@ -506,7 +577,10 @@ module.exports = {
   NAV,
   site: SITE,
   services: SERVICES,
+  servicesExtended: SERVICES_EXT,
   locations: LOCATIONS,
   guides: GUIDES,
+  guidesExtended: GUIDES_EXT,
+  linkIndexSources: LINK_INDEX_SOURCES,
   core: CORE,
 };

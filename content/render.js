@@ -7,6 +7,7 @@
 const UI = require('./ui');
 const SITE = require('./site');
 const { GLYPH, ICONS, esc, rich, stars, isHi, L } = UI;
+const ALL_SERVICES = [...UI.services, ...UI.servicesExtended];
 
 const cta = (hi) => `
     <div class="cta-group">
@@ -305,8 +306,17 @@ function servicesHub(page) {
   const hi = isHi(page.slug);
   const s = UI.core.servicesPage;
   const c = hi ? s.hi : s;
-  const path = (p) => (hi ? L(p) : p);
-  const lookup = Object.fromEntries(UI.services.map((x) => [x.slug, x]));
+  const lookup = Object.fromEntries(ALL_SERVICES.map((x) => [x.slug, x]));
+  const ICON_BY_SLUG = {
+    'love-problem-solution-kamakhya': 'heart',
+    'black-magic-removal-kamakhya': 'shield',
+    'vashikaran-specialist-mayong': 'check',
+    'husband-wife-dispute-mayong': 'users',
+    'business-problem-solution': 'briefcase',
+    'childless-problem-solution': 'heart',
+    'evil-eye-removal': 'shield',
+    'kundli-consultation': 'star',
+  };
 
   return `<main>
   <section class="hero hero--page">
@@ -326,20 +336,21 @@ function servicesHub(page) {
         ${s.order
           .map((slug) => {
             const e = lookup[slug];
-            const icon = { 'love-problem-solution-kamakhya': 'heart', 'black-magic-removal-kamakhya': 'shield', 'vashikaran-specialist-mayong': 'check', 'husband-wife-dispute-mayong': 'users' }[slug];
+            if (!e) return '';
+            const icon = ICON_BY_SLUG[slug] || 'star';
             return `<div class="service-card">
           <div class="service-icon-wrapper" aria-hidden="true">
             <svg viewBox="0 0 24 24">${ICONS[icon]}</svg>
           </div>
           <h3>${rich(hi ? e.hi.h1 : e.h1)}</h3>
           <p>${rich(e.desc.split('. ').slice(0, 2).join('. '))}.</p>
-          <a href="${path('/' + slug)}">${hi ? 'विस्तार से पढ़ें' : 'Read the full service page'} ${GLYPH.arrow}</a>
+          <a href="${UI.localizedPath(slug, hi)}">${hi ? 'विस्तार से पढ़ें' : 'Read the full service page'} ${GLYPH.arrow}</a>
         </div>`;
           })
           .join('\n        ')}
       </div>
       <div class="view-all-link">
-        <a href="${path('/contact')}">${hi ? 'मुफ्त परामर्श लें' : 'Request a free consultation'} ${GLYPH.arrow}</a>
+        <a href="${UI.localizedPath('contact', hi)}">${hi ? 'मुफ्त परामर्श लें' : 'Request a free consultation'} ${GLYPH.arrow}</a>
       </div>
     </div>
   </section>
@@ -440,6 +451,76 @@ ${relatedBlock(s.related, hi)}
 }
 
 // ---------------------------------------------------------------------------
+// Verify / anti-fraud page. The red-flags block and the promises block are
+// rendered from the same arrays the copy came from, so they cannot drift.
+// ---------------------------------------------------------------------------
+function verifyPage(page) {
+  const hi = isHi(page.slug);
+  const s = UI.core.verify;
+  const c = hi ? s.hi : s;
+
+  return `<main>
+  <section class="hero hero--page">
+    <div class="container hero-content">
+      <h1>${rich(c.h1)}</h1>
+      <p>${rich(c.sub)}</p>
+      <div class="cta-group">
+        <a href="${SITE.phoneHref}" class="btn-primary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+          <span>${hi ? 'अभी कॉल करें' : 'Call now'}</span>
+        </a>
+        <a href="${SITE.wa('Hello, I want to verify I am talking to the real Deepak Tantrik')}" target="_blank" rel="noopener" class="btn-outline">${hi ? 'व्हाट्सएप करें' : 'WhatsApp'}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="panel">
+        <h2>${rich(c.lead.h2)}</h2>
+        ${c.lead.p.map((p) => `<p>${rich(p)}</p>`).join('\n        ')}
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-narrative">
+    <div class="container">
+      <div class="panel">
+        ${c.redFlags.map((r) => `<h2>${rich(r.h2)}</h2>\n        ${r.p.map((p) => `<p>${rich(p)}</p>`).join('\n        ')}`).join('\n        ')}
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="panel panel--accent">
+        <h2>${rich(c.promise.h2)}</h2>
+        ${c.promise.p.map((p) => `<p>${rich(p)}</p>`).join('\n        ')}
+        <ul class="verify-facts">
+          <li><strong>${hi ? 'केवल यही नंबर' : 'Only number'}</strong> <a href="${SITE.phoneHref}">${esc(SITE.phone)}</a></li>
+          <li><strong>${hi ? 'कामाख्या मंदिर कार्यालय' : 'Kamakhya Temple office'}</strong> ${esc(SITE.addresses[0].street)}, ${esc(SITE.addresses[0].locality)} ${esc(SITE.addresses[0].postal)}</li>
+          <li><strong>${hi ? 'मायोंग आश्रम' : 'Mayong Ashram'}</strong> ${esc(SITE.addresses[1].street)}, ${esc(SITE.addresses[1].locality)} ${esc(SITE.addresses[1].postal)}</li>
+          <li><strong>${hi ? 'ईमेल' : 'Email'}</strong> <a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a></li>
+          <li><strong>${hi ? 'आधिकारिक साइट' : 'Official site'}</strong> ${esc(SITE.domain)}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-narrative">
+    <div class="container">
+      <div class="panel">
+        ${deepBlock(c.deep)}
+      </div>
+    </div>
+  </section>
+
+${faqBlock(c.faqs, hi)}
+${relatedBlock(s.related, hi)}
+</main>`;
+}
+
+// ---------------------------------------------------------------------------
 // 404. Never in the sitemap, noindex, still fully branded and navigable.
 // ---------------------------------------------------------------------------
 function notFoundPage() {
@@ -479,6 +560,7 @@ const RENDERERS = {
   about: aboutPage,
   services: servicesHub,
   contact: contactPage,
+  verify: verifyPage,
   service: genericPage,
   location: genericPage,
   article: genericPage,

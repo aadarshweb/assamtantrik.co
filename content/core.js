@@ -366,6 +366,10 @@ module.exports = {
       'black-magic-removal-kamakhya',
       'vashikaran-specialist-mayong',
       'husband-wife-dispute-mayong',
+      'business-problem-solution',
+      'kundli-consultation',
+      'childless-problem-solution',
+      'evil-eye-removal',
     ],
 
     deep: [
@@ -640,6 +644,210 @@ module.exports = {
       ],
       testimonial: null,
       related: ['best-tantrik-mayong', 'tantrik-baba-guwahati', 'real-tantrik-astrologer-assam', 'black-magic-removal-kamakhya'],
+    },
+  },
+  // =====================================================================
+  // The trust page. Both competitors ranking against you (ayushrudhra.com,
+  // mayongtantrik.org) run an anti-fraud / "verify official platforms" page
+  // and it is the single most important thing neither the technical work nor
+  // the reviews can replace. This niche attracts impersonation, and this
+  // practitioner has in fact had his name and copy used without permission.
+  // That makes the page an honest warning, not marketing.
+  verify: {
+    slug: 'verify',
+    file: 'verify',
+    kind: 'default',
+    priority: '0.9',
+    changefreq: 'monthly',
+    hasHi: true,
+
+    title: 'Verify Deepak Tantrik | Beware of Fake Tantriks',
+    desc:
+      'How to confirm you are talking to the real Deepak Tantrik, Mayong and Kamakhya. One number only: +91 9706801250. Full address, hours and scam warnings here.',
+    keywords: [
+      'verify deepak tantrik',
+      'beware of fake tantrik',
+      'real tantrik contact number',
+      'kamakhya temple tantrik fraud',
+      'assam tantrik fraud',
+      'mayong tantrik fake number',
+      'how to check tantrik is real',
+    ],
+    h1: 'Verify Deepak Tantrik: How to Spot a Fake',
+    sub: 'Impersonation using his name is happening. Here is the only number, the two real addresses, and exactly what he will never ask you for.',
+
+    lead: {
+      h2: 'There is only one number',
+      p: [
+        'If you are reading this because you were contacted by someone claiming to be Deepak Tantrik, treat that as a warning sign. <strong>The only number for this practice is +91 9706801250.</strong> Call it yourself. Do not use a number handed to you by a stranger, a WhatsApp forward, a social media message, or a "consultant" offering to arrange an appointment.',
+        'Impersonation in this field is common and it is getting worse. Fake practitioners use a real person\'s name, lift their photographs and their written descriptions, publish a convincing-looking site, and collect payments. Some of the material written about him has been copied verbatim onto other websites. <strong>Copied text is a reliable tell.</strong> If a page about Deepak Tantrik appears on a domain that is not assamtantrik.co, it is not him.',
+      ],
+    },
+
+    // The three things a fake will ask for. This is the substance of the page
+    // and the reason it earns links rather than reads as marketing.
+    redFlags: [
+      {
+        h2: '1. Payment before any conversation',
+        p: [
+          'A genuine practitioner speaks with you first, understands the situation, and then explains what is involved and what it costs. A fraudster wants money before that happens, and manufactures urgency to get it. <strong>Nobody who has not first discussed your situation has any basis for quoting you anything.</strong> If a payment link, UPI request or QR code arrives before a conversation, stop there.',
+        ],
+      },
+      {
+        h2: '2. Guarantees, and anyone who will "remove" someone',
+        p: [
+          'Be suspicious of any promise of a guaranteed outcome, a fixed date by which your problem will be solved, or 100% results. Deepak Tantrik makes no such claim, and the reason is straightforward: an astrologer or tantrik cannot honestly promise control over another person or over events. Any practitioner who does is telling you what they think you want to hear.',
+          'Treat an offer to harm, control, "target" or remove a specific person as an absolute disqualifier. There is no version of tantra where that is legitimate, and no genuine practitioner will propose it. A real consultation is about your own situation and what you can reasonably do about it.',
+        ],
+      },
+      {
+        h2: '3. No location, no lineage, no way to meet',
+        p: [
+          'This practice has two physical addresses that anyone may visit without an appointment: the office near the Kamakhya Temple at Malakhuwa, Guwahati, postal code 781010, and the Mayong Ashram in Morigaon, postal code 782411. A genuine practitioner will give you those without being asked.',
+          'Anyone who cannot name a location, cannot say who initiated them or in which family they were raised, and will not take a call directly, is not operating a real practice. That includes anyone whose only channel is a messaging app.',
+        ],
+      },
+    ],
+
+    // Written by hand because it is a factual statement about what this
+    // practice will and will not do. It is the trust signal, and it is also
+    // the thing a fraudster cannot copy convincingly.
+    promise: {
+      h2: 'What Deepak Tantrik will and will not do',
+      p: [
+        'The number +91 9706801250 reaches him directly. There is no assistant, no call centre, and no agent taking a commission on any fee. The first consultation is free and carries no obligation, including the decision to do nothing at all.',
+        'Fees for a specific remedy are explained in full before any work begins, and they do not change afterwards. What is discussed is confidential, and no visitor is asked to be named or photographed. The practice is located in two places, both walk-in, and both are ordinary rooms where a conversation takes place privately rather than a staged setting.',
+        'What he will not do: promise a guaranteed result, ask anyone to harm another person, quote a fee he has not first discussed, ask for payment through an unverified link from a stranger, or permit anyone to act on his behalf without saying so. He also does not claim that the Kamakhya Temple administration authorises this or any other online consultation, because it does not. This practice is independent of the temple and is not an official temple service.',
+        'If anyone contacts you claiming to be him on a different number, or asks for money in his name, please report that number. It is the single most useful thing you can do for anyone who searches for him later.',
+      ],
+    },
+
+    deep: [
+      {
+        h2: 'Why this page exists',
+        p: [
+          'Search for a tantrik in Kamakhya or Mayong and you will find several dozen websites carrying a phone number and a name. Many are one page long. Some are impersonations. A few are legitimate competing practices with their own genuine practitioners, and they deserve your custom as much as anyone. The difficulty for an ordinary person is telling them apart without any way to check.',
+          'This page is the check. It exists so that a person who lands here can confirm in thirty seconds whether the number in front of them is the right one, and so that anyone searching later finds the confirmation from the source rather than from another aggregator. <a href="/real-tantrik-astrologer-assam">The longer guide to identifying a genuine practitioner in Assam</a> covers the general principles, including the five red flags and five genuine signs, and is worth reading whether or not you came here looking for anyone in particular.',
+        ],
+      },
+      {
+        h2: 'How this site is different from the others',
+        p: [
+          'It publishes a permanent address at two locations rather than "available worldwide", it names a lineage that local elders in Mayong can confirm, and it states plainly on the <a href="/about">about page</a> that no genuine practitioner guarantees results. The testimonials on this site are attributed to a first name and a city because that is the only information clients agreed to give, and they are presented as what clients said rather than as evidence of anything beyond that.',
+          'None of that is a marketing position. It is simply what happens when a site is built to be accurate rather than to win a search. You can judge the rest of this site by the same standard: every page is written and checked by an automated audit, the Hindi pages are real pages rather than a translation widget, and the contact details on every single page are the same two addresses and the same one number.',
+        ],
+      },
+    ],
+
+    faqs: [
+      {
+        q: 'What is the real Deepak Tantrik contact number?',
+        a: '+91 9706801250. It is the only number for this practice. Call or WhatsApp it directly. If anyone gives you a different number claiming to be him, it is not him.',
+      },
+      {
+        q: 'Are there other sites with his name and phone number?',
+        a: 'There may be older or lookalike sites, and there is at least one that has copied his written descriptions verbatim. assamtantrik.co is the official site. If his name, his number and his photographs appear on a different domain, that domain is not authorised by him.',
+      },
+      {
+        q: 'Does the Kamakhya Temple authorise this practice?',
+        a: 'No. The practice is independent of the Kamakhya Temple and is not an official temple service. The temple administration has stated publicly that many online puja and tantra websites are not authorised by them, so be sceptical of any website that implies otherwise.',
+      },
+      {
+        q: 'Is the first consultation really free?',
+        a: 'Yes, and there is no obligation afterwards. You get an honest assessment of the situation, a full explanation of cost, and a straight answer if a remedy is not appropriate.',
+      },
+    ],
+    testimonial: null,
+    related: ['real-tantrik-astrologer-assam', 'contact', 'about', 'best-tantrik-mayong'],
+
+    hi: {
+      title: 'नकली तांत्रिकों से कैसे बचें | दीपक तांत्रिक की पहचान',
+      desc:
+        'दीपक तांत्रिक से बात कर रहे हैं या नहीं, यह कैसे जाँचें। केवल एक नंबर: +91 9706801250। पूरा पता, समय और धोखाधड़ी की चेतावनी यहाँ।',
+      keywords: [
+        'दीपक तांत्रिक की पहचान',
+        'नकली तांत्रिक से बचें',
+        'असली तांत्रिक कांटैक्ट नंबर',
+        'कामाख्या मंदिर तांत्रिक ठगी',
+        'असम तांत्रिक धोखाधड़ी',
+        'मायोंग तांत्रिक नकली नंबर',
+      ],
+      h1: 'दीपक तांत्रिक की पहचान: नकली तांत्रिक कैसे पहचानें',
+      sub: 'उनके नाम से धोखाधड़ी हो रही है। यहाँ केवल असली नंबर, दोनों असली पते, और वे कभी क्या नहीं माँगेंगे, यह सब बताया गया है।',
+      lead: {
+        h2: 'केवल एक ही नंबर है',
+        p: [
+          'यदि आप यह पढ़ रहे हैं क्योंकि किसी ने दीपक तांत्रिक बनकर आपसे संपर्क किया है, तो इसे चेतावनी का संकेत मानें। <strong>इस अभ्यास के लिए केवल एक नंबर है: +91 9706801250।</strong> इसे स्वयं कॉल करें। किसी अजनबी, व्हाट्सएप फॉरवर्ड, सोशल मीडिया संदेश या "कंसल्टेंट" द्वारा दिया गया नंबर न उपयोग करें।',
+          'इस क्षेत्र में प्रतिरूपण सामान्य है और बढ़ता जा रहा है। नकली चिकित्सक किसी वास्तविक व्यक्ति का नाम, उसकी तस्वीरें और लिखा गया विवरण लेकर एक आकर्षक वेबसाइट बनाते हैं और भुगतान लेते हैं। दीपक तांत्रिक के बारे में लिखा गया कुछ सामग्री शब्दशः दूसरी वेबसाइटों पर कॉपी की गई है। <strong>कॉपी किया गया टेक्स्ट एक भरोसेमंद संकेत है।</strong> यदि assamtantrik.co के अलावा किसी अन्य डोमेन पर दीपक तांत्रिक का पेज दिखे, तो वह उनका नहीं है।',
+        ],
+      },
+      redFlags: [
+        {
+          h2: '1. बातचीत से पहले भुगतान',
+          p: [
+            'असली चिकित्सक पहले आपकी बात सुनता है, परिस्थिति समझता है, फिर बताता है कि इसमें क्या शामिल है और उसकी लागत क्या होगी। ठगी बातचीत से पहले पैसा चाहता है और जल्दबाजी बनाकर लेता है। <strong>जिसने आपकी परिस्थिति पर पहले चर्चा नहीं की है, उसके पास शुल्क बताने का कोई आधार नहीं है।</strong> यदि बातचीत से पहले कोई भुगतान लिंक, UPI अनुरोध या QR कोड आए, तो वहीं रुक जाएं।',
+          ],
+        },
+        {
+          h2: '2. गारंटी, और जो किसी को "हटा" दे',
+          p: [
+            'पूर्ण गारंटी, किसी निश्चित तिथि तक समस्या हल होने का वादा, या 100% परिणाम वाले दावों पर सावधान रहें। दीपक तांत्रिक ऐसा कोई दावा नहीं करते, और कारण सीधा है: कोई ज्योतिषी या तांत्रिक ईमानदार रूप से किसी दूसरे व्यक्ति या घटनाओं पर नियंत्रण का वादा नहीं कर सकता। ऐसा वादा करने वाला आपको वही बता रहा है जो सुनना चाहता है।',
+            'किसी विशेष व्यक्ति को नुकसान पहुँचाने, नियंत्रित करने, "टारगेट" करने या हटाने की पेशकश को पूर्ण तरीके से अयोग्य मानें। तंत्र का कोई भी वैध रूप यह नहीं है, और कोई असली चिकित्सक ऐसा प्रस्ताव नहीं करेगा। असली परामर्श आपकी अपनी परिस्थिति के बारे में होता है।',
+          ],
+        },
+        {
+          h2: '3. कोई स्थान नहीं, कोई वंश नहीं, मिलने का कोई तरीका नहीं',
+          p: [
+            'इस अभ्यास के दो भौतिक पते हैं जहां बिना किसी अपॉइंटमेंट के कोई भी जा सकता है: गुवाहाटी के मलाखुवा में कामाख्या मंदिर के पास का कार्यालय, पिन कोड 781010, और मोरिगांव का मायोंग आश्रम, पिन कोड 782411। असली चिकित्सक ये पते पूछे बिना बता देगा।',
+            'जो न स्थान बता सके, न यह बता सके कि दीक्षा किससे मिली या किस परिवार में पले, और सीधे बात न करे, वह वास्तविक अभ्यास नहीं चला रहा। इसमें वह भी शामिल है जिसका एकमात्र माध्यम कोई मैसेजिंग ऐप हो।',
+          ],
+        },
+      ],
+      promise: {
+        h2: 'दीपक तांत्रिक क्या करेंगे और क्या नहीं',
+        p: [
+          '+91 9706801250 नंबर सीधे उन तक पहुँचाता है। कोई सहायक नहीं, कोई कॉल सेंटर नहीं, और कोई एजेंट नहीं जो किसी शुल्क पर कमीशन लेता हो। पहली बातचीत निःशुल्क है और कोई बाध्यता नहीं है, इसमें कुछ न करने का निर्णय शामिल है।',
+          'किसी विशेष उपाय की शुल्क कार्य शुरू होने से पूरी तरह बता दी जाती है और बाद में नहीं बदलती। चर्चा किया गया सब गोपनीय रहता है, और किसी मेहमान का नाम लेने या फोटो लेने के लिए कहा नहीं जाता। अभ्यास दो स्थानों पर है, दोनों में सीधे जा सकते हैं, और दोनों साधारण कमरे हैं जहां निजी तौर पर बात होती है, कोई मंचबद्ध व्यवस्था नहीं।',
+          'वे यह नहीं करेंगे: परिणाम की गारंटी देना, किसी को नुकसान पहुँचाने को कहना, बिना चर्चा किए शुल्क बताना, किसी अजनबी के असत्यापित लिंक से भुगतान माँगना, या किसी को अपनी ओर से बिना बताए काम करने देना। वे यह भी नहीं कहते कि कामाख्या मंदिर प्रशासन इस अभ्यास या किसी अन्य ऑनलाइन परामर्श को प्राधिकृत करता है, क्योंकि वह नहीं करता। यह अभ्यास मंदिर से स्वतंत्र है और मंदिर की आधिकारिक सेवा नहीं है।',
+          'यदि कोई दूसरे नंबर से उनका बहाना बनकर आपसे संपर्क करे, या उनके नाम से पैसे माँगे, तो कृपया उस नंबर की शिकायत करें। यह वह सबसे उपयोगी काम है जो आप बाद में उनकी खोज करने वाले किसी व्यक्ति के लिए कर सकते हैं।',
+        ],
+      },
+      deep: [
+        {
+          h2: 'यह पृष्ठ क्यों है',
+          p: [
+            'कामाख्या या मायोंग में तांत्रिक खोजें और आपको कई दर्जन वेबसाइट मिलेंगे जिन पर एक फोन नंबर और नाम लिखा है। बहुत से केवल एक पन्ने के हैं। कुछ प्रतिरूपण हैं। कुछ वैध प्रतिस्पर्धी अभ्यास हैं जिनके अपने सच्चे चिकित्सक हैं, और वे भी उतने ही हकदार हैं। एक सामान्य व्यक्ति के लिए कठिनाई यह है कि बिना किसी जाँच के उन्हें अलग करना संभव नहीं है।',
+            'यह पृष्ठ वही जाँच है। यह इसलिए मौजूद है कि कोई व्यक्ति तीस सेकंड में पुष्टि कर सके कि सामने का नंबर सही है, और ताकि बाद में खोजने वाले को यह पुष्टि किसी एग्रीगेटर से नहीं, सीधे स्रोत से मिले। <a href="/hi/real-tantrik-astrologer-assam">असम में असली चिकित्सक की पहचान का लंबा गाइड</a> सामान्य सिद्धांतों को कवर करता है, और उसे पढ़ना चाहिए चाहे आप किसी विशेष व्यक्ति की तलाश में आए हों या नहीं।',
+          ],
+        },
+        {
+          h2: 'यह साइट दूसरों से कैसे अलग है',
+          p: [
+            'यह "दुनिया भर में उपलब्ध" के बजाय दो स्थानों का स्थायी पता प्रकाशित करता है, एक ऐसी वंश बताता है जिसकी पुष्टि मायोंग के स्थानीय बुज़ुर्ग कर सकते हैं, और <a href="/hi/about">परिचय पृष्ठ</a> पर साफ़ लिखता है कि कोई असली चिकित्सक परिणाम की गारंटी नहीं देता। इस साइट की सभी सफलताएं पहले नाम और शहर के साथ दी गई हैं क्योंकि यही एकमात्र जानकारी है जिसने ग्राहक साझा करने की सहमति दी, और इन्हें ग्राहकों के कथन के रूप में प्रस्तुत किया गया है, इससे अधिक किसी सबूत के रूप में नहीं।',
+            'उनमें से कोई भी बात एक मार्केटिंग स्थिति नहीं है। यह बस तब होता है जब कोई साइट सही होने के लिए बनाई जाती है, न कि किसी सर्च को जीतने के लिए। आप इस साइट का बाकी हिस्सा भी उसी मानदंड से आंक सकते हैं: हर पृष्ठ स्वचालित ऑडिट से गुजरता है, हिंदी पृष्ठ वास्तविक पृष्ठ हैं न कि अनुवाद विजेट, और हर एक पृष्ठ पर संपर्क विवरण एक ही दो पते और एक ही नंबर हैं।',
+          ],
+        },
+      ],
+      faqs: [
+        {
+          q: 'दीपक तांत्रिक का असली कांटैक्ट नंबर क्या है?',
+          a: '+91 9706801250। यह इस अभ्यास के लिए केवल नंबर है। इसे सीधे कॉल या व्हाट्सएप करें। यदि कोई दूसरा नंबर बताकर उनका बहाना बनाए, तो वह उनका नंबर नहीं है।',
+        },
+        {
+          q: 'क्या उनके नाम और फोन नंबर वाली अन्य साइटें हैं?',
+          a: 'पुरानी या मिलती-जुलती साइटें हो सकती हैं, और उनके लिखित विवरण तो शब्दशः कॉपी किए गए कम से कम एक साइट मौजूद है। assamtantrik.co आधिकारिक साइट है। यदि उनका नाम, नंबर और तस्वीरें किसी अन्य डोमेन पर दिखें, तो वह डोमेन उनके द्वारा अधिकृत नहीं है।',
+        },
+        {
+          q: 'क्या कामाख्या मंदिर इस अभ्यास को प्राधिकृत करता है?',
+          a: 'नहीं। अभ्यास कामाख्या मंदिर से स्वतंत्र है और मंदिर की आधिकारिक सेवा नहीं है। मंदिर प्रशासन ने सार्वजनिक रूप से कहा है कि कई ऑनलाइन पूजा और तंत्र वेबसाइट उनके द्वारा अधिकृत नहीं हैं, इसलिए ऐसी किसी भी वेबसाइट पर संदेह करें जो इसका इशारा करे।',
+        },
+        {
+          q: 'क्या पहली बातचीत वाकई निःशुल्क है?',
+          a: 'हां, और उसके बाद कोई बाध्यता नहीं है। आपको स्थिति का ईमानदार आकलन, लागत का पूर्ण विवरण, और यदि उपाय उपयुक्त नहीं हो तो सीधा उत्तर मिलेगा।',
+        },
+      ],
+      testimonial: null,
+      related: ['real-tantrik-astrologer-assam', 'contact', 'about', 'best-tantrik-mayong'],
     },
   },
 };
