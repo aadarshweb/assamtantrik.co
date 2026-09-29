@@ -1,69 +1,208 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://assamtantrik.co/</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/hi/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/about</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/about"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/about"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/hi/about</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/about"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/about"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/services</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/services"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/services"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/hi/services</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/services"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/services"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://assamtantrik.co/love-problem-solution-kamakhya</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/contact"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/contact"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/hi/contact</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/contact"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/contact"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/black-magic-removal-kamakhya</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/black-magic-removal-kamakhya"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/black-magic-removal-kamakhya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/black-magic-removal-kamakhya"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/hi/black-magic-removal-kamakhya</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/black-magic-removal-kamakhya"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/black-magic-removal-kamakhya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/black-magic-removal-kamakhya"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/love-problem-solution-kamakhya</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/love-problem-solution-kamakhya"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/love-problem-solution-kamakhya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/love-problem-solution-kamakhya"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/hi/love-problem-solution-kamakhya</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/love-problem-solution-kamakhya"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/love-problem-solution-kamakhya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/love-problem-solution-kamakhya"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/vashikaran-specialist-mayong</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/vashikaran-specialist-mayong"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/vashikaran-specialist-mayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/vashikaran-specialist-mayong"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/hi/vashikaran-specialist-mayong</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/vashikaran-specialist-mayong"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/vashikaran-specialist-mayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/vashikaran-specialist-mayong"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/husband-wife-dispute-mayong</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/husband-wife-dispute-mayong"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/husband-wife-dispute-mayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/husband-wife-dispute-mayong"/>
   </url>
   <url>
-    <loc>https://assamtantrik.co/tantrik-baba-guwahati</loc>
+    <loc>https://assamtantrik.co/hi/husband-wife-dispute-mayong</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/husband-wife-dispute-mayong"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/husband-wife-dispute-mayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/husband-wife-dispute-mayong"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/best-tantrik-mayong</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/best-tantrik-mayong"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/best-tantrik-mayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/best-tantrik-mayong"/>
   </url>
   <url>
-    <loc>https://assamtantrik.co/history-of-mayong-black-magic-assam</loc>
+    <loc>https://assamtantrik.co/hi/best-tantrik-mayong</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/best-tantrik-mayong"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/best-tantrik-mayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/best-tantrik-mayong"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/tantrik-baba-guwahati</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/tantrik-baba-guwahati"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/hi/tantrik-baba-guwahati"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/tantrik-baba-guwahati"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/hi/tantrik-baba-guwahati</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/tantrik-baba-guwahati"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://assamtantrik.co/tantrik-baba-guwahati"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/tantrik-baba-guwahati"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/about-kamakhya-temple-guwahati</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/about-kamakhya-temple-guwahati"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/about-kamakhya-temple-guwahati"/>
+  </url>
+  <url>
+    <loc>https://assamtantrik.co/history-of-mayong-black-magic-assam</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/history-of-mayong-black-magic-assam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/history-of-mayong-black-magic-assam"/>
   </url>
   <url>
     <loc>https://assamtantrik.co/real-tantrik-astrologer-assam</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url></urlset>
-
-
+    <xhtml:link rel="alternate" hreflang="en" href="https://assamtantrik.co/real-tantrik-astrologer-assam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assamtantrik.co/real-tantrik-astrologer-assam"/>
+  </url>
+</urlset>

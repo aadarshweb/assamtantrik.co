@@ -2,3 +2,9 @@
 seo strategy.md
 seo strategy v2 final.md
 *.md
+
+# The build system's own instructions must be tracked, unlike the other docs.
+!AGENTS.md
+
+# .kilo/ is a tool worktree directory, not site source.
+.kilo/
