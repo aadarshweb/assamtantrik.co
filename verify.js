@@ -271,6 +271,47 @@ for (const [k, fn] of Object.entries(RENDERERS)) {
 if (!failures) ok(Object.keys(RENDERERS).length + ' renderers registered');
 
 // ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+section('11. Review data is real, not invented');
+{
+  const R = SITE.reviews;
+  if (R.enabled) {
+    if (!R.ratingValue || !R.reviewCount) fail('content/site.js', 'reviews.enabled is true but ratingValue/reviewCount are missing');
+    if (!R.source) {
+      fail('content/site.js',
+        'aggregateRating is enabled with no `source` URL. Google requires review markup to be verifiable by a visitor. Enable it only with figures a user can see on a page you can link to, otherwise leave reviews.enabled = false');
+    }
+    const num = parseFloat(R.ratingValue);
+    if (!(num >= 0 && num <= 5)) fail('content/site.js', 'ratingValue ' + R.ratingValue + ' is outside 0-5');
+  } else {
+    ok('aggregateRating is OFF - no unverifiable review claim in machine-readable data');
+  }
+
+  // The visible testimonials must not be presented as a review count.
+  for (const f of htmlFiles) {
+    const c = read(f);
+    for (const m of c.matchAll(/"reviewCount":\s*"([^"]+)"/g)) {
+      fail(f, 'reviewCount ' + m[1] + ' present while SITE.reviews.enabled is false');
+    }
+    // "387 reviews", "1,248 ratings" and similar claims in visible copy
+    for (const m of c.matchAll(/(\d[\d,]{2,})\s*\+?\s*(?:reviews|ratings|clients served)/gi)) {
+      fail(f, 'visible copy claims "' + m[0] + '" - a count that large must be verifiable or removed');
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+section('12. Mobile conversion: sticky call/WhatsApp bar');
+{
+  for (const p of pages) {
+    const c = read(p.file + '.html');
+    if (!c.includes('class="mobile-cta-bar"')) fail(p.file, 'no sticky mobile call/WhatsApp bar');
+  }
+  const css = read('css/style.css');
+  if (!/\.mobile-cta-bar\s*\{/.test(css)) fail('css/style.css', 'no .mobile-cta-bar rule');
+  else ok('sticky mobile CTA bar present on all ' + pages.length + ' pages');
+}
+
 console.log('\n' + '-'.repeat(60));
 console.log(
   failures

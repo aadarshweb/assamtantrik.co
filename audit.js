@@ -130,7 +130,10 @@ section('6. Schema: exactly one LocalBusiness, AggregateRating nested, no standa
     const top = parsed.filter((x) => x['@type'] === 'LocalBusiness');
     if (top.length !== 1) fail(f, top.length + ' top-level LocalBusiness blocks, want exactly 1');
     if (top[0]) {
-      if (!top[0].aggregateRating) fail(f, 'LocalBusiness has no nested aggregateRating');
+      // aggregateRating is OPTIONAL. It is only emitted when real, citable
+      // review data exists. If it IS present it must be nested inside the
+      // business, never a standalone block.
+      if (SITE.reviews.enabled && !top[0].aggregateRating) fail(f, 'reviews.enabled is true but LocalBusiness has no nested aggregateRating');
       if (!Array.isArray(top[0].address) || top[0].address.length < 2) {
         fail(f, 'LocalBusiness needs BOTH locations as an address array, got ' + (top[0].address ? 1 : 0));
       }

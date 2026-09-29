@@ -51,6 +51,23 @@ const SITE = {
   areaServed: ['Guwahati', 'Mayong', 'Morigaon', 'Assam', 'Kamakhya'],
   hours: { opens: '06:00', closes: '22:00' },
 
+  // --- Reviews. OFF BY DEFAULT. ---------------------------------------
+  // Google requires aggregateRating to reflect reviews that are genuinely
+  // shown to a user, and treats unattributable self-serving review markup as a
+  // structured-data violation. Shipping a number that is not verifiable on the
+  // page is a manual-action risk in a YMYL-adjacent niche, and it is exactly
+  // what several competitors in this SERP are doing.
+  //
+  // TO TURN ON: put the real, current figures here. `source` must be a URL a
+  // visitor can read and that shows the same count, e.g. a Google Business
+  // Profile URL. verify.js fails the build if enabled without one.
+  reviews: {
+    enabled: false,
+    ratingValue: null, // e.g. '4.9'
+    reviewCount: null, // e.g. 214
+    source: null, // e.g. 'https://g.page/yourGBPid'
+  },
+
   // --- SEO / entity description, woven with the primary keyword cluster ---
   description:
     'Deepak Tantrik is a best tantrik in Kamakhya Temple and Mayong, Assam. Born into a seven-generation Mayong tantra lineage and initiated at Kamakhya Temple, Guwahati, he offers black magic removal, vashikaran, love problem solutions and husband wife dispute help with 25+ years of experience. Call +91 9706801250.',

@@ -318,6 +318,79 @@ a.service-card h3 {
   margin-top: 28px;
 }
 
+/* --- STICKY MOBILE CTA BAR -------------------------------------------- */
+/* Two floating buttons in the corner are hard to reach one-handed. This keeps
+   Call / WhatsApp / Message under the thumb on every page. */
+.mobile-cta-bar {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-cta-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    background: rgba(11, 18, 30, 0.97);
+    border-top: 1px solid rgba(255, 102, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+  }
+  .mobile-cta-bar .mcta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    min-height: 52px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+  }
+  .mobile-cta-bar .mcta svg {
+    width: 21px;
+    height: 21px;
+    fill: currentColor;
+  }
+  .mcta--call {
+    background: var(--primary-color);
+  }
+  .mcta--wa {
+    background: #1f9d55;
+  }
+  .mcta--form {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+
+  /* The bar covers the bottom of the page, so the footer needs clearance
+     and the floating buttons move up out from under it. */
+  body {
+    padding-bottom: 66px;
+  }
+  .floating-buttons {
+    bottom: 78px;
+  }
+  .floating-buttons .float-btn {
+    width: 46px;
+    height: 46px;
+  }
+  .floating-buttons .float-btn svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+html[lang='hi'] .mobile-cta-bar .mcta {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
 /* --- VERIFY PAGE: the anti-fraud trust block --- */
 .panel--accent {
   border-color: rgba(255, 102, 0, 0.35);
