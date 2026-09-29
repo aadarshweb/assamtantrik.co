@@ -664,14 +664,17 @@ module.exports = {
     title: 'Verify Deepak Tantrik | Beware of Fake Tantriks',
     desc:
       'How to confirm you are talking to the real Deepak Tantrik, Mayong and Kamakhya. One number only: +91 9706801250. Full address, hours and scam warnings here.',
+    // This page owns: is THIS person real, and how do I check.
+    // /real-tantrik-astrologer-assam owns: how do I evaluate ANY practitioner.
+    // They must not share terms or they compete for the same query.
     keywords: [
       'verify deepak tantrik',
+      'is deepak tantrik real',
       'beware of fake tantrik',
-      'real tantrik contact number',
       'kamakhya temple tantrik fraud',
-      'assam tantrik fraud',
       'mayong tantrik fake number',
-      'how to check tantrik is real',
+      'impersonation tantrik india',
+      'deepak tantrik official website',
     ],
     h1: 'Verify Deepak Tantrik: How to Spot a Fake',
     sub: 'Impersonation using his name is happening. Here is the only number, the two real addresses, and exactly what he will never ask you for.',

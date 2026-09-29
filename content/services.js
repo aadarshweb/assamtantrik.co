@@ -195,6 +195,22 @@ const SERVICES = [
           'An ex-lover refusing to return, an inter-caste or inter-religion family objection, a husband or wife attracted to someone else, one-sided love, a broken engagement, or love lost after years together. No matter how hopeless the situation seems, as the leading <strong>tantrik in guwahati</strong> and an authentic <strong>assam tantrik</strong>, Deepak Tantrik has a solution. Call the <strong>mayong tantrik contact</strong> right now and begin your journey back to love.',
         ],
       },
+      {
+        h2: 'What the Process Actually Involves',
+        p: [
+          'The first conversation establishes the facts, and the facts are what determine whether a remedy is appropriate at all. How long the relationship lasted, how it ended, whether anything was said to the other person since, and whether either of you is already in a relationship. A situation where one person has not let go is a different problem from one where the other person has actively withdrawn, and the two are treated differently.',
+          'Where a remedy does make sense, it is described before it is done: what will be performed, how long it takes, what it costs, and what a realistic result looks like. The honest position is that a remedy can address a specific obstruction, usually a third party, a family objection, or a pattern of interference, and that it cannot make someone choose you who has decided otherwise. Any practitioner who promises otherwise is promising something no one in this line of work can deliver.',
+          'Most clients report a noticeable shift within 7 to 21 days, and many describe the first change as the person becoming calmer and less anxious rather than the other person calling. That is usually the meaningful indicator, because it is the part that is actually working on your own situation rather than on someone else\'s decision.',
+        ],
+      },
+      {
+        h2: 'Love Marriage and Parent Objection: The Most Common Case',
+        p: [
+          'A large share of consultations are not lost-love cases at all. They are couples who are in love, want to marry, and have hit a wall of family objection. Inter-caste, inter-religion, differences in income or education, a previous marriage, or simply two families who have not met and do not know what to think of each other. The obstacle is frequently practical rather than ideological, which means it is often more tractable than people expect.',
+          'Approaching that as a single problem is what makes it hard. In practice it has three separate layers that get confused with one another: whether the couple is strong enough to hold, what specifically the parents are objecting to, and whether the situation is being made worse by something external. Identifying which layer is the real obstacle matters more than applying a ritual to all three at once.',
+          'The first consultation reads both charts, which matters more here than in most other cases because the objection is frequently about compatibility as the parents understand it. The remedy addresses the specific objection rather than the relationship in general, and it frequently involves the couple doing something concrete, not only a ritual. If the honest answer is that the objection will not shift, you will be told that too. A remedy performed over an objection that will not move costs money and delays the decision the couple needs to make anyway.',
+        ],
+      },
     ],
     faqs: [
       {
@@ -319,6 +335,22 @@ const SERVICES = [
           'Anyone facing a partner who has grown cold and distant, family members refusing a love marriage, business rivals blocking your success, or children falling into bad company. As the most sought-after <strong>assam tantrik</strong> for vashikaran, Deepak Tantrik has resolved cases that other practitioners declared impossible. His dual authority as a <strong>tantrik in guwahati</strong> and a <strong>mayong tantrik</strong> makes him uniquely powerful. Do not hesitate. Call the <strong>mayong tantrik contact number</strong> today.',
         ],
       },
+      {
+        h2: 'What Vashikaran Can and Cannot Do',
+        p: [
+          'This is worth stating plainly because the word is used loosely and the honest limits are not widely discussed. Positive vashikaran works on alignment: it is used to address a specific obstruction that is preventing two people who already have a connection from resolving what is between them. In practice that means a partner who has withdrawn, a family blocking a marriage, a relationship where something external is interfering, or a situation where communication has broken down badly enough that the normal route is not available.',
+          'It does not make someone fall in love who has no prior connection with you. It does not create affection where none exists, and no honest practitioner will offer it. It does not override a person\'s decision, and any method sold on the promise that it does is either fraud or superstition. It is also not a substitute for anything else: it does not replace a medical opinion, a lawyer, a financial adviser, or a difficult conversation.',
+          'Where the situation is one where a person has clearly chosen to end a relationship, the useful question is usually not whether a remedy can change that but whether the client wants to begin again in a way that leaves them waiting indefinitely for a decision that has already been made. That is an honest conversation worth having, and it is one that is regularly avoided by practitioners who would rather sell a remedy.',
+        ],
+      },
+      {
+        h2: 'The Process and What to Expect',
+        p: [
+          'The first consultation is free and is a conversation rather than a booking. What is established is what is actually happening, whether the situation falls within what can be helped, and what the alternatives are if a remedy is not appropriate. Both partners\' details are useful where both are involved, and where the relationship is between two people the assessment is made against both charts, because that is where the obstruction either is or is not.',
+          'Where a remedy is indicated, you are told what will be performed, at which of the two locations, how long it takes, and what it costs as a fixed amount before anything begins. Most clients report a noticeable change within 7 to 21 days. It is worth being clear that a first change is usually in the client\'s own state, less anxiety and more steadiness, rather than an immediate change in the other person\'s behaviour.',
+          'There is no percentage of any outcome, no monthly package, and no follow-up call used to introduce a new problem. If the assessment is that a remedy will not help, you are told that and the consultation is the end of the matter.',
+        ],
+      },
     ],
     faqs: [
       {
@@ -441,6 +473,22 @@ const SERVICES = [
         h2: 'Results You Can Expect',
         p: [
           'Clients who consult this <strong>assam tantrik</strong> for marriage problems report: cessation of daily arguments within 7 days, return of warmth, affection and physical closeness, elimination of third-party interference, and a lasting, deeply bonded relationship. As the top-ranked <strong>tantrik in guwahati</strong> for husband wife dispute, Deepak Tantrik stands behind his remedies. If you are at the edge of divorce, make one call to the most trusted <strong>tantrik in assam</strong> before you give up.',
+        ],
+      },
+      {
+        h2: 'What the Process Actually Involves',
+        p: [
+          'Both partners\' charts are read, which matters here more than in most other cases. A marriage dispute is a property of the relationship between two charts, so reading one alone gives an incomplete picture, and the question of who is running which period is frequently the most useful single piece of information in the assessment.',
+          'The consultation establishes what changed and when. A marriage that has been difficult for years is a different situation from one that turned in eighteen months ago, and the two have very different causes. Where the friction is a period that will pass, the remedy may be light and short. Where it is a long-standing pattern, the work is slower and the expectation has to be honest about that.',
+          'What tends to help most is often not the ritual but the conversation it forces. Couples frequently arrive having stopped talking properly, and the astrology conversation reintroduces the specifics. That is worth saying plainly: the remedy supports the marriage, it does not substitute for the two people doing the work, and anyone promising to fix a marriage without the participation of both partners is describing something that does not exist.',
+        ],
+      },
+      {
+        h2: 'What This Cannot Fix',
+        p: [
+          'Some problems are not spiritual and should not be presented as spiritual. A marriage where one partner has decided to leave will not be held by any remedy. A marriage involving sustained physical harm, coercion, addiction or serious untreated illness needs professional help, not a ritual, and treating it as a spiritual problem causes real damage by delaying it.',
+          'Where the difficulty is a genuine incompatibility that has been visible to both partners for years, astrological work can clarify the situation but cannot resolve it, and pretending otherwise wastes money and time. There is also no honest remedy for a dispute where one partner is systematically deceiving the other, because the problem is a decision being made, not an obstruction in the relationship.',
+          'What can often be helped is the identifiable set: a third party whose presence has grown, a period of genuine stress affecting one partner, a communication pattern that has calcified, a situation where a specific unresolved grievance from years ago is still running. Those are real, they are common, and they are worth an honest consultation. Whether a given marriage falls into that category is exactly what the first consultation exists to determine, and the answer is sometimes no.',
         ],
       },
     ],

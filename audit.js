@@ -473,6 +473,107 @@ section('19. Images are never stretched by CSS');
   else ok('every img rule fixes at most one dimension and lets the other scale');
 }
 
+section('20. No two pages compete for the same intent');
+{
+  // Site-wide vocabulary. Two pages sharing these are not cannibalising,
+  // they are both describing the same business in the same geography.
+  const NOISE = new Set([
+    'tantrik', 'tantriks', 'tantra', 'kamakhya', 'mayong', 'assam', 'guwahati',
+    'contact', 'number', 'deepak', 'call', 'mandir', 'best', 'in', 'and', 'for',
+    'the', 'a', 'an', 'of', 'to', 'problem', 'solution', 'astrologer', 'baba',
+    'specialist', 'kamakhya', 'guwahati', 'assam', 'mayong',
+  ]);
+  const terms = (kws) =>
+    new Set(
+      kws
+        .join(' ')
+        .toLowerCase()
+        .split(/[^a-z]+/)
+        .filter((w) => w.length > 2 && !NOISE.has(w))
+    );
+
+  const en = pages.filter((p) => !p.slug.startsWith('hi/'));
+  const clashes = [];
+  for (let i = 0; i < en.length; i++) {
+    for (let j = i + 1; j < en.length; j++) {
+      const a = terms(en[i].keywords);
+      const b = terms(en[j].keywords);
+      const shared = [...a].filter((w) => b.has(w));
+      // 3 shared distinctive terms means both pages are built around the same
+      // subject and will compete for it.
+      if (shared.length >= 3) clashes.push({ a: '/' + en[i].slug, b: '/' + en[j].slug, shared });
+    }
+  }
+  if (clashes.length) {
+    for (const c of clashes) {
+      fail('cannibalisation', c.a + ' and ' + c.b + ' share 3+ distinctive terms [' + c.shared.join(', ') + '] - one of them should own that subject alone');
+    }
+  } else {
+    ok('no two English pages share 3+ distinctive keyword terms');
+  }
+
+  // And the primary must stay unique, which is the rule that actually decides
+  // what each page ranks for.
+  const primary = new Map();
+  for (const p of en) {
+    const k = p.keywords[0].toLowerCase();
+    if (primary.has(k)) fail('cannibalisation', 'primary "' + k + '" is shared by /' + p.slug + ' and ' + primary.get(k));
+    primary.set(k, '/' + p.slug);
+  }
+  ok(primary.size + ' unique primary keywords');
+
+  // Same check for the Hindi set. Devanagari cannot be split on [^a-z], so
+  // tokens are whitespace-separated words and the noise list is Hindi.
+  const HI_NOISE = new Set([
+    'तांत्रिक', 'तंत्रिक', 'तांत्रिकों', 'कामाख्या', 'मायोंग', 'असम', 'गुवाहाटी',
+    'संपर्क', 'नंबर', 'दीपक', 'समाधान', 'समस्या', 'भारत', 'सेवा', 'सेवाएं',
+    'सर्वश्रेष्ठ', 'बेस्ट', 'मंदिर', 'सबसे', 'बड़े', 'छोटे', 'नया', 'नए',
+    // Category vocabulary, not topic. These are the Hindi equivalents of the
+    // English "dosh / remedy / problem" noise: every service page says them.
+    'दोष', 'निवारण', 'उपाय', 'उपचार', 'समस्या', 'समाधान',
+    'के', 'की', 'का', 'में', 'और', 'लिए', 'से', 'है', 'हैं', 'एक', 'यह',
+    'वह', 'कर', 'किया', 'जाता', 'दिया', 'ही', 'ना', 'नहीं', 'भी',
+  ]);
+  const hiTerms = (kws) =>
+    new Set(
+      (kws || [])
+        .join(' ')
+        .split(/\s+/)
+        .map((w) => w.replace(/[।,.\-]/g, ''))
+        .filter((w) => w.length > 1 && !HI_NOISE.has(w))
+    );
+
+  const hiPages = pages
+    .filter((p) => String(p.slug).startsWith('hi/'))
+    .map((p) => ({ slug: p.slug, kw: p.keywords || [] }))
+    .filter((p) => p.kw.length);
+
+  const hiClashes = [];
+  for (let i = 0; i < hiPages.length; i++) {
+    for (let j = i + 1; j < hiPages.length; j++) {
+      const a = hiTerms(hiPages[i].kw);
+      const b = hiTerms(hiPages[j].kw);
+      const shared = [...a].filter((w) => b.has(w));
+      if (shared.length >= 3) hiClashes.push({ a: '/' + hiPages[i].slug, b: '/' + hiPages[j].slug, shared });
+    }
+  }
+  if (hiClashes.length) {
+    for (const c of hiClashes) {
+      fail('cannibalisation', c.a + ' and ' + c.b + ' share 3+ distinctive Hindi terms [' + c.shared.join(', ') + ']');
+    }
+  } else {
+    ok('no two Hindi pages share 3+ distinctive keyword terms (' + hiPages.length + ' pages checked)');
+  }
+
+  const hiPrimary = new Map();
+  for (const p of hiPages) {
+    const k = String(p.kw[0]).toLowerCase();
+    if (hiPrimary.has(k)) fail('cannibalisation', 'Hindi primary "' + k + '" is shared by /' + p.slug + ' and ' + hiPrimary.get(k));
+    hiPrimary.set(k, '/' + p.slug);
+  }
+  ok(hiPrimary.size + ' unique Hindi primary keywords');
+}
+
 console.log('\n' + '-'.repeat(60));
 const pages_ = pages.length;
 console.log(

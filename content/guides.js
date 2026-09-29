@@ -26,9 +26,8 @@ const GUIDES = [
       'about kamakhya temple',
       'kamakhya temple guwahati',
       'kamakhya temple tantriks',
-      'ambubachi mela',
       'kamakhya mandir tantrik',
-      'nilachal hill temple',
+      'kamakhya temple shakti peetha',
       'best kamakhya tantrik',
     ],
     h1: 'About Kamakhya Temple, Guwahati',
@@ -42,16 +41,22 @@ const GUIDES = [
     imageAlt: 'Shrine lamps burning at Kamakhya Temple on Nilachal Hill, Guwahati, Assam',
     deep: [
       {
-        h2: 'Kamakhya Temple Black Magic: Facts vs. Myths',
+        // Deliberately short. /black-magic-removal-kamakhya owns the
+        // "kamakhya temple black magic" intent. This page states the position
+        // and links; it does not compete for the term.
+        h2: 'On Claims of "Kamakhya Temple Black Magic"',
         p: [
-          'The phrase <strong>kamakhya temple black magic</strong> generates enormous curiosity and fear in equal measure. Here is the truth: Kamakhya is a site of immense spiritual power that can be channeled in multiple directions. Authentic <strong>kamakhya temple tantriks</strong> use this power exclusively for healing and protection. However, because the energy here is so potent, it is also susceptible to misuse by unscrupulous practitioners.',
-          'Genuine <strong>kamakhya black magic</strong> removal is one of the most sought-after services among serious practitioners. When properly performed by the <strong>best kamakhya tantrik</strong>, the removal is permanent and comes with a protective shield that prevents re-attack. Deepak Tantrik, as the most trusted <strong>tantrik in kamakhya temple</strong>, specializes in this exact process, combining Kamakhya\'s divine power with his ancestral Mayong knowledge.',
+          'The phrase generates enormous curiosity and fear in equal measure, and it is worth being clear about what it means. Kamakhya is a site of very great power that can be directed either way. Authentic <strong>kamakhya temple tantriks</strong> use it for healing and protection. The dark reputation comes from its misuse by a small number of unscrupulous practitioners, not from the temple itself.',
+          'Whether you are looking for <strong>kamakhya black magic</strong> removal specifically, what the warning signs are, and how the process works is set out on the <a href="/black-magic-removal-kamakhya">black magic removal page</a>. If you want to check that a practitioner is legitimate before approaching anyone, start with the <a href="/verify">verification page</a> instead.',
         ],
       },
       {
-        h2: 'The Ambubachi Mela: When Tantriks Gather',
+        // Short by design. /ambubachi-mela-kamakhya owns the festival intent
+        // and ranks for it; this page owns what the temple IS. Two pages
+        // writing 700 words each about the Mela compete with each other.
+        h2: 'The Ambubachi Mela, in Brief',
         p: [
-          'During Ambubachi Mela, the <strong>kamakhya temple tantriks</strong> who normally practice in private emerge to perform public rituals, bless devotees, and exchange knowledge. This is the one time of year when even skeptics witness phenomena that cannot be explained by ordinary means. Deepak Tantrik participates in this sacred gathering every year, deepening his practice and maintaining his connection with the broader community of <strong>tantrik in assam</strong> and across India.',
+          'Once a year the <strong>kamakhya temple tantriks</strong> who normally work in private emerge to perform public rituals during the Ambubachi Mela, which is the largest annual gathering of practitioners anywhere in the world. Deepak Tantrik takes part every year. The dates, the rules on Nilachal Hill and how to plan a visit are covered in full on the <a href="/ambubachi-mela-kamakhya">Ambubachi Mela guide</a> rather than repeated here.',
         ],
       },
       {
@@ -62,9 +67,11 @@ const GUIDES = [
         ],
       },
       {
-        h2: 'Services Performed at Kamakhya Temple',
+        // A list here duplicates the service pages it should be linking to.
+        // Point at them instead of restating them.
+        h2: 'What Is Performed at Kamakhya, and Where',
         p: [
-          'Deepak Tantrik performs the following at both Kamakhya Temple and his Mayong Ashram: <strong>Kamakhya black magic</strong> removal and protection rituals, love and relationship restoration pujas, vashikaran rituals blessed by Kamakhya Devi, business success and financial abundance yagnas, husband-wife reconciliation ceremonies, childlessness resolution rituals, and career and promotion guidance through Vedic astrology.',
+          'Remedies are performed at one of two locations depending on the case: the Kamakhya Temple in Malakhuwa, Guwahati, or the Mayong Ashram in Morigaon. Work tied to the site itself is done at the temple; work drawing on the Mayong lineage tradition is done at the ashram. The <a href="/services">services page</a> sets out each remedy, what it involves, and what it costs, and every one has its own page linked from there.',
         ],
       },
       {
@@ -214,10 +221,10 @@ const GUIDES = [
     keywords: [
       'how to find a real tantrik',
       'real tantrik assam',
-      'how to avoid tantrik fraud',
-      'real tantrik mayong',
+      'how to spot a fake tantrik',
       'genuine tantrik kamakhya',
-      'assam tantrik',
+      'identify a legitimate astrologer',
+      'tantrik red flags',
       'best tantrik in guwahati',
     ],
     h1: 'How to Find a Real Tantrik and Astrologer in Assam',
