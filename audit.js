@@ -373,6 +373,67 @@ section('17. robots.txt and sitemap hygiene');
 if (!issues) ok('robots.txt and sitemap.xml well formed');
 
 // ---------------------------------------------------------------------------
+section('18. Mobile: no fixed grid tracks, 44px tap targets, readable text');
+{
+  const issuesBefore = issues;
+  const css = read('css/style.css');
+
+  // minmax(350px, 1fr) forces a 350px column even when the viewport only has
+  // 320px of content width, so the page scrolls sideways. min() is the fix.
+  const bare = [...css.matchAll(/minmax\(\s*(\d+)px\s*,/g)].map((m) => m[1]);
+  if (bare.length) fail('css/style.css', 'minmax() with a fixed px floor and no min() guard: ' + bare.join(', ') + 'px - causes horizontal overflow on narrow phones');
+  else ok('every minmax() is guarded with min(Npx, 100%)');
+
+  // Touch targets. WCAG 2.5.5 / iOS HIG floor is 44px.
+  // Parse the stylesheet into (media, selector, declarations) so a rule can be
+  // found by selector regardless of formatting.
+  const rules = [];
+  {
+    const stripped = css.replace(/\/\*[\s\S]*?\*\//g, '');
+    const re = /([^{}]+)\{([^{}]*)\}/g;
+    let m;
+    while ((m = re.exec(stripped))) {
+      const media = (m[1].match(/^@media[^{]*?([^{]*?)\s*\{[\s\S]*$/) || [])[1] || '';
+      rules.push({ sel: m[1].trim(), body: m[2] });
+      void media;
+    }
+  }
+  // Match a tap target against the rules that mention its distinctive class,
+  // so ".lang-switch .lang-link" and ".footer-links a" both resolve.
+  const blocksFor = (sel) => {
+    const cls = (sel.match(/\.[A-Za-z][\w-]*/g) || []).pop() || sel;
+    return rules
+      .filter((r) => r.sel.includes(cls) || r.sel.trim() === sel)
+      .map((r) => r.body);
+  };
+
+  const TAP = [
+    '.hamburger', '.learn-more-link', '.view-all-link a', '.seo-links-grid a',
+    '.related-links a', '.card-more', '.footer-links a', '.contact-list a',
+    '.logo-wrapper', '.lang-link', '.service-card > a',
+  ];
+  for (const sel of TAP) {
+    const blocks = blocksFor(sel);
+    if (!blocks.length) { fail('css/style.css', 'tap target "' + sel + '" has no CSS rule'); continue; }
+    if (!blocks.some((b) => /min-height:\s*(4[4-9]|[5-9]\d)px/.test(b))) {
+      fail('css/style.css', 'tap target "' + sel + '" has no min-height of at least 44px');
+    }
+  }
+  if (issues === issuesBefore) ok(TAP.length + ' tap-target classes all declare a >=44px min-height');
+
+  // Body copy must not drop below 14px anywhere that a user has to read it.
+  const tooSmall = [...css.matchAll(/font-size:\s*(0\.(\d{1,2}))\s*rem/g)]
+    .filter((m) => parseFloat(m[1]) * 16 < 14)
+    .map((m) => m[1] + 'rem');
+  if (tooSmall.length) fail('css/style.css', 'font-size below 14px: ' + [...new Set(tooSmall)].join(', '));
+  else ok('no font-size below 14px');
+
+  // The mobile breakpoint must not reintroduce a fixed grid track.
+  const mobileBlocks = [...css.matchAll(/@media[^{]*max-width[^)]*\)[\s\S]*?(?=@media[^)]*max-width|\n*$)/g)];
+  if (!mobileBlocks.length) fail('css/style.css', 'no max-width media queries found - the site has no mobile layout');
+  else ok(mobileBlocks.length + ' mobile breakpoints defined');
+}
+
 console.log('\n' + '-'.repeat(60));
 const pages_ = pages.length;
 console.log(
