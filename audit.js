@@ -434,6 +434,42 @@ section('18. Mobile: no fixed grid tracks, 44px tap targets, readable text');
   else ok(mobileBlocks.length + ' mobile breakpoints defined');
 }
 
+section('19. Images are never stretched by CSS');
+{
+  // Every <img> carries width/height attributes to reserve its box and prevent
+  // CLS. A CSS rule that sets ONE dimension and leaves the other alone makes
+  // the attribute count as a real length, which distorts the image instead of
+  // scaling it. This shipped a 320x804 portrait on a phone (47% squashed) and
+  // a 200x40 footer logo (5:1).
+  //
+  // SVG icons are excluded: they scale uniformly from a viewBox, and setting
+  // both width and height to the same value is correct for them.
+  const css = read('css/style.css');
+  const broken = [];
+  const re = /([^{}]+)\{([^{}]*)\}/g;
+  let m;
+  while ((m = re.exec(css))) {
+    const sel = m[1].trim().replace(/\s+/g, ' ');
+    const body = m[2];
+    if (!/\bimg\b/.test(sel)) continue;
+    if (/\bsvg\b/.test(sel)) continue;
+    const w = (body.match(/(?<!-)\bwidth:\s*([^;]+);/g) || []).map((x) => x.replace(/^width:\s*/, '').replace(/;$/, '').trim());
+    const h = (body.match(/(?<!-)\bheight:\s*([^;]+);/g) || []).map((x) => x.replace(/^height:\s*/, '').replace(/;$/, '').trim());
+    const fixedW = w.filter((v) => v !== 'auto');
+    const fixedH = h.filter((v) => v !== 'auto');
+    if (!fixedW.length && !fixedH.length) continue;
+    // Distortion happens when exactly one dimension is fixed and the other is
+    // neither auto nor set. Percentage widths are fine as long as height is auto.
+    const wNeedsAuto = fixedW.length > 0 && h.length === 0;
+    const hNeedsAuto = fixedH.length > 0 && w.length === 0;
+    if (wNeedsAuto || hNeedsAuto) {
+      broken.push(sel + ' (width:[' + w.join(',') + '] height:[' + h.join(',') + ']) - the missing dimension falls back to the HTML attribute and stretches the image');
+    }
+  }
+  if (broken.length) broken.forEach((b) => fail('css/style.css', b));
+  else ok('every img rule fixes at most one dimension and lets the other scale');
+}
+
 console.log('\n' + '-'.repeat(60));
 const pages_ = pages.length;
 console.log(

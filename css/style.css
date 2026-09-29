@@ -491,6 +491,9 @@ header {
   }
   .logo-wrapper img {
     height: 32px;
+    /* explicit, not inherited from the base rule, so removing the base
+       width:auto can never silently stretch the header logo on mobile */
+    width: auto;
   }
   .logo-wrapper {
     gap: 10px;
@@ -714,6 +717,11 @@ header {
 
 .about-image img {
   width: 100%;
+  /* height:auto is REQUIRED. Every <img> carries width/height attributes to
+     reserve its box and prevent CLS, and without this the height attribute is
+     used as a real height. The portrait then renders 320x804 on a phone
+     instead of 320x429, which is a 47% distortion. */
+  height: auto;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.6);
   border: 1px solid rgba(255,255,255,0.05);
@@ -880,6 +888,9 @@ footer {
 }
 .footer-brand img {
   height: 40px;
+  /* width:auto for the same reason as .about-image img - without it the logo
+     renders 200x40 from its width/height attributes, a 5:1 squash. */
+  width: auto;
 }
 .footer-col p {
   color: var(--text-muted);
@@ -1050,6 +1061,7 @@ footer {
   }
   .logo-wrapper img {
     height: 35px;
+    width: auto;
   }
   .brand-name {
     font-size: 1.2rem;
