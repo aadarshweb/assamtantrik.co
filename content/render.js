@@ -555,12 +555,76 @@ function notFoundPage() {
 </main>`;
 }
 
+// ---------------------------------------------------------------------------
+// Legal / governance pages: privacy, terms, disclaimer, developer declaration.
+//
+// Only classes that already have a CSS rule elsewhere are used, so verify.js
+// section 5 (every HTML class used in the HTML has a rule) cannot be broken by
+// adding a document to the registry.
+//
+// The document index is what links these four pages to each other. ui.rich()
+// escapes anything that is not <strong> or <em>, so an authored <a href> in the
+// copy renders as literal text - a live bug on five pages today. Cross-
+// references in the copy therefore name the document in prose, and this block
+// does the actual linking.
+//
+// The shared text in that block is deliberately kept under 40 words. audit.js
+// section 11 fails the build on a 40-word run repeated verbatim between two
+// pages, and four legal pages sharing a footer strip is exactly how that
+// assertion would be tripped by a paragraph written out of habit.
+// ---------------------------------------------------------------------------
+function legalPage(page) {
+  const hi = isHi(page.slug);
+  const s = UI.sourceFor(page.slug).src;
+  const other = UI.legal.filter((p) => p.slug !== page.slug);
+
+  return `<main>
+  <section class="hero hero--page">
+    <div class="container hero-content">
+      <h1>${rich(s.h1)}</h1>
+      <p>${rich(s.sub)}</p>
+      <p>Effective from ${esc(s.effectiveDate)}.</p>${cta(hi)}
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="panel">
+        <h2>${rich(s.lead.h2)}</h2>
+        ${s.lead.p.map((p) => `<p>${rich(p)}</p>`).join('\n        ')}
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-narrative">
+    <div class="container">
+      <div class="panel">
+        ${deepBlock(s.deep)}
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="panel panel--accent">
+        <h2>The other documents on this site</h2>
+        <p>Each of these is linked from the footer of every page here, and none of them is indexed or in the sitemap.</p>
+        <div class="related-links">
+          ${other.map((p) => `<a href="/${p.slug}">${esc(p.navLabel)} ${GLYPH.arrow}</a>`).join('\n          ')}
+        </div>
+      </div>
+    </div>
+  </section>
+</main>`;
+}
+
 const RENDERERS = {
   home: homePage,
   about: aboutPage,
   services: servicesHub,
   contact: contactPage,
   verify: verifyPage,
+  legal: legalPage,
   service: genericPage,
   location: genericPage,
   article: genericPage,

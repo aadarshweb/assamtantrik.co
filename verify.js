@@ -43,6 +43,13 @@ function fileForUrl(url) {
 }
 
 const pages = UI.allPages();
+// The sitemap contract is defined against these, NOT against `pages`. A page
+// marked noindex is built, linked and crawlable but is never submitted.
+const indexable = UI.indexablePages();
+const noindex = pages.filter((p) => p.noindex);
+const norm = (p) => p.replace(/\\/g, '/');
+const noindexFiles = new Set(noindex.map((p) => norm(p.file + '.html')));
+
 const htmlFiles = [];
 (function walk(dir, base) {
   for (const f of fs.readdirSync(dir)) {
@@ -84,8 +91,8 @@ if (!failures) ok(ldCount + ' JSON-LD blocks parse');
 section('3. Sitemap');
 const sm = read('sitemap.xml');
 const locs = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-if (locs.length === pages.length) ok('loc count ' + locs.length + ' === indexable page count ' + pages.length);
-else fail('loc count ' + locs.length + ' !== page count ' + pages.length);
+if (locs.length === indexable.length) ok('loc count ' + locs.length + ' === indexable page count ' + indexable.length);
+else fail('loc count ' + locs.length + ' !== indexable page count ' + indexable.length);
 
 if (new Set(locs).size !== locs.length) fail('sitemap contains duplicate <loc> values');
 else ok('no duplicate <loc>');
@@ -107,9 +114,20 @@ for (const l of locs) {
 
 // Every indexable page must be in the sitemap. The mirror of the assertion
 // above, and the one that catches a page silently lost from the build.
-for (const p of pages) {
-  if (!locs.includes(SITE.url(p.slug))) fail('page is missing from the sitemap: ' + SITE.url(p.slug));
+for (const p of indexable) {
+  if (!locs.includes(SITE.url(p.slug))) fail('indexable page is missing from the sitemap: ' + SITE.url(p.slug));
 }
+
+// And the reverse, which did not exist before noindex pages did. A sitemap is
+// an explicit request to index, and it is a stronger signal than a robots meta
+// tag, so listing a URL whose own meta says noindex asks Google to honour one
+// instruction or the other. The page must simply be absent.
+for (const p of noindex) {
+  if (locs.includes(SITE.url(p.slug))) {
+    fail('noindex page is listed in the sitemap: ' + SITE.url(p.slug) + ' - a sitemap entry overrides the page\'s own noindex meta');
+  }
+}
+if (noindex.length) ok(noindex.length + ' noindex page(s) correctly absent from the sitemap');
 
 // _redirects must 301 every .html path to its clean URL, or Google can index
 // both forms and split the page signals.
@@ -175,8 +193,11 @@ const hreflangTargets = new Map();
 for (const f of htmlFiles) {
   const c = read(f);
 
-  // The 404 is noindex. hreflang on a noindex page is meaningless noise.
-  if (f === '404.html') continue;
+  // The 404 is noindex. hreflang on a noindex page is meaningless noise: it is
+  // a request to index this URL and to treat it as the language alternate for a
+  // set, which is the opposite of what the page asks for. build.js omits it and
+  // this check skips those pages for the same reason.
+  if (f === '404.html' || noindexFiles.has(norm(f))) continue;
 
   const self = (c.match(/<link rel="canonical" href="([^"]+)"/) || [])[1];
   const alts = [...c.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)];
@@ -207,6 +228,28 @@ for (const [href, from] of hreflangTargets) {
   if (!c.includes(`href="${fromSelf}"`)) fail(file + ': does not link back to ' + from + ' (hreflang not reciprocal)');
 }
 if (!failures) ok('hreflang is reciprocal');
+
+// The VISIBLE language switcher, which is a separate code path from the
+// rel=alternate links above and used to be built unconditionally as '/hi/' +
+// slug. Every English page without a Hindi translation therefore shipped a
+// language link to a 404, and neither gate caught it: audit section 8 only
+// matches root-relative hrefs, and this one is an absolute URL. Asserted over
+// ALL pages, noindex included, because the untranslated guides and the
+// governance documents are exactly the pages that hit it.
+{
+  let broken = 0;
+  for (const f of htmlFiles) {
+    const c = read(f);
+    for (const m of c.matchAll(/<a class="lang-link" href="([^"]+)"/g)) {
+      const target = fileForUrl(m[1]);
+      if (!exists(target)) {
+        broken++;
+        fail(f + ': language switcher points at ' + m[1] + ' which has no file (' + target + ' missing)');
+      }
+    }
+  }
+  if (!broken) ok('every visible language switcher resolves to a real page');
+}
 
 // ---------------------------------------------------------------------------
 section('7. Encoding: no BOM, no mojibake, no replacement chars');
@@ -243,7 +286,7 @@ if (!failures) ok('no data-i18n, no translation dictionary in site JS');
 
 // ---------------------------------------------------------------------------
 section('9. Registry integrity');
-for (const src of [...UI.services, ...UI.locations, ...UI.guides, UI.core.about, UI.core.servicesPage, UI.core.contact, UI.core.home]) {
+for (const src of [...UI.services, ...UI.locations, ...UI.guides, ...UI.legal, UI.core.about, UI.core.servicesPage, UI.core.contact, UI.core.home]) {
   const id = src.slug === '' ? '(home)' : src.slug;
   if (typeof src.slug !== 'string') fail('a registry entry has a non-string slug: ' + id);
   // Body copy can be intro, lead, or a renderer-specific field.
@@ -310,6 +353,101 @@ section('12. Mobile conversion: sticky call/WhatsApp bar');
   const css = read('css/style.css');
   if (!/\.mobile-cta-bar\s*\{/.test(css)) fail('css/style.css', 'no .mobile-cta-bar rule');
   else ok('sticky mobile CTA bar present on all ' + pages.length + ' pages');
+}
+
+// ---------------------------------------------------------------------------
+// The noindex contract, asserted in full. Four pages are built, linked from
+// every English page, crawlable, noindex, and absent from the sitemap. Any one
+// half of that can be broken silently: drop the footer link and the page
+// becomes orphaned, drop the meta and it starts competing for queries, list it
+// in the sitemap and the sitemap wins. None of those raise an error anywhere
+// else in the build, so they are checked here against the SERVED html rather
+// than against the registry that produced it.
+// ---------------------------------------------------------------------------
+section('13. noindex governance pages: unindexed, out of the sitemap, linked everywhere');
+{
+  if (!noindex.length) {
+    fail('no page is marked noindex - the privacy / terms / disclaimer / developer-declaration pages have gone missing');
+  }
+
+  for (const p of noindex) {
+    const c = read(p.file + '.html');
+    const directives = ((c.match(/<meta name="robots" content="([^"]*)"/) || [])[1] || '')
+      .split(',')
+      .map((d) => d.trim());
+    if (!directives.includes('noindex')) {
+      fail(p.file, 'is marked noindex in the registry but the served robots meta is "' + directives.join(',') + '"');
+    }
+    // A stray bare `index` next to `noindex` is a contradiction a crawler has
+    // to resolve, and it does not always resolve the way we want.
+    if (directives.includes('index')) {
+      fail(p.file, 'robots meta carries both index and noindex');
+    }
+    if (!directives.includes('follow')) {
+      fail(p.file, 'robots meta has no `follow` - the footer links that make this page reachable would be wasted');
+    }
+    if (/<link rel="alternate" hreflang=/.test(c)) {
+      fail(p.file, 'emits hreflang - that is a request to index, contradicting its own noindex');
+    }
+  }
+
+  // Crawlable, not blocked. A noindex page hidden behind a robots.txt Disallow
+  // is never fetched, so the noindex is never read and the URL can still turn
+  // up in results as "indexed, though blocked by robots.txt" - a worse outcome
+  // than being absent. These pages are meant to be fetched and then declined.
+  {
+    const rb = read('robots.txt');
+    for (const p of noindex) {
+      const blocked = rb
+        .split('\n')
+        .map((l) => l.trim())
+        .some((l) => new RegExp('^Disallow:\\s*' + p.slug + '\\s*$').test(l));
+      if (blocked) fail('robots.txt', 'Disallows /' + p.slug + ' - a noindex page must stay crawlable');
+    }
+  }
+
+  // Linked from every ENGLISH page. Asserted against the built html, so this
+  // catches the footer block being dropped, filtered out, or scoped to the
+  // wrong locale, none of which would fail anything else.
+  const en = pages.filter((p) => !UI.isHi(p.slug));
+  for (const p of en) {
+    const c = read(p.file + '.html');
+    for (const l of noindex) {
+      if (!c.includes('href="/' + l.slug + '"')) {
+        fail(p.file, 'does not link to the governance page /' + l.slug);
+      }
+    }
+  }
+  if (!failures) ok('all ' + noindex.length + ' governance pages linked from all ' + en.length + ' English pages');
+
+  // And English ONLY, which is a decision rather than an omission. None of
+  // these documents has a Hindi translation, so hasHi is false, no hi hreflang
+  // is emitted and /hi/privacy-policy does not exist. A Hindi page linking to
+  // an English-only legal document would be a half-finished localisation; the
+  // scope is pinned here so it cannot drift quietly.
+  for (const p of pages.filter((x) => UI.isHi(x.slug))) {
+    const c = read(p.file + '.html');
+    for (const l of noindex) {
+      if (c.includes('href="/' + l.slug + '"')) {
+        fail(p.file, 'links to /' + l.slug + ', which has no Hindi version');
+      }
+    }
+  }
+  const hiNoindex = noindex.filter((p) => UI.isHi(p.slug));
+  if (hiNoindex.length) fail('a Hindi page is marked noindex: ' + hiNoindex.map((p) => '/' + p.slug).join(', '));
+  else ok('governance pages stay English-only; no Hindi twin is emitted');
+
+  // Each governance page must link to the other three, so a reader who lands on
+  // one can reach the rest without going back to the footer.
+  for (const p of noindex) {
+    const c = read(p.file + '.html');
+    for (const l of noindex) {
+      if (l.slug !== p.slug && !c.includes('href="/' + l.slug + '"')) {
+        fail(p.file, 'does not cross-link to the sibling document /' + l.slug);
+      }
+    }
+  }
+  if (!failures) ok('each governance page cross-links the other three');
 }
 
 console.log('\n' + '-'.repeat(60));

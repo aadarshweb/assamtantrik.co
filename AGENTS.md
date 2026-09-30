@@ -35,6 +35,7 @@ content/
   core.js             homepage, about, services hub, contact - EN + HI
   ui.js               shared components + the schema emitters
   render.js           page body renderers
+  legal.js            4 governance documents - noindex, OUT of the sitemap
 css/style.css         hand-maintained
 js/script.js          hand-maintained, ~3 KB, no translation data
 images/               hand-maintained
@@ -69,6 +70,33 @@ Set `hasHi: false` if there is no Hindi translation. Do **not** invent a Hindi
 page and do **not** emit a `hi` hreflang that points at a 404 — that is exactly
 the bug the live site had. `UI.twinOf()` returns `null` when there is no
 translation and the `hi` hreflang is then omitted.
+
+## noindex pages (`content/legal.js`)
+
+`/privacy-policy`, `/terms`, `/disclaimer`, `/developer-declaration`. Set
+`noindex: true` on the registry entry. That ONE flag is the whole contract:
+
+- `noindex` in the robots meta (`noindex, follow`), and **no** hreflang —
+  hreflang is a request to index, so it contradicts the meta
+- **absent** from `sitemap.xml`; a sitemap entry is a stronger index request
+  than the meta tag, and listing both asks Google to pick one
+- **crawlable** — never add these to a `Disallow`. A page hidden from crawlers
+  is never fetched, so the `noindex` is never read and the URL can still appear
+  as "indexed, though blocked"
+- linked from the footer of every **English** page, and from no Hindi page,
+  because none of them has a translation
+- still in `_redirects`, so `/terms.html` 301s to `/terms` and the `.html` form
+  can never be indexed separately
+
+`UI.indexablePages()` is the only definition of "may appear in the sitemap".
+Never read `noindex` anywhere else. `verify.js` §3 and §13 and `audit.js` §13
+assert every clause of the list above against the served HTML.
+
+Related trap, already fixed once: `ui.rich()` escapes anything that is not
+`<strong>` or `<em>`, so an authored `<a href>` in content copy renders as
+literal text. Cross-reference a document by naming it in prose, or add it to
+the `related` list. Ten such links are still broken on the live pages listed in
+`content/legal.js`'s header comment.
 
 ## Multilingual
 

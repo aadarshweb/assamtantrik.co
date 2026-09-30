@@ -26,6 +26,16 @@ function head(page, kind) {
   const og = SITE.domain + SITE.ogImage;
   const fontCss = hi ? SITE.fontCssHi : SITE.fontCss;
   const twin = UI.twinOf(page.slug);
+  const noindex = page.noindex === true;
+
+  // The four governance documents ask crawlers to fetch them (a legal page
+  // nobody can fetch is useless) and then asks them not to keep them. `follow`
+  // is deliberate: the legal links in the footer are how they are discovered.
+  // max-image-preview and friends are SERP directives, so they are meaningless
+  // on a page that will never appear in a result, and are omitted.
+  const robots = noindex
+    ? 'noindex, follow'
+    : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 
   // hreflang. Reciprocal, self-referencing, x-default, and ONLY for languages
   // that exist. v3 pointed every page at /hi/ and /bn/ URLs that 404'd; those
@@ -34,15 +44,22 @@ function head(page, kind) {
   //
   // Every page must name ITSELF for its own language. Omitting the self-entry
   // on a Hindi page was a real bug caught by verify.js section 6.
+  //
+  // A noindex page gets NO hreflang at all. hreflang is a request to index and
+  // to treat this URL as the language alternate for a set of URLs; emitting it
+  // next to a noindex meta asks for two opposite things at once. The 404 has
+  // always been handled the same way, and verify.js section 6 skips both.
   const enSelf = hi ? SITE.url(page.slug.slice(3)) : canonical;
-  const hreflang = [
-    `<link rel="alternate" hreflang="en" href="${enSelf}">`,
-    hi ? '' : twin ? `<link rel="alternate" hreflang="hi" href="${twin}">` : '',
-    hi ? `<link rel="alternate" hreflang="hi" href="${canonical}">` : '',
-    `<link rel="alternate" hreflang="x-default" href="${enSelf}">`,
-  ]
-    .filter(Boolean)
-    .join('\n  ');
+  const hreflang = noindex
+    ? ''
+    : [
+        `<link rel="alternate" hreflang="en" href="${enSelf}">`,
+        hi ? '' : twin ? `<link rel="alternate" hreflang="hi" href="${twin}">` : '',
+        hi ? `<link rel="alternate" hreflang="hi" href="${canonical}">` : '',
+        `<link rel="alternate" hreflang="x-default" href="${enSelf}">`,
+      ]
+        .filter(Boolean)
+        .join('\n  ');
 
   return `<!DOCTYPE html>
 <html lang="${hi ? 'hi' : 'en'}">
@@ -54,7 +71,7 @@ function head(page, kind) {
   <meta name="description" content="${page.desc}">
   <meta name="keywords" content="${page.keywords.join(', ')}">
   <meta name="author" content="${SITE.name}">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="robots" content="${robots}">
   <meta name="geo.region" content="IN-AS">
   <meta name="geo.placename" content="Mayong, Morigaon, Assam">
   <link rel="canonical" href="${canonical}">
@@ -150,6 +167,11 @@ ${UI.footer('404')}
 // sitemap. Canonical URLs only. /index.html NEVER appears - v3 listed both and
 // submitted a URL that Cloudflare 307-redirects, which is a Search Console
 // "Redirect error" (see ai_build_postmortem.md section 2).
+//
+// Called with UI.indexablePages(), not UI.allPages(). A noindex page listed in
+// a sitemap is a contradiction, and a sitemap is a stronger and more explicit
+// index request than a meta robots tag, so the safe resolution is to leave the
+// page out entirely. verify.js section 3 asserts both directions of that.
 // ---------------------------------------------------------------------------
 function sitemap(pages) {
   const urls = pages
@@ -255,6 +277,8 @@ function write(rel, content) {
 
 function main() {
   const pages = UI.allPages();
+  const indexable = UI.indexablePages();
+  const noindex = pages.filter((p) => p.noindex);
   const written = [];
 
   // Clear previously generated output so a removed page cannot linger.
@@ -269,17 +293,21 @@ function main() {
     written.push([`${p.file}.html`, write(`${p.file}.html`, head(p, found.kind))]);
   }
   written.push(['404.html', write('404.html', notFound())]);
-  written.push(['sitemap.xml', write('sitemap.xml', sitemap(pages))]);
+  // indexable, NOT pages. See the note on sitemap() above.
+  written.push(['sitemap.xml', write('sitemap.xml', sitemap(indexable))]);
   written.push(['robots.txt', write('robots.txt', robots())]);
   written.push(['manifest.json', write('manifest.json', manifest())]);
+  // _redirects covers EVERY page including the noindex ones, so /terms.html
+  // still 301s to /terms and the .html form can never be indexed separately.
   written.push(['_redirects', write('_redirects', redirects(pages))]);
 
   const total = written.reduce((a, [, b]) => a + b, 0);
   console.log(`build: ${pages.length} pages + 404 + sitemap + robots + manifest`);
-  console.log(`  indexable pages : ${pages.length}`);
-  console.log(`  english pages   : ${pages.filter((p) => !p.slug.startsWith('hi/')).length}`);
-  console.log(`  hindi pages     : ${pages.filter((p) => p.slug.startsWith('hi/')).length}`);
-  console.log(`  total html      : ${(total / 1024).toFixed(1)} KB`);
+  console.log(`  sitemap entries  : ${indexable.length}  (${noindex.length} noindex page(s) excluded)`);
+  console.log(`  noindex pages    : ${noindex.map((p) => '/' + p.slug).join(', ') || 'none'}`);
+  console.log(`  english pages    : ${pages.filter((p) => !p.slug.startsWith('hi/')).length}`);
+  console.log(`  hindi pages      : ${pages.filter((p) => p.slug.startsWith('hi/')).length}`);
+  console.log(`  total html       : ${(total / 1024).toFixed(1)} KB`);
   const big = written.filter(([, b]) => b > 90 * 1024);
   if (big.length) console.log(`  WARNING over 90KB: ${big.map(([n, b]) => `${n} ${(b / 1024).toFixed(0)}KB`).join(', ')}`);
 }

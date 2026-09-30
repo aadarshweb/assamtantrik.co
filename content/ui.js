@@ -12,6 +12,7 @@ const LOCATIONS = require('./locations');
 const GUIDES = require('./guides');
 const GUIDES_EXT = require('./guides-extended');
 const CORE = require('./core');
+const LEGAL = require('./legal');
 
 // All service pages, extended set included. The nav, the services hub, the
 // footer link grid, the related-links block and the ItemList schema are all
@@ -61,6 +62,11 @@ const stars = (n = 5) => GLYPH.star.repeat(n);
 // ---------------------------------------------------------------------------
 // Page index: every generated page, in one place, so nav/footer/sitemap/link
 // counts can all be derived and cross-checked.
+//
+// `noindex` is the single flag that keeps a page out of the sitemap. There is
+// deliberately no second `inSitemap` field: two flags describing one decision
+// is how a page ends up listed in a sitemap it asks not to be indexed from.
+// indexablePages() below is the only place that decision is read.
 // ---------------------------------------------------------------------------
 function allPages() {
   const list = [];
@@ -69,6 +75,7 @@ function allPages() {
       kind,
       slug: src.slug,
       file: src.file,
+      noindex: src.noindex === true,
       title: src.title,
       desc: src.desc,
       h1: src.h1,
@@ -85,6 +92,9 @@ function allPages() {
         kind: src.kind,
         slug: 'hi/' + src.slug,
         file: 'hi/' + src.file,
+        // Carried through so a Hindi twin can never be indexable while its
+        // English original is not.
+        noindex: src.noindex === true,
         title: src.hi.title,
         desc: src.hi.desc,
         h1: src.hi.h1,
@@ -108,9 +118,19 @@ function allPages() {
   ALL_SERVICES.forEach((s) => push(s, 'default'));
   LOCATIONS.forEach((l) => push(l, 'default'));
   ALL_GUIDES.forEach((g) => push(g, 'article'));
+  // The four governance documents. Built, linked and crawlable, but noindex and
+  // absent from sitemap.xml - see the header of content/legal.js for why.
+  LEGAL.forEach((p) => push(p, 'legal'));
 
   return list;
 }
+
+// The only definition of "may appear in the sitemap". build.js sitemap() and
+// verify.js section 3 both read this, so a noindex page cannot leak in through
+// a second code path.
+const indexablePages = () => allPages().filter((p) => !p.noindex);
+const noindexPages = () => allPages().filter((p) => p.noindex);
+
 
 // Given a page slug, find its source object (for body rendering). The Hindi
 // twin resolves to the same source object; the locale is carried by the slug,
@@ -125,6 +145,7 @@ function sourceFor(slug) {
   for (const s of ALL_SERVICES) if (s.slug === plain) return { kind: 'service', src: s };
   for (const l of LOCATIONS) if (l.slug === plain) return { kind: 'location', src: l };
   for (const g of ALL_GUIDES) if (g.slug === plain) return { kind: 'article', src: g };
+  for (const l of LEGAL) if (l.slug === plain) return { kind: 'legal', src: l };
   return null;
 }
 
@@ -410,11 +431,32 @@ function header(slug) {
   const link = (n) => (hi ? '/hi/' + n.slug : n.slug ? n.slug : '/');
 
   const twin = twinOf(slug);
-  const langLinks = [
-    hi
-      ? `<a class="lang-link" href="${SITE.url(plain)}" hreflang="en" lang="en">English</a>`
-      : `<a class="lang-link" href="${SITE.url('hi/' + plain)}" hreflang="hi" lang="hi">हिन्दी</a>`,
-  ].join('\n      ');
+
+  // The language switcher is only offered when the other language ACTUALLY
+  // EXISTS. This used to be built unconditionally as '/hi/' + slug, so every
+  // English page without a Hindi translation shipped a link to a 404 - the
+  // five long-form guides, and the four governance documents. That is the same
+  // v3 hreflang bug in a different place, and it survived the audit because
+  // this href is an absolute URL and audit section 8 only matches root-relative
+  // ones. verify.js section 6 now checks it.
+  //
+  // twinOf() is the single guard, so the visible link and the rel=alternate in
+  // the head can no longer disagree about whether a translation exists.
+  const langLinks = hi
+    ? twin
+      ? `<a class="lang-link" href="${twin}" hreflang="en" lang="en">English</a>`
+      : ''
+    : twin
+    ? `<a class="lang-link" href="${twin}" hreflang="hi" lang="hi">हिन्दी</a>`
+    : '';
+  // With no twin there is nothing to switch to, so the nav is dropped rather
+  // than left empty - an empty labelled landmark is worse than no landmark.
+  const langNav = langLinks
+    ? `
+        <nav class="lang-switch" aria-label="Language">
+      ${langLinks}
+    </nav>`
+    : '';
 
   return `<header>
     <div class="container header-container">
@@ -422,10 +464,7 @@ function header(slug) {
         <a href="${home}" class="logo-wrapper">
           <img src="/images/logo.png" width="200" height="200" alt="${esc(SITE.name)} - Best Tantrik in Kamakhya Temple and Mayong, Assam" fetchpriority="high" decoding="async">
           <span class="brand-name">${esc(hi ? 'दीपक तांत्रिक' : SITE.name)}</span>
-        </a>
-        <nav class="lang-switch" aria-label="Language">
-      ${langLinks}
-    </nav>
+        </a>${langNav}
       </div>
 
       <nav class="nav-links" aria-label="Main">
@@ -480,6 +519,27 @@ const LINK_INDEX_SOURCES = () => [
   CORE.contact,
   CORE.verify,
 ];
+
+// The governance documents, in the footer strip rather than in the Quick Links
+// column. That column mirrors the header nav deliberately and stays four items
+// long; a legal list is a different kind of list and belongs somewhere else.
+//
+// DERIVED from the legal registry, so a fifth document is a registry entry and
+// nothing else. ENGLISH ONLY, and that is a decision rather than an omission:
+// none of these documents has a Hindi translation, so hasHi is false, no hi
+// hreflang is emitted and /hi/privacy-policy does not exist. A Hindi-speaking
+// visitor is better served by a page that does not pretend to be in their
+// language. verify.js section 13 asserts this scope instead of trusting it.
+function legalLinks(hi) {
+  if (hi) return '';
+  return `
+        <nav aria-label="Legal and site notices">
+          <h3 class="footer-legal-title">Legal and Site Notices</h3>
+          <ul class="footer-legal">
+            ${LEGAL.map((p) => `<li><a href="/${p.slug}">${esc(p.navLabel)}</a></li>`).join('\n            ')}
+          </ul>
+        </nav>`;
+}
 
 function footer(slug) {
   const hi = isHi(slug);
@@ -545,6 +605,7 @@ function footer(slug) {
       </div>
 
       <div class="footer-bottom">
+        ${legalLinks(hi)}
         ${GAME_COPYRIGHT(hi)}
       </div>
     </div>
@@ -590,6 +651,8 @@ module.exports = {
   rich,
   stars,
   allPages,
+  indexablePages,
+  noindexPages,
   sourceFor,
   isHi,
   L,
@@ -607,6 +670,7 @@ module.exports = {
   locations: LOCATIONS,
   guides: GUIDES,
   guidesExtended: GUIDES_EXT,
+  legal: LEGAL,
   linkIndexSources: LINK_INDEX_SOURCES,
   core: CORE,
 };

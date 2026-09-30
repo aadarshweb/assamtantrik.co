@@ -36,7 +36,7 @@ const pages = UI.allPages();
 
 // Word-count floors by page kind. Service and article pages are the ones that
 // must answer the query properly.
-const WORD_MIN = { home: 600, article: 1000, service: 500, location: 500, about: 500, services: 400, contact: 400 };
+const WORD_MIN = { home: 600, article: 1000, service: 500, location: 500, about: 500, services: 400, contact: 400, legal: 400 };
 
 // ---------------------------------------------------------------------------
 section('1. Titles (46-62 chars, primary keyword first, brand after)');
@@ -289,9 +289,25 @@ for (const p of pages) {
   if (canonical !== expected) fail(p.file, 'canonical is ' + canonical + ', expected ' + expected);
   if (/\.html$/.test(canonical || '')) fail(p.file, 'canonical ends in .html - Cloudflare 307-redirects it');
   if (!canonical.startsWith(SITE.domain)) fail(p.file, 'canonical is not on ' + SITE.domain);
-  const robots = (c.match(/<meta name="robots" content="([^"]*)"/) || [])[1] || '';
-  if (!/index/.test(robots)) fail(p.file, 'no index directive in robots meta');
-  if (!/max-image-preview:large/.test(robots)) fail(p.file, 'robots meta is missing max-image-preview:large - images may be withheld from the index');
+  const directives = ((c.match(/<meta name="robots" content="([^"]*)"/) || [])[1] || '')
+    .split(',')
+    .map((d) => d.trim());
+
+  // The index directive is conditional, and the condition is the page's own
+  // `noindex` flag. This assertion used to be unconditional, which is why the
+  // four governance pages could not exist: it demanded `index` from a page
+  // whose entire purpose is to not be indexed. Both branches are now asserted,
+  // so a page cannot silently lose the directive it is supposed to carry, and
+  // the SERP-only directives are required exactly where they mean something.
+  if (p.noindex) {
+    if (!directives.includes('noindex')) fail(p.file, 'marked noindex in the registry but the served meta is "' + directives.join(',') + '"');
+    if (directives.includes('index')) fail(p.file, 'robots meta carries both index and noindex');
+    // A noindex page still has to be a good page: geo meta, canonical and the
+    // whole head are checked above and below regardless of indexing.
+  } else {
+    if (!directives.includes('index')) fail(p.file, 'no index directive in robots meta');
+    if (!directives.includes('max-image-preview:large')) fail(p.file, 'robots meta is missing max-image-preview:large - images may be withheld from the index');
+  }
   if (!c.includes('name="geo.region"')) fail(p.file, 'missing geo.region');
 }
 if (!issues) ok('canonical, robots and geo meta correct on all pages');
