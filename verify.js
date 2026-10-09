@@ -251,6 +251,69 @@ if (!failures) ok('hreflang is reciprocal');
   if (!broken) ok('every visible language switcher resolves to a real page');
 }
 
+// The other half of the same bug. A missing _redirects rule does not fail
+// anything: the URL simply 404s, Google records it under "Not found (404)",
+// and Search Console keeps reporting it long after the LINK that caused it was
+// removed. The five /hi/<guide> 404s shipped in 0fd5a88..cbfa30e and /bn/ in
+// five commits before that, and both are only closed by a 301 in _redirects.
+//
+// Asserting the TARGET matters as much as asserting the rule: a redirect to a
+// page that does not exist turns a 404 into a "Redirect error", which is worse
+// than the original fault. So every rule in the file is checked, not just the
+// legacy ones.
+{
+  const rd = read('_redirects');
+  let missing = 0;
+  let dangling = 0;
+  let rules = 0;
+
+  for (const line of rd.split('\n')) {
+    if (!line.trim() || line.startsWith('#')) continue;
+    rules++;
+    const parts = line.split('\t');
+    if (parts.length !== 3) {
+      dangling++;
+      fail('_redirects: unparseable line, Cloudflare rejects the whole file: ' + JSON.stringify(line));
+      continue;
+    }
+    const [, to, code] = parts;
+    if (code !== '301') {
+      dangling++;
+      fail(line + ': only 301 is allowed - a 302 or a 307 keeps the URL in the "Page with redirect" report forever');
+    }
+    if (!exists(fileForUrl(SITE.url(to)))) {
+      dangling++;
+      fail(line + ': target ' + to + ' has no file, which Search Console reports as "Redirect error"');
+    }
+  }
+
+  for (const [from, to] of [
+    ['/bn/', '/hi/'],
+    ['/bn/index.html', '/hi/'],
+    ['/bn.html', '/hi/'],
+    ['/hi/bn/', '/hi/'],
+  ]) {
+    const line = rd.split('\n').find((l) => l.startsWith(from + '\t'));
+    if (!line) {
+      missing++;
+      fail('_redirects: no rule for the once-published dead path ' + from);
+    } else if (!line.includes('\t' + to + '\t301')) {
+      missing++;
+      fail('_redirects: ' + from + ' does not 301 to ' + to);
+    }
+  }
+  for (const p of pages) {
+    if (UI.isHi(p.slug) || UI.twinOf(p.slug)) continue;
+    if (!rd.split('\n').some((l) => l.startsWith('/hi/' + p.slug + '\t'))) {
+      missing++;
+      fail('_redirects: no rule for /hi/' + p.slug + ' (untranslated page, Google already crawled it as a 404)');
+    }
+  }
+
+  if (!missing) ok('_redirects closes the once-published /bn/ and /hi/<untranslated> 404s');
+  if (!dangling) ok('all ' + rules + ' redirect rules are 301s to a real page');
+}
+
 // ---------------------------------------------------------------------------
 section('7. Encoding: no BOM, no mojibake, no replacement chars');
 const MOJIBAKE = /[\u00C2\u00C3\u00E2][\u0080-\u00BF]|[\uFFFD]|â€|Ã¢/;

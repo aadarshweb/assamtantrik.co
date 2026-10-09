@@ -252,13 +252,45 @@ function redirects(pages) {
     '',
   ];
   const seen = new Set();
+  const add = (from, to) => {
+    if (seen.has(from)) return;
+    seen.add(from);
+    rules.push(`${from}\t${to}\t301`);
+  };
   for (const p of pages) {
     const clean = p.slug === '' ? '/' : '/' + p.slug;
-    const from = '/' + p.file + '.html';
-    if (seen.has(from)) continue; // the homepage would otherwise appear twice
-    seen.add(from);
-    rules.push(`${from}\t${clean}\t301`);
+    add('/' + p.file + '.html', clean);
   }
+
+  // Dead URLs that were once linked from the live site. Search Console reports
+  // them as "Not found (404)" and will keep reporting them until it re-crawls
+  // and sees something other than a 404. A 301 is the accurate answer: these
+  // paths were genuinely published, Googlebot genuinely followed them, and
+  // each one has a real page to stand in for it.
+  //
+  //   /bn/*   The v3 build shipped a "Bengali" entry in the language menu on
+  //           EVERY page (commits 5bc6312..c4a8344). No /bn/ page was ever
+  //           built, so every visitor who picked it hit a 404. Hindi is the
+  //           site's only real second language, so it is the correct target.
+  //
+  //   /hi/<slug>   The v4 build (0fd5a88..cbfa30e) built the visible language
+  //           switcher as '/hi/' + slug for EVERY English page, including the
+  //           five guides that have hasHi:false and therefore no Hindi twin.
+  //           Five hard 404s, shipped live for three commits. The English
+  //           guide is the same content, so it is the correct target.
+  add('/bn/', '/hi/');
+  add('/bn/index.html', '/hi/');
+  add('/bn.html', '/hi/');
+  add('/hi/bn/', '/hi/');
+
+  for (const p of pages) {
+    if (UI.isHi(p.slug)) continue;
+    if (UI.twinOf(p.slug)) continue; // a real Hindi page exists; it 301s already
+    const clean = '/' + p.slug;
+    add('/hi/' + p.slug, clean);
+    add('/hi/' + p.file + '.html', clean);
+  }
+
   rules.push('');
   return rules.join('\n');
 }
