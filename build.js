@@ -177,18 +177,26 @@ function sitemap(pages) {
   const urls = pages
     .map((p) => {
       const alts = [];
+      const hi = UI.isHi(p.slug);
+      const self = SITE.url(p.slug);
+      // twinOf() is direction-dependent: asked for "hi/about" it answers with
+      // the ENGLISH URL, because "the twin of this page" means "the same page
+      // in the other language". So on a Hindi entry, `twin` is the en target,
+      // never the hi one. Reading it straight into hreflang="hi" therefore
+      // pointed every Hindi entry back at its English page - which is how
+      // /hi/about ended up declaring hreflang="hi" href="/about". head() gets
+      // this right by branching on `hi`; this must branch identically.
       const twin = UI.twinOf(p.slug);
-      const enSelf = UI.isHi(p.slug) ? SITE.url(p.slug.slice(3)) : SITE.url(p.slug);
-      if (twin) {
-        alts.push(`    <xhtml:link rel="alternate" hreflang="en" href="${enSelf}"/>`);
-        alts.push(`    <xhtml:link rel="alternate" hreflang="hi" href="${twin}"/>`);
-        alts.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${enSelf}"/>`);
-      } else {
-        alts.push(`    <xhtml:link rel="alternate" hreflang="en" href="${enSelf}"/>`);
-        alts.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${enSelf}"/>`);
-      }
+      const enSelf = hi ? SITE.url(p.slug.slice(3)) : self;
+      const hiSelf = hi ? self : twin;
+      alts.push(`    <xhtml:link rel="alternate" hreflang="en" href="${enSelf}"/>`);
+      // Omitted entirely, never emitted pointing at a 404, when there is no
+      // Hindi translation. See AGENTS.md: a hi alternate to a nonexistent page
+      // is the bug this whole guard exists to prevent.
+      if (hiSelf) alts.push(`    <xhtml:link rel="alternate" hreflang="hi" href="${hiSelf}"/>`);
+      alts.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${enSelf}"/>`);
       return `  <url>
-    <loc>${SITE.url(p.slug)}</loc>
+    <loc>${self}</loc>
     <lastmod>${p.dateModified || BUILD_DATE}</lastmod>
     <changefreq>${p.changefreq}</changefreq>
     <priority>${p.priority}</priority>

@@ -229,6 +229,106 @@ for (const [href, from] of hreflangTargets) {
 }
 if (!failures) ok('hreflang is reciprocal');
 
+// The sitemap carries its own copy of the hreflang set, emitted by a different
+// function than head(). That is the whole reason this bug existed: section 6
+// only ever read the HTML, so the sitemap's copy was never checked and every
+// Hindi entry shipped hreflang="hi" pointing back at its own English page.
+//
+// Assert the full per-entry contract against the registry, not against the
+// HTML, so the sitemap and the pages cannot disagree about what a set is.
+{
+  const sm = read('sitemap.xml');
+  let wrong = 0;
+  let missing = 0;
+
+  for (const p of indexable) {
+    const loc = SITE.url(p.slug);
+    const block = sm.split('<url>').find((b) => b.includes('<loc>' + loc + '</loc>'));
+    if (!block) continue; // section 3 already asserts every page is present
+
+    const hi = UI.isHi(p.slug);
+    const twin = UI.twinOf(p.slug);
+    // The invariant, stated once. For a given page pair BOTH entries must
+    // declare the identical set; only <loc> differs between them.
+    const wantEn = hi ? SITE.url(p.slug.slice(3)) : loc;
+    const wantHi = hi ? loc : twin;
+    const wantDefault = wantEn;
+
+    const got = {};
+    for (const m of block.matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)) got[m[1]] = m[2];
+
+    if (got.en !== wantEn) {
+      wrong++;
+      fail('sitemap ' + loc + ': hreflang="en" -> ' + got.en + ', expected ' + wantEn);
+    }
+    if (got['x-default'] !== wantDefault) {
+      wrong++;
+      fail('sitemap ' + loc + ': hreflang="x-default" -> ' + got['x-default'] + ', expected ' + wantDefault);
+    }
+    if (wantHi) {
+      if (got.hi !== wantHi) {
+        wrong++;
+        fail('sitemap ' + loc + ': hreflang="hi" -> ' + got.hi + ', expected ' + wantHi);
+      }
+    } else if (got.hi) {
+      wrong++;
+      fail('sitemap ' + loc + ': emits hreflang="hi" -> ' + got.hi + ' but the page has no Hindi translation');
+    }
+
+    // A Hindi entry must never describe itself as English-only, and an
+    // hreflang="hi" URL is by definition a /hi/ URL. Cheap, and it is the
+    // exact shape of the regression this section exists to stop.
+    for (const [lang, href] of Object.entries(got)) {
+      if (lang === 'hi' && !/^https:\/\/assamtantrik\.co\/hi\//.test(href)) {
+        wrong++;
+        fail('sitemap ' + loc + ': hreflang="hi" -> ' + href + ' is not a /hi/ URL');
+      }
+      if (lang === 'en' && href.includes('/hi/')) {
+        wrong++;
+        fail('sitemap ' + loc + ': hreflang="en" -> ' + href + ' is a Hindi URL');
+      }
+    }
+  }
+
+  // Reciprocity across the sitemap: the two entries of a page pair must declare
+  // an IDENTICAL set, differing only in <loc>.
+  //
+  // Note what "reciprocal" does NOT mean here. It does not mean /hi/about
+  // declares hreflang="hi" -> /about; inside a cluster every URL names ALL
+  // members under ALL languages, so the Hindi entry names ITSELF for "hi" and
+  // the English page for "en". The first loop above already pins each entry's
+  // absolute values; this loop pins the pair against each other, which is what
+  // actually caught the original bug (the hi entry simply reused the en URL).
+  const smBlocks = sm.split('<url>').slice(1);
+  const byLoc = {};
+  for (const b of smBlocks) {
+    const m = b.match(/<loc>([^<]+)<\/loc>/);
+    if (!m) continue;
+    const got = {};
+    for (const a of b.matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)) got[a[1]] = a[2];
+    byLoc[m[1]] = got;
+  }
+  const sameSet = (a, b) =>
+    Object.keys(a).length === Object.keys(b).length &&
+    Object.keys(a).every((k) => a[k] === b[k]);
+  for (const [loc, got] of Object.entries(byLoc)) {
+    if (!got.hi) continue; // English-only page, no pair to compare against
+    const peer = byLoc[got.hi];
+    if (!peer) continue; // section 3 / the loop above already covers a missing loc
+    if (!sameSet(got, peer)) {
+      missing++;
+      fail(
+        'sitemap ' + loc + ' and ' + got.hi + ' declare different hreflang sets:\n' +
+        '         ' + loc + ' = ' + JSON.stringify(got) + '\n' +
+        '         ' + got.hi + ' = ' + JSON.stringify(peer)
+      );
+    }
+  }
+
+  if (!wrong) ok('sitemap hreflang set is correct on all ' + indexable.length + ' entries');
+  if (!missing) ok('every EN/hi pair in the sitemap declares an identical hreflang set');
+}
+
 // The VISIBLE language switcher, which is a separate code path from the
 // rel=alternate links above and used to be built unconditionally as '/hi/' +
 // slug. Every English page without a Hindi translation therefore shipped a
