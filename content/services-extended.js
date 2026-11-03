@@ -85,11 +85,7 @@ const SERVICES_EXT = [
         a: 'No. There is no percentage, no commission, no ongoing monthly arrangement and no bundle. The first consultation is free and any remedy is quoted as a fixed amount before it is performed.',
       },
     ],
-    testimonial: {
-      text: 'I had given up hope on my career but with his powerful remedies, I found the success I was searching for.',
-      name: 'Amit Kumar, Guwahati',
-      initial: 'A',
-    },
+    testimonial: null,
     related: ['vashikaran-specialist-mayong', 'tantrik-baba-guwahati', 'contact', 'kundli-consultation'],
 
     hi: {
@@ -153,11 +149,7 @@ const SERVICES_EXT = [
           a: 'नहीं। कोई प्रतिशत नहीं, कोई कमीशन नहीं, कोई मासिक व्यवस्था नहीं और कोई बंडल नहीं। पहली बातचीत निःशुल्क है और कोई उपाय निश्चित राशि पहले बताकर किया जाता है।',
         },
       ],
-      testimonial: {
-        text: 'मैं अपने करियर से निराश हो चुका था, लेकिन उनके शक्तिशाली उपायों से मुझे वह सफलता मिली जिसका मैं खोज रहा था।',
-        name: 'अमित कुमार, गुवाहाटी',
-        initial: 'अ',
-      },
+      testimonial: null,
     },
   },
 
@@ -233,11 +225,7 @@ const SERVICES_EXT = [
         a: 'The first consultation is free and includes reading both charts and an honest assessment. If a remedy is appropriate, it is quoted as a fixed amount before anything is performed. There is no monthly arrangement and no package.',
       },
     ],
-    testimonial: {
-      text: 'His knowledge is truly a blessing. The negative energy surrounding my home vanished completely.',
-      name: 'Sneha, Guwahati',
-      initial: 'S',
-    },
+    testimonial: null,
     related: ['kundli-consultation', 'husband-wife-dispute-mayong', 'black-magic-removal-kamakhya', 'contact'],
 
     hi: {
@@ -301,11 +289,7 @@ const SERVICES_EXT = [
           a: 'पहली बातचीत निःशुल्क है और इसमें दोनों कुंडलियों का पठन और ईमानदार आकलन शामिल है। यदि उपाय उपयुक्त हो, तो कुछ भी शुरू करने से पहले निश्चित राशि बताई जाती है। कोई मासिक व्यवस्था नहीं, कोई पैकेज नहीं।',
         },
       ],
-      testimonial: {
-        text: 'उनका ज्ञान वास्तव में एक वरदान है। मेरे घर के आसपास की नकारात्मक ऊर्जा पूरी तरह समाप्त हो गई।',
-        name: 'स्नेहा, गुवाहाटी',
-        initial: 'स्ने',
-      },
+      testimonial: null,
     },
   },
 
@@ -381,11 +365,7 @@ const SERVICES_EXT = [
         a: 'Yes. Everything discussed is confidential as a working rule of the practice, not a courtesy. No visitor is asked to be named or photographed, and case details are not published.',
       },
     ],
-    testimonial: {
-      text: 'I was facing severe business losses and family disputes. Baba Ji\'s spiritual guidance changed my life. Everything is peaceful now.',
-      name: 'Priya Das, Guwahati',
-      initial: 'P',
-    },
+    testimonial: null,
     related: ['black-magic-removal-kamakhya', 'best-tantrik-mayong', 'tantrik-baba-guwahati', 'contact'],
 
     hi: {
@@ -446,14 +426,10 @@ const SERVICES_EXT = [
         },
         {
           q: 'क्या मेरी समस्या गोपनीय रहेगी?',
-          a: 'हां। चर्चा किया गया सब कार्य नियम के रूप में गोपनीय रहता है, अनुषंगा नहीं। किसी मेहमान का नाम लेने या फोटो लेने के लिए कहा नहीं जाता, और इस साइट की सफलताएं केवल पहले नाम और शहर के साथ हैं क्योंकि यही एकमात्र जानकारी है जिसने ग्राहक साझा करने की सहमति दी।',
+          a: 'हां। चर्चा किया गया सब कार्य नियम के रूप में गोपनीय रहता है, अनुषंगा नहीं। किसी मेहमान का नाम लेने या फोटो लेने के लिए कहा नहीं जाता, और इस साइट पर ऐसी ग्राहक कहानियां नहीं हैं जिन्हें स्वतंत्र रूप से सत्यापित नहीं किया जा सकता।',
         },
       ],
-      testimonial: {
-        text: 'मुझे गंभीर व्यापारिक नुकसान और पारिवारिक झगड़ों का सामना करना पड़ा। बाबा जी का आध्यात्मिक मार्गदर्शन ने मेरा जीवन बदल दिया। अब सब कुछ शांत है।',
-        name: 'प्रिया दास, गुवाहाटी',
-        initial: 'प्र',
-      },
+      testimonial: null,
     },
   },
 
@@ -529,11 +505,7 @@ const SERVICES_EXT = [
         a: 'The first consultation is free and includes the reading and an honest answer. If a remedy is indicated, it is quoted as a fixed amount before anything is performed. There is no package and no subscription.',
       },
     ],
-    testimonial: {
-      text: 'I was facing severe business losses and family disputes. Baba Ji\'s spiritual guidance changed my life. Everything is peaceful now.',
-      name: 'Priya Das, Guwahati',
-      initial: 'P',
-    },
+    testimonial: null,
     related: ['business-problem-solution', 'childless-problem-solution', 'husband-wife-dispute-mayong', 'contact'],
 
     hi: {
@@ -597,11 +569,7 @@ const SERVICES_EXT = [
           a: 'पहला परामर्श निःशुल्क है और इसमें पठन और ईमानदार उत्तर शामिल है। यदि उपाय का संकेत हो, तो कुछ भी करने से पहले निश्चित राशि बताई जाती है। कोई पैकेज नहीं, कोई सदस्यता नहीं।',
         },
       ],
-      testimonial: {
-        text: 'मुझे गंभीर व्यापारिक नुकसान और पारिवारिक झगड़ों का सामना करना पड़ा। बाबा जी का आध्यात्मिक मार्गदर्शन ने मेरा जीवन बदल दिया। अब सब कुछ शांत है।',
-        name: 'प्रिया दास, गुवाहाटी',
-        initial: 'प्र',
-      },
+      testimonial: null,
     },
   },
 ];

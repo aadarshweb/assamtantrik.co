@@ -92,11 +92,11 @@ const GUIDES = [
     faqs: [
       {
         q: 'Why is Kamakhya Temple called a Shakti Peetha?',
-        a: 'The Kalika Purana records that the yoni of the goddess Sati fell here after Vishnu dismembered her body with the Sudarshana Chakra. Kamakhya is therefore one of the 51 Shakti Peethas, the most sacred sites of goddess worship in Hinduism, and is the supreme seat of Shakti.',
+        a: 'The Kalika Purana records that the yoni of the goddess Sati fell here after Vishnu dismembered her body with the Sudarshana Chakra. Kamakhya is therefore one of the 51 Shakti Peethas, a major site of goddess worship in Hinduism and a seat of Shakti.',
       },
       {
         q: 'What happens at the Ambubachi Mela?',
-        a: 'Held every June, the Ambubachi Mela is the annual festival marking the annual menstruation of the goddess. It draws hundreds of thousands of devotees and is also called the Tantrik Kumbh Mela because it is the largest annual gathering of tantrik practitioners in the world.',
+        a: 'Held every June, the Ambubachi Mela is the annual festival marking the annual menstruation of the goddess. It draws hundreds of thousands of devotees and is also called the Tantrik Kumbh Mela because of its importance to tantrik practitioners.',
       },
       {
         q: 'Is black magic really practised at Kamakhya Temple?',
@@ -240,25 +240,25 @@ const GUIDES = [
       {
         h2: '5 Red Flags of a Fake Tantrik or Astrologer',
         p: [
-          '1. Upfront money demands before any consultation. A genuine best kamakhya tantrik will speak with you first to understand your situation before discussing any fees. Fraudsters demand large sums immediately, claiming the ritual is urgent.',
-          '2. Guaranteed results in unrealistically short times. A real tantrik in kamakhya temple will give you an honest timeline, typically 7 to 21 days for most remedies, not 24 hours.',
+          '1. Upfront money demands before any consultation. A genuine Kamakhya tantrik will speak with you first to understand your situation before discussing any fees. Fraudsters demand large sums immediately, claiming the ritual is urgent.',
+          '2. Guaranteed results in unrealistically short times. A real tantrik in kamakhya temple will give you an honest assessment and explain that timing depends on the situation, rather than promising a fix in 24 hours.',
           '3. No verifiable lineage or location. Any authentic mayong assam tantrik will be able to state their family background, their guru\'s name, and their physical location clearly. Ask for these before paying anything.',
           '4. Claims to be the only or most powerful. Genuine practitioners of tantrik in assam tradition are deeply humble. Arrogant claims of exclusive power are a hallmark of fraud.',
-          '5. No physical office or verifiable address. The best tantrik in guwahati will have a real, physical location, at the Kamakhya Temple, in Mayong, or elsewhere, that you can visit in person.',
+          '5. No physical office or verifiable address. A genuine tantrik in Guwahati will have a real, physical location, at the Kamakhya Temple, in Mayong, or elsewhere, that you can visit in person.',
         ],
       },
       {
         h2: '5 Signs of a Genuine Assam Tantrik or Astrologer',
         p: [
-          '1. Multi-generational family lineage. The most trustworthy mayong tantrik practitioners have been in the same family for generations. Deepak Tantrik\'s family has practiced in Mayong for seven generations, verifiable through community elders.',
-          '2. Formal initiation (diksha) from a recognized guru. Deepak Tantrik received his formal initiation at the Kamakhya Temple, making him one of the few truly initiated kamakhya temple tantriks.',
-          '3. Verifiable client testimonials and case histories. The best tantrik in kamakhya will have dozens, ideally hundreds, of verifiable success stories from real clients.',
+          '1. Multi-generational family lineage. The more trustworthy mayong tantrik practitioners have been in the same family for generations. Deepak Tantrik\'s family has practiced in Mayong for seven generations, verifiable through community elders.',
+          '2. Formal initiation (diksha) from a recognized guru. Deepak Tantrik received his formal initiation at the Kamakhya Temple.',
+          '3. Claims that can be checked. A genuine tantrik in Kamakhya can name a lineage, a guru and a physical address. Those are stronger evidence than a page of testimonials that cannot be verified.',
           '4. Ethical framework and confidentiality. A real tantrik in guwahati will never ask you to harm anyone, never perform unethical rituals, and will maintain absolute confidentiality about your personal situation.',
           '5. Transparent pricing with no hidden escalation. A genuine assam tantrik explains all costs upfront. No surprise escalations or "extra rituals needed" after you have paid.',
         ],
       },
       {
-        h2: 'Why Deepak Tantrik Is the Safest Choice',
+        h2: 'What Can Be Checked About Deepak Tantrik',
         p: [
           'Deepak Tantrik has practised for more than 25 years. He was born into a seven-generation Mayong tantra lineage and was initiated at Kamakhya Temple. He publishes two physical addresses and a direct phone number, and he states plainly that no genuine practitioner can guarantee a result. The number +91 9706801250 reaches him directly rather than an intermediary.',
           'The practice covers relationship and marriage problems, family conflict, business difficulties and situations described as a negative presence. The combination of the Mayong lineage and the Kamakhya initiation is the basis of the practice, not a claim of exclusivity.',

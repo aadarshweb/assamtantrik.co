@@ -69,7 +69,7 @@ const SITE = {
 
   // --- SEO / entity description, woven with the primary keyword cluster ---
   description:
-    'Deepak Tantrik is a best tantrik in Kamakhya Temple and Mayong, Assam. Born into a seven-generation Mayong tantra lineage and initiated at Kamakhya Temple, Guwahati, he offers black magic removal, vashikaran, love problem solutions and husband wife dispute help with 25+ years of experience. Call +91 9706801250.',
+    'Deepak Tantrik practises tantra at Kamakhya Temple and in Mayong, Assam. Born into a seven-generation Mayong tantra lineage and initiated at Kamakhya Temple, Guwahati, he offers black magic removal, vashikaran, love problem solutions and husband wife dispute help with 25+ years of experience. Call +91 9706801250.',
 
   knowsAbout: [
     'Tantra Shastra',

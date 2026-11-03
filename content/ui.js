@@ -251,7 +251,7 @@ function schemaPerson() {
     name: SITE.name,
     jobTitle: SITE.jobTitle,
     description:
-      'Deepak Tantrik is the best tantrik in Kamakhya Temple and Mayong, Assam. Born into a seven-generation Mayong tantra lineage and formally initiated at Kamakhya Temple, Guwahati, he has 25+ years of experience in black magic removal, vashikaran, love problem solutions and husband wife dispute work.',
+      'Deepak Tantrik practises tantra at Kamakhya Temple and in Mayong, Assam. Born into a seven-generation Mayong tantra lineage and formally initiated at Kamakhya Temple, Guwahati, he has 25+ years of experience in black magic removal, vashikaran, love problem solutions and husband wife dispute work.',
     url: SITE.url('about'),
     telephone: SITE.phone,
     knowsAbout: SITE.knowsAbout,
