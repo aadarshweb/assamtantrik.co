@@ -36,42 +36,42 @@ const SERVICES = [
     h2: 'Genuine Black Magic Removal at Kamakhya',
     intro: [
       'Kamakhya Temple is internationally renowned as the epicenter of Tantra and spiritual power. If you are facing sudden downfall in business, unexplained illnesses, continuous family disputes, or a feeling of heavy negative presence, you might be a victim of Kala Jadu (Black Magic). Deepak Tantrik specializes in powerful black magic removal from Kamakhya.',
-      'Using centuries-old rituals passed down through generations, he identifies the exact source of the curse. His specialized Kamakhya pujas cut through all negative bindings and create a permanent protective shield (Kavach) around you and your family.',
-      "Don't let jealousy and evil intentions ruin your life. With Deepak Tantrik's proven remedies, you will experience immediate relief and a return to prosperity and good health.",
+      'The work begins with a careful reading of the situation rather than an assumption about its cause. Where a spiritual cause is assessed as present, the remedy is described before it is performed: what will be done, where, how long it takes, and what it can and cannot achieve. The aim is to address a specific obstruction, not to promise a permanent shield around every part of your life.',
+      "If you are dealing with a run of misfortune, unexplained illness or persistent family conflict, the first step is an honest assessment. Some of these problems have ordinary causes that should be checked first. The consultation is free, and you will be told plainly whether a remedy is appropriate.",
     ],
     image: '/images/religious.jpg',
     imageAlt:
       'Lamps burning at a Kamakhya Temple shrine in Guwahati during black magic removal puja',
     deep: [
       {
-        h2: 'Why Kamakhya Black Magic Removal Is Different',
+        h2: 'What the Kamakhya Tradition Actually Involves',
         p: [
-          'The phrase <strong>kamakhya temple black magic</strong> is feared and respected in equal measure across India. Kamakhya Devi, the goddess of desire and power, presides over Guwahati Nilachal Hill. Seekers of both dark arts and divine protection flock here. As someone who has studied <strong>about kamakhya temple</strong> since birth and served among the greatest <strong>kamakhya temple tantriks</strong>, Deepak Tantrik understands that real <strong>kamakhya black magic</strong> does not follow ordinary rules. It is deeply woven into a person\'s aura, requiring precise ritual counter-measures only an experienced <strong>tantrik in kamakhya temple</strong> can perform.',
-          'Signs you may need <strong>kamakhya temple black magic</strong> removal include: sudden financial ruin, unexplained nightmares, estrangement from loved ones, chronic illness with no medical cause, animals behaving strangely near your home, and a persistent feeling of being watched or drained. Do not ignore these warning signs.',
+          'Kamakhya Temple on Nilachal Hill is one of the most important Shakti sites in India, and the surrounding tradition is inseparable from the practice of tantra. That history is often reduced to a single phrase, but the actual work is more specific. A practitioner has to assess what is happening, separate an ordinary cause from a spiritual one, and describe the remedy in plain terms. Deepak Tantrik works within that tradition at Kamakhya and at his family ashram in Mayong.',
+          'People often describe a cluster of symptoms: a sudden financial reversal, disturbed sleep, estrangement from family, an illness that tests have not explained, or a persistent feeling of heaviness at home. None of these proves a spiritual cause on its own. They are reasons to look carefully, rule out the ordinary explanations, and then decide whether a remedy is the right response.',
         ],
       },
       {
-        h2: 'Mayong Black Magic: The Ancient Origins',
+        h2: 'The Mayong Family Lineage',
         p: [
-          'Anyone who has searched for a <strong>mayong assam black magic video</strong> online knows the mystical reputation of this tiny village. The <strong>mayong assam tantrik</strong> tradition predates written history. Ancient palm-leaf manuscripts discovered in Mayong describe precise rituals for casting and removing dark spells. As the best <strong>mayong tantrik</strong> from this lineage, Deepak Tantrik is one of very few who still reads and applies these manuscripts. This gives him an unparalleled edge in diagnosing even the most ancient forms of spiritual attack.',
-          'His dual expertise, rooted in <strong>mayong assam tantrik</strong> tradition and empowered by Kamakhya Temple, makes him the supreme <strong>assam tantrik</strong> for black magic removal. When you contact the <strong>mayong tantrik contact number</strong> on this site, you are reaching a practitioner whose knowledge spans both locations.',
+          'Mayong in Morigaon district has a long reputation in Assamese folklore as a place associated with tantra and the occult. The family tradition here is oral and practical rather than theatrical: it is passed down through practice, and it is used for protection and repair, not for harming anyone. Deepak Tantrik was born into that lineage and still works from the family ashram in Mayong.',
+          'His practice draws on two locations: the family lineage in Mayong and his initiation at Kamakhya Temple in Guwahati. Clients sometimes choose to consult at one or the other depending on the case. The number on this page reaches him directly, and the first conversation is used to decide whether a remedy is appropriate at all.',
         ],
       },
       {
         h2: 'How the Removal Process Works',
         p: [
-          'The process begins with a detailed spiritual reading to identify the exact type and source of the negative binding. Deepak Tantrik then performs a specific counter-ritual at either the Kamakhya Temple or his Mayong ashram, depending on the nature of the affliction. A protective <em>kavach</em> (spiritual shield) is then permanently installed. Most clients report feeling the heavy oppression lift within 3 to 7 days. Full cleansing may take up to 21 days depending on severity. Contact the genuine <strong>tantrik in assam</strong> today.',
+          'The process begins with an assessment of what is actually happening and how long it has been going on. If a remedy is indicated, Deepak Tantrik explains what will be performed, at which location, and what it costs before anything begins. A protective kavach may form part of the practice. The honest timeline is usually measured in weeks, not hours, and no outcome is guaranteed. If the assessment is that a remedy will not help, you will be told that.',
         ],
       },
     ],
     faqs: [
       {
         q: 'Can black magic really be removed at Kamakhya Temple?',
-        a: 'Yes. With the help of an authentic kamakhya temple tantrik like Deepak Ji, severe kamakhya black magic and negative energies can be permanently removed and a protective shield (kavach) is cast around you and your family.',
+        a: 'A remedy may be appropriate where an ordinary cause has been ruled out and a spiritual cause is assessed as present. No honest practitioner can promise a guaranteed outcome. The first consultation is free and is used to decide whether a remedy makes sense.',
       },
       {
         q: 'How long does black magic removal take?',
-        a: 'Most clients report that the heavy feeling lifts within 3 to 7 days. A complete cleansing may take up to 21 days depending on the severity of the binding and how deeply it is woven into a person\'s aura.',
+        a: 'The honest timeline is usually a few weeks rather than a few days. It depends on what is assessed during the consultation, and no fixed number of days is promised in advance.',
       },
       {
         q: 'Is it safe to get black magic removed at Kamakhya?',
@@ -110,21 +110,21 @@ const SERVICES = [
         {
           h2: 'कामाख्या में काला जादू हटाना अलग क्यों है',
           p: [
-            'भारत में <strong>कामाख्या मंदिर काला जादू</strong> शब्द का उल्लेख सम्मान और भय दोनों के साथ किया जाता है। कामाख्या देवी, काम की और शक्ति की देवी, गुवाहाटी के नीलाचल पहाड़ी पर विराजमान हैं। यहाँ दीक्षा लेने वाले असली <strong>कामाख्या मंदिर तांत्रिक</strong> इसी शक्ति का उपयोग केवल उपचार और सुरक्षा के लिए करते हैं।',
-            'यदि आपको अचानक आर्थिक मंदी, अनिद्रा, प्रियजनों से दूरी, या बिना कारण बीमारी महसूस हो रही है, तो ये <strong>कामाख्या मंदिर काला जादू</strong> हटाने के संकेत हो सकते हैं। इन संकेतों को अनदेखा न करें।',
+            'भारत में कामाख्या मंदिर काला जादू शब्द का उल्लेख सम्मान और भय दोनों के साथ किया जाता है। कामाख्या देवी, काम की और शक्ति की देवी, गुवाहाटी के नीलाचल पहाड़ी पर विराजमान हैं। यहाँ दीक्षा लेने वाले असली कामाख्या मंदिर तांत्रिक इसी शक्ति का उपयोग केवल उपचार और सुरक्षा के लिए करते हैं।',
+            'यदि आपको अचानक आर्थिक मंदी, अनिद्रा, प्रियजनों से दूरी, या बिना कारण बीमारी महसूस हो रही है, तो ये कामाख्या मंदिर काला जादू हटाने के संकेत हो सकते हैं। इन संकेतों को अनदेखा न करें।',
           ],
         },
         {
           h2: 'मायोंग काला जादू: प्राचीन उत्पत्ति',
           p: [
-            'जो कोई <strong>मायोंग असम काला जादू वीडियो</strong> खोजता है, वह इस छोटे गाँव की रहस्यमय प्रतिष्ठा से परिचित होता है। <strong>मायोंग असम तांत्रिक</strong> परंपरा लिखित इतिहास से भी पहले की है। मायोंग में मिले प्राचीन ताड़पत्र ग्रंथों में अभिशाप हटाने की सटीक विधियाँ वर्णित हैं। इस वंश के सर्वश्रेष्ठ <strong>मायोंग तांत्रिक</strong> के रूप में दीपक तांत्रिक उनमें से बहुत कम हैं जो आज भी ये मूल ग्रंथ पढ़ और लागू कर सकते हैं।',
-            'मायोंग की परंपरा और कामाख्या मंदिर की कृपा से प्राप्त ज्ञान के कारण वे काला जादू हटाने के लिए असम के सर्वश्रेष्ठ <strong>असम तांत्रिक</strong> हैं। इस साइट पर दिए <strong>मायोंग तांत्रिक कांटैक्ट नंबर</strong> पर संपर्क करने पर आप दोनों स्थानों के ज्ञान से जुड़े एक सच्चे चिकित्सक तक पहुँचते हैं।',
+            'जो कोई मायोंग असम काला जादू वीडियो खोजता है, वह इस छोटे गाँव की रहस्यमय प्रतिष्ठा से परिचित होता है। मायोंग असम तांत्रिक परंपरा लिखित इतिहास से भी पहले की है। मायोंग में मिले प्राचीन ताड़पत्र ग्रंथों में अभिशाप हटाने की सटीक विधियाँ वर्णित हैं। इस वंश के सर्वश्रेष्ठ मायोंग तांत्रिक के रूप में दीपक तांत्रिक उनमें से बहुत कम हैं जो आज भी ये मूल ग्रंथ पढ़ और लागू कर सकते हैं।',
+            'मायोंग की परंपरा और कामाख्या मंदिर की कृपा से प्राप्त ज्ञान के कारण वे काला जादू हटाने के लिए असम के सर्वश्रेष्ठ असम तांत्रिक हैं। इस साइट पर दिए मायोंग तांत्रिक कांटैक्ट नंबर पर संपर्क करने पर आप दोनों स्थानों के ज्ञान से जुड़े एक सच्चे चिकित्सक तक पहुँचते हैं।',
           ],
         },
         {
           h2: 'काला जादू हटाने की प्रक्रिया',
           p: [
-            'प्रक्रिया की शुरुआत एक विस्तृत आध्यात्मिक पठन से होती है, जिसमें नकारात्मक बंधन की सही प्रकृति और स्रोत पहचाना जाता है। फिर दीपक तांत्रिक अफेक्शन के अनुसार कामाख्या मंदिर या अपने मायोंग आश्रम में विशिष्ट प्रतिकारी अनुष्ठान करते हैं। इसके बाद एक स्थायी <em>कवच</em> स्थापित किया जाता है। अधिकांश ग्राहक 3 से 7 दिनों में भारी बोझ कम होने की सूचना देते हैं। पूर्ण शुद्धि में 21 दिन तक लग सकते हैं। आज ही असली <strong>असम तांत्रिक</strong> से संपर्क करें।',
+            'प्रक्रिया की शुरुआत एक विस्तृत आध्यात्मिक पठन से होती है, जिसमें नकारात्मक बंधन की सही प्रकृति और स्रोत पहचाना जाता है। फिर दीपक तांत्रिक अफेक्शन के अनुसार कामाख्या मंदिर या अपने मायोंग आश्रम में विशिष्ट प्रतिकारी अनुष्ठान करते हैं। इसके बाद एक स्थायी <em>कवच</em> स्थापित किया जाता है। अधिकांश ग्राहक 3 से 7 दिनों में भारी बोझ कम होने की सूचना देते हैं। पूर्ण शुद्धि में 21 दिन तक लग सकते हैं। आज ही असली असम तांत्रिक से संपर्क करें।',
           ],
         },
       ],
@@ -175,24 +175,24 @@ const SERVICES = [
     sub: 'Restore harmony and bring your true love back with powerful Vedic rituals from Kamakhya Temple.',
     h2: 'Expert Love Astrology and Rituals',
     intro: [
-      'Love is the most beautiful feeling, but losing the person you love can cause unimaginable pain. Whether it is due to misunderstandings, family objections, or third-party interference, Deepak Tantrik provides the most effective love problem solution in Kamakhya Temple.',
-      'Using the sacred, positive energies of Kamakhya, his proven mantras and spiritual pujas align the cosmic stars in your favor. This process clears negativity between partners, creates strong attraction, and convinces strict parents for love marriage, all without any harmful side effects.',
-      'Do not let your relationship end in sorrow. Thousands of couples have reunited through his guidance. Contact him today for a personalized astrological reading and start your journey back to happiness.',
+      'Relationship problems are the most common reason people contact a tantrik, and they are rarely simple. A relationship may have broken after a misunderstanding, a family objection, a long separation or the involvement of someone else. The first task is to understand which of those is actually happening, because each calls for a different response.',
+      'Where a remedy is appropriate, it is used to address a specific obstruction rather than to control another person\'s feelings. That distinction matters. A ritual cannot make someone choose you, and any practitioner who says otherwise is describing something that does not exist. What can sometimes be helped is a family objection, a pattern of interference, or a situation where communication has broken down.',
+      'If you are unsure whether your situation is one that astrology can help with, describe it in your own words. The first consultation is free, and the answer may be that the problem needs a conversation, a lawyer, or time rather than a ritual. You will be told that honestly.',
     ],
     image: '/images/mandala.png',
     imageAlt: 'Mandala ritual design used for love problem puja at Kamakhya Temple, Guwahati',
     deep: [
       {
-        h2: 'Why Kamakhya Temple Is the Most Powerful for Love Solutions',
+        h2: 'Why Kamakhya Is Central to Relationship Consultations',
         p: [
-          'Anyone who has studied <strong>about kamakhya temple</strong> knows that this sacred site is the abode of the Goddess of Desire. Performing love-related rituals here, under the guidance of one of the authentic <strong>kamakhya temple tantriks</strong>, amplifies their power a thousandfold. Deepak Tantrik, the most revered <strong>tantrik in kamakhya temple</strong> for love problems, harnesses the raw divine energy of this location to dissolve the obstacles between you and your beloved.',
-          'Additionally, his roots as a <strong>mayong assam tantrik</strong> give him access to ancient love-binding rituals not found anywhere else. The combination of Kamakhya energy and Mayong knowledge makes him the <strong>best kamakhya tantrik</strong> for love problem solutions by a wide margin. He is also the easiest to reach. Simply use the <strong>mayong tantrik contact number</strong>: <strong>+91 9706801250</strong>.',
+          'Kamakhya is associated with desire and fertility, which is why relationship questions are so often brought here. The location matters in the tradition, but it does not replace the assessment. Deepak Tantrik reads the situation and, where relevant, the charts of both people before deciding whether a remedy is appropriate.',
+          'His family practice in Mayong is the other part of the picture, and it is described on the Mayong page rather than repeated here. The practical point is that you can reach him directly on +91 9706801250, and the first conversation is used to work out whether there is a real obstruction to address.',
         ],
       },
       {
-        h2: 'Common Love Problems Solved',
+        h2: 'Common Situations People Bring',
         p: [
-          'An ex-lover refusing to return, an inter-caste or inter-religion family objection, a husband or wife attracted to someone else, one-sided love, a broken engagement, or love lost after years together. No matter how hopeless the situation seems, as the leading <strong>tantrik in guwahati</strong> and an authentic <strong>assam tantrik</strong>, Deepak Tantrik has a solution. Call the <strong>mayong tantrik contact</strong> right now and begin your journey back to love.',
+          'The cases that come most often are a former partner who has withdrawn, a family objecting to a marriage, a spouse who has become distant, one-sided affection, a broken engagement, or a relationship that ended after several years. Some of these can be helped and some cannot. The consultation is where that is worked out, and the answer is sometimes that the useful step is not a ritual.',
         ],
       },
       {
@@ -215,11 +215,11 @@ const SERVICES = [
     faqs: [
       {
         q: 'Can a lost love really be brought back?',
-        a: 'In many cases, yes. As the best kamakhya tantrik for love problems, Deepak Tantrik clears the negativity between partners and restores attraction through Kamakhya puja. Results depend on the individual situation, which he assesses during the first consultation.',
+        a: 'Sometimes. A remedy can address a specific obstruction, such as a family objection or a pattern of interference. It cannot make someone return who has decided otherwise. The first consultation is used to work out which situation applies.',
       },
       {
         q: 'Do you help with love marriage family objections?',
-        a: 'Yes. Convincing strict parents for love marriage through Vedic astrology and mantra therapy is one of his core services at Kamakhya Temple. He addresses both the family side and the emotional side of the objection.',
+        a: 'A family objection is a common reason for consultation. The useful work is to identify what the objection actually is, because it is often practical rather than ideological. A remedy may support that process, but it does not replace the conversation the couple and the families need to have.',
       },
       {
         q: 'Is love problem solution safe?',
@@ -257,14 +257,14 @@ const SERVICES = [
         {
           h2: 'प्रेम के उपायों के लिए कामाख्या मंदिर सबसे शक्तिशाली क्यों है',
           p: [
-            'जो कोई <strong>कामाख्या मंदिर के बारे में</strong> जानना चाहता है, वह जानता है कि यह पवित्र स्थल काम की देवी की निवासस्थानी है। यहाँ, प्रामाणिक <strong>कामाख्या मंदिर तांत्रिक</strong> के मार्गदर्शन में प्रेम संबंधी अनुष्ठान करने से उनकी शक्ति हजार गुना बढ़ जाती है। प्रेम समस्याओं के लिए सर्वाधिक पूजनीय <strong>कामाख्या मंदिर में तांत्रिक</strong> दीपक तांत्रिक इस स्थान की दिव्य ऊर्जा का उपयोग आपके और आपके प्रिय के बीच की बाधाओं को दूर करने के लिए करते हैं।',
-            'इसके अतिरिक्त, <strong>मायोंग असम तांत्रिक</strong> के रूप में उनकी जड़ें उन प्राचीन प्रेम-बंधन विधियों तक पहुँच देती हैं जो कहीं और नहीं मिलतीं। कामाख्या की ऊर्जा और मायोंग का ज्ञान मिलकर उन्हें प्रेम समस्याओं के लिए <strong>कामाख्या के सबसे बड़े तांत्रिक</strong> बनाता है। संपर्क के लिए <strong>मायोंग तांत्रिक कांटैक्ट नंबर</strong> का उपयोग करें: <strong>+91 9706801250</strong>।',
+            'जो कोई कामाख्या मंदिर के बारे में जानना चाहता है, वह जानता है कि यह पवित्र स्थल काम की देवी की निवासस्थानी है। यहाँ, प्रामाणिक कामाख्या मंदिर तांत्रिक के मार्गदर्शन में प्रेम संबंधी अनुष्ठान करने से उनकी शक्ति हजार गुना बढ़ जाती है। प्रेम समस्याओं के लिए सर्वाधिक पूजनीय कामाख्या मंदिर में तांत्रिक दीपक तांत्रिक इस स्थान की दिव्य ऊर्जा का उपयोग आपके और आपके प्रिय के बीच की बाधाओं को दूर करने के लिए करते हैं।',
+            'इसके अतिरिक्त, मायोंग असम तांत्रिक के रूप में उनकी जड़ें उन प्राचीन प्रेम-बंधन विधियों तक पहुँच देती हैं जो कहीं और नहीं मिलतीं। कामाख्या की ऊर्जा और मायोंग का ज्ञान मिलकर उन्हें प्रेम समस्याओं के लिए कामाख्या के सबसे बड़े तांत्रिक बनाता है। संपर्क के लिए मायोंग तांत्रिक कांटैक्ट नंबर का उपयोग करें: +91 9706801250।',
           ],
         },
         {
           h2: 'सामान्य प्रेम समस्याएं जिनका समाधान किया जाता है',
           p: [
-            'पुराना प्रेमी लौटने से मना करना, जाति या धर्म के कारण परिवार का विरोध, पति या पत्नी का किसी और की ओर आकर्षित होना, एकतरफा प्रेम, टूटी हुई सगाई, या वर्षों की रिश्ते के बाद प्रेम का खो जाना। हालातक कितने भी निराश लगें, गुवाहाटी के प्रमुख <strong>तांत्रिक बाबा</strong> और असली <strong>असम तांत्रिक</strong> दीपक तांत्रिक के पास समाधान है। अभी <strong>मायोंग तांत्रिक कांटैक्ट</strong> पर कॉल करें और प्रेम की यात्रा फिर से शुरू करें।',
+            'पुराना प्रेमी लौटने से मना करना, जाति या धर्म के कारण परिवार का विरोध, पति या पत्नी का किसी और की ओर आकर्षित होना, एकतरफा प्रेम, टूटी हुई सगाई, या वर्षों की रिश्ते के बाद प्रेम का खो जाना। हालातक कितने भी निराश लगें, गुवाहाटी के प्रमुख तांत्रिक बाबा और असली असम तांत्रिक दीपक तांत्रिक के पास समाधान है। अभी मायोंग तांत्रिक कांटैक्ट पर कॉल करें और प्रेम की यात्रा फिर से शुरू करें।',
           ],
         },
       ],
@@ -315,24 +315,24 @@ const SERVICES = [
     sub: 'Attract positivity and bring loved ones back on the right path with safe Mayong Vashikaran techniques.',
     h2: 'Genuine Vashikaran Services in Mayong',
     intro: [
-      'Mayong is globally famous as the capital of ancient magic and tantra. For centuries, the deep secrets of vashikaran (mind control through positive energies) have been practiced here. Deepak Tantrik is a highly respected Vashikaran Specialist in Mayong, utilizing these ancient methods strictly for the welfare of people.',
-      'Vashikaran is often misunderstood. In the right hands, it is a powerful tool to save breaking marriages, stop a partner from straying, or convince strict parents for love marriage. The rituals performed by Deepak Tantrik invoke pure energies that align the mind of your desired person favorably towards you, without causing any harm.',
-      'If you feel you are losing control over your relationships or life situations, consult the most trusted expert in Mayong. The results are swift, natural, and permanent. Reclaim the happiness you deserve.',
+      'Mayong has a long association with tantra in Assamese tradition. Practices described as vashikaran are part of that history, but the word is used very loosely today. The version practised here is not coercion: it is an attempt to address a specific obstruction in a relationship that already exists, and it is refused where the request is to override another person\'s decision.',
+      'Most requests fall into a few categories: a marriage under pressure, a partner who has become distant, a family blocking a match, or a relationship where communication has broken down. The work is presented honestly as an attempt to address the obstruction, not as a way to control someone. No harm is intended, and no result is guaranteed.',
+      'If you are unsure whether your situation is appropriate for this kind of consultation, say so when you call. The first consultation is free, and if the honest answer is that a remedy will not help, you will hear that rather than a sales pitch.',
     ],
     image: '/images/religious.jpg',
     imageAlt: 'Red vermilion and lamps at a Mayong tantra ritual for positive vashikaran',
     deep: [
       {
-        h2: 'Vashikaran in Mayong: The Original Science',
+        h2: 'What Vashikaran Means in This Practice',
         p: [
-          'In the spiritual vocabulary of <strong>tantrik in assam</strong>, vashikaran is not a dark art. It is a precise science of cosmic alignment. The Mayong texts describe vashikaran as channeling the natural magnetic frequency of an individual toward the person seeking the remedy. As the <strong>best mayong tantrik</strong> for vashikaran, Deepak Tantrik has spent decades studying these frequencies. His techniques, refined at the Kamakhya Temple and in the fields of Mayong, are entirely safe and leave no karmic debt on the practitioner or client.',
-          'The <strong>mayong tantrik contact</strong> for vashikaran services is the same as the general contact number: <strong>+91 9706801250</strong>. When you reach out, Deepak Tantrik will assess your situation via a detailed consultation before recommending the appropriate vashikaran ritual. He serves as both a <strong>mayong assam tantrik</strong> and a <strong>kamakhya temple tantrik</strong>, giving you access to the most powerful vashikaran remedies from two sacred locations simultaneously.',
+          'In the tradition Deepak Tantrik was trained in, vashikaran is described as a way of addressing a specific obstruction between two people who already have a connection. It is not presented as a science of mind control, and it is not used to create affection where none exists. The assessment matters more than the label, because the same word is used for very different things.',
+          'The number is the same for every kind of consultation: +91 9706801250. The first call is used to establish what is happening and whether a remedy is appropriate. If it is, you will be told where it would be performed and what it involves before you commit to anything.',
         ],
       },
       {
-        h2: 'Who Can Benefit from Kamakhya Vashikaran?',
+        h2: 'Who This Is, and Is Not, For',
         p: [
-          'Anyone facing a partner who has grown cold and distant, family members refusing a love marriage, business rivals blocking your success, or children falling into bad company. As the most sought-after <strong>assam tantrik</strong> for vashikaran, Deepak Tantrik has resolved cases that other practitioners declared impossible. His dual authority as a <strong>tantrik in guwahati</strong> and a <strong>mayong tantrik</strong> makes him uniquely powerful. Do not hesitate. Call the <strong>mayong tantrik contact number</strong> today.',
+          'People usually come with a partner who has become distant, a family refusing a marriage, a child who has fallen into bad company, or a business relationship that has turned hostile. Some of these are appropriate for a consultation and some are not. The first conversation is where that is decided, without pressure and without a fee.',
         ],
       },
       {
@@ -347,7 +347,7 @@ const SERVICES = [
         h2: 'The Process and What to Expect',
         p: [
           'The first consultation is free and is a conversation rather than a booking. What is established is what is actually happening, whether the situation falls within what can be helped, and what the alternatives are if a remedy is not appropriate. Both partners\' details are useful where both are involved, and where the relationship is between two people the assessment is made against both charts, because that is where the obstruction either is or is not.',
-          'Where a remedy is indicated, you are told what will be performed, at which of the two locations, how long it takes, and what it costs as a fixed amount before anything begins. Most clients report a noticeable change within 7 to 21 days. It is worth being clear that a first change is usually in the client\'s own state, less anxiety and more steadiness, rather than an immediate change in the other person\'s behaviour.',
+          'Where a remedy is indicated, you are told what will be performed, at which of the two locations, how long it takes, and what it costs as a fixed amount before anything begins. The honest answer is that there is no fixed timeline. A change is sometimes reported within a few weeks, but it depends on the situation and is never guaranteed. You will be told what to expect during the consultation.',
           'There is no percentage of any outcome, no monthly package, and no follow-up call used to introduce a new problem. If the assessment is that a remedy will not help, you are told that and the consultation is the end of the matter.',
         ],
       },
@@ -355,11 +355,11 @@ const SERVICES = [
     faqs: [
       {
         q: 'Is positive vashikaran safe?',
-        a: 'Yes. The vashikaran Deepak Tantrik performs is positive vashikaran only. It is used to save marriages, resolve family disputes and correct a partner\'s behaviour. He never uses it to harm anyone or to override a person\'s free will.',
+        a: 'The practice does not use coercion and does not claim to override another person\'s decision. It is used only where a specific obstruction can be addressed and where the request does not involve harming or controlling someone.',
       },
       {
         q: 'Where is vashikaran performed?',
-        a: 'At either the Kamakhya Temple in Guwahati or his Mayong ashram in Morigaon, depending on the case. He holds both the Mayong tantra lineage and formal initiation at Kamakhya, so he can select whichever location suits the problem.',
+        a: 'It is performed at either the Kamakhya Temple in Guwahati or the Mayong ashram in Morigaon, depending on the case. Which location is appropriate is decided during the consultation and explained before anything begins.',
       },
       {
         q: 'How long does a vashikaran remedy take to work?',
@@ -397,14 +397,14 @@ const SERVICES = [
         {
           h2: 'मायोंग में वशीकरण: मूल विज्ञान',
           p: [
-            '<strong>असम तांत्रिक</strong> की आध्यात्मिक शब्दावली में वशीकरण कोई अंधकारी कला नहीं है, बल्कि ब्रह्मांडीय संरेखण का एक सटीक विज्ञान है। मायोंग के ग्रंथ वशीकरण को व्यक्ति के प्राकृतिक चुंबकीय आवृत्ति को उपचार चाहने वाले व्यक्ति की ओर मोड़ने के रूप में वर्णित करते हैं। वशीकरण के लिए <strong>मायोंग के सबसे बड़े तांत्रिक</strong> के रूप में दीपक तांत्रिक दशकों से इन आवृत्तियों का अध्ययन कर चुके हैं। उनकी तकनीकें कामाख्या मंदिर और मायोंग दोनों में परिष्कृत हैं, पूर्णतः सुरक्षित हैं, और न चिकित्सक पर न ग्राहक पर कोई कर्मिक भार छोड़ती हैं।',
-            'वशीकरण सेवाओं के लिए <strong>मायोंग तांत्रिक कांटैक्ट</strong> सामान्य संपर्क नंबर के समान है: <strong>+91 9706801250</strong>। संपर्क करने पर दीपक तांत्रिक विस्तृत परामर्श के माध्यम से आपकी स्थिति का आकलन करेंगे और उपयुक्त वशीकरण अनुष्ठान की सलाह देंगे। वे <strong>मायोंग असम तांत्रिक</strong> और <strong>कामाख्या मंदिर तांत्रिक</strong> दोनों हैं, जिससे आपको दो पवित्र स्थानों से सबसे शक्तिशाली वशीकरण उपाय एक साथ मिलते हैं।',
+            'असम तांत्रिक की आध्यात्मिक शब्दावली में वशीकरण कोई अंधकारी कला नहीं है, बल्कि ब्रह्मांडीय संरेखण का एक सटीक विज्ञान है। मायोंग के ग्रंथ वशीकरण को व्यक्ति के प्राकृतिक चुंबकीय आवृत्ति को उपचार चाहने वाले व्यक्ति की ओर मोड़ने के रूप में वर्णित करते हैं। वशीकरण के लिए मायोंग के सबसे बड़े तांत्रिक के रूप में दीपक तांत्रिक दशकों से इन आवृत्तियों का अध्ययन कर चुके हैं। उनकी तकनीकें कामाख्या मंदिर और मायोंग दोनों में परिष्कृत हैं, पूर्णतः सुरक्षित हैं, और न चिकित्सक पर न ग्राहक पर कोई कर्मिक भार छोड़ती हैं।',
+            'वशीकरण सेवाओं के लिए मायोंग तांत्रिक कांटैक्ट सामान्य संपर्क नंबर के समान है: +91 9706801250। संपर्क करने पर दीपक तांत्रिक विस्तृत परामर्श के माध्यम से आपकी स्थिति का आकलन करेंगे और उपयुक्त वशीकरण अनुष्ठान की सलाह देंगे। वे मायोंग असम तांत्रिक और कामाख्या मंदिर तांत्रिक दोनों हैं, जिससे आपको दो पवित्र स्थानों से सबसे शक्तिशाली वशीकरण उपाय एक साथ मिलते हैं।',
           ],
         },
         {
           h2: 'कामाख्या वशीकरण से किसे लाभ हो सकता है?',
           p: [
-            'जिसका साथी ठंडा और दूर हो चुका हो, जिसके परिवार प्रेम विवाह का विरोध कर रहा हो, जिसके व्यापारिक प्रतिद्वंद्वी आपकी सफलता रोक रहे हों, या जिसके बच्चे बुरी संगत में पड़ गए हों। वशीकरण के लिए सबसे मांगे जाने वाले <strong>असम तांत्रिक</strong> के रूप में दीपक तांत्रिक ने वे मामले सुलझाए हैं जिन्हें अन्य चिकित्सक असंभव बता चुके थे। <strong>गुवाहाटी में तांत्रिक</strong> और <strong>मायोंग तांत्रिक</strong> दोनों रूपों में उनकी द्विगुणी सत्ता उन्हें अद्वितीय रूप से शक्तिशाली बनाती है। संकोच न करें, आज ही <strong>मायोंग तांत्रिक कांटैक्ट नंबर</strong> पर कॉल करें।',
+            'जिसका साथी ठंडा और दूर हो चुका हो, जिसके परिवार प्रेम विवाह का विरोध कर रहा हो, जिसके व्यापारिक प्रतिद्वंद्वी आपकी सफलता रोक रहे हों, या जिसके बच्चे बुरी संगत में पड़ गए हों। वशीकरण के लिए सबसे मांगे जाने वाले असम तांत्रिक के रूप में दीपक तांत्रिक ने वे मामले सुलझाए हैं जिन्हें अन्य चिकित्सक असंभव बता चुके थे। गुवाहाटी में तांत्रिक और मायोंग तांत्रिक दोनों रूपों में उनकी द्विगुणी सत्ता उन्हें अद्वितीय रूप से शक्तिशाली बनाती है। संकोच न करें, आज ही मायोंग तांत्रिक कांटैक्ट नंबर पर कॉल करें।',
           ],
         },
       ],
@@ -455,24 +455,24 @@ const SERVICES = [
     sub: 'Save your marriage. Stop arguments, remove third-party interference, and rebuild trust today.',
     h2: 'Expert Marriage Problem Solution',
     intro: [
-      'A peaceful marriage is essential for a happy life, but constant disputes, lack of communication, or the involvement of another person can push a marriage towards divorce. As a renowned specialist for husband wife dispute solutions in Mayong, Deepak Tantrik has saved thousands of families from breaking apart.',
-      'Using profound astrological charts and the mystical remedies born in Mayong, Assam, he identifies the root cause of the friction. Often, negative planetary placements or external evil eyes cause these sudden changes in a partner\'s behavior.',
-      'With targeted mantras and specific spiritual rituals, Deepak Tantrik can remove all bitterness between you and your spouse. His remedies foster deep understanding, restore love, and ensure a harmonious, long-lasting marital bond. Contact him today to bring the peace back into your home.',
+      'Marriage problems are among the most difficult things people bring to a consultation. Constant arguments, a breakdown in communication, or the involvement of a third person can make a marriage feel impossible to repair. The work here starts with understanding what changed and when, not with a promise to save the marriage.',
+      'Both partners\' charts are read where both are available, because a marriage is a relationship between two charts rather than a property of one. The reading looks at the periods each person is running and at what has changed recently. Ordinary explanations, including health, money and family pressure, are considered alongside the chart.',
+      'Where a remedy is appropriate, it is described in full before it is performed. The honest position is that a ritual can support a marriage, but it cannot substitute for the two people doing the work. If the assessment is that the marriage needs something other than a remedy, you will be told that plainly.',
     ],
     image: '/images/portrait.jpg',
     imageAlt: 'Deepak Tantrik, husband wife dispute specialist in Mayong and Kamakhya, Assam',
     deep: [
       {
-        h2: 'Why Marriages Break: A Spiritual Perspective',
+        h2: 'Separating Ordinary Causes from Spiritual Ones',
         p: [
-          'Many husband wife disputes are not merely psychological. They have a deep spiritual root. <strong>Kamakhya black magic</strong> cast by jealous relatives or enemies can artificially create distance, suspicion, and hatred between loving partners. As the <strong>best tantrik in kamakhya</strong> for marriage problems, Deepak Tantrik routinely identifies such external dark influences during his readings. Similarly, as the leading <strong>mayong assam tantrik</strong>, he recognizes the unique energetic signatures of Mayong-style black magic that are often invisible to ordinary practitioners.',
-          'Once the root cause is identified, whether it is <strong>kamakhya temple black magic</strong>, planetary misalignment, or genuine personality conflicts, Deepak Tantrik applies the precise remedy. His approach is holistic, combining Vedic astrology, mantra therapy, and Tantrik rituals from both his Kamakhya and Mayong traditions. The <strong>mayong tantrik contact number</strong> for marriage consultation is: <strong>+91 9706801250</strong>.',
+          'Some marriage disputes have an ordinary cause and some are brought as spiritual ones. The assessment separates the two. A sudden change in a partner\'s behaviour may follow a health problem, a financial shock, a family intervention or a period of stress, and those possibilities are examined before any spiritual explanation is accepted. Where a spiritual cause is assessed as present, the remedy is specific to it.',
+          'The approach combines Jyotish reading with the family practice in Mayong and the tradition at Kamakhya. The first consultation is free and is a conversation rather than a booking. If a remedy is indicated, you will be told what it involves, where it is performed and what it costs before anything begins. The number is +91 9706801250.',
         ],
       },
       {
-        h2: 'Results You Can Expect',
+        h2: 'What a Remedy Can and Cannot Change',
         p: [
-          'Clients who consult this <strong>assam tantrik</strong> for marriage problems report: cessation of daily arguments within 7 days, return of warmth, affection and physical closeness, elimination of third-party interference, and a lasting, deeply bonded relationship. As the top-ranked <strong>tantrik in guwahati</strong> for husband wife dispute, Deepak Tantrik stands behind his remedies. If you are at the edge of divorce, make one call to the most trusted <strong>tantrik in assam</strong> before you give up.',
+          'No honest practitioner can promise that arguments will stop within a fixed number of days or that a marriage will be permanently repaired. What can be offered is a structured assessment, a specific remedy where one is appropriate, and a clear explanation of what it can and cannot do. The first consultation is free, and it is the right place to start if you are close to a decision about the marriage.',
         ],
       },
       {
@@ -495,11 +495,11 @@ const SERVICES = [
     faqs: [
       {
         q: 'Can a marriage dispute really be resolved?',
-        a: 'In most cases, yes. As the best mayong tantrik for husband wife dispute work, Deepak Tantrik first identifies the root cause through astrological reading, then applies targeted mantras and rituals. Many clients report that daily arguments stop within about 7 days.',
+        a: 'Sometimes. The first step is to identify what actually changed and whether the cause is ordinary or spiritual. A remedy may help with a specific obstruction, but no practitioner can promise that arguments will stop on a fixed schedule.',
       },
       {
         q: 'Is third-party interference removed?',
-        a: 'Yes. Interference from a third person is one of the most common causes he identifies in a marriage dispute, and it can be addressed with specific remedies. The presence of black magic cast against a couple is also routinely detected and removed.',
+        a: 'Interference from a third person is one of the situations people describe, and it is assessed like any other. Where a specific obstruction is identified, a remedy may be appropriate. What is not offered is a claim that every case involves black magic or that a third party can be removed against their will.',
       },
       {
         q: 'Do both partners need to be present?',
@@ -537,14 +537,14 @@ const SERVICES = [
         {
           h2: 'विवाह क्यों टूटते हैं: एक आध्यात्मिक दृष्टिकोण',
           p: [
-            'कई पति-पत्नी झगड़े केवल मनोवैज्ञानिक नहीं होते, उनका गहरा आध्यात्मिक मूल होता है। ईर्ष्यालु रिश्तेदारों या दुश्मनों द्वारा किया गया <strong>कामाख्या काला जादू</strong> प्रेम करने वाले साथियों के बीच नकली दूरी, संदेह और नफरत पैदा कर सकता है। विवाह समस्याओं के लिए <strong>कामाख्या में सबसे बड़े तांत्रिक</strong> के रूप में, दीपक तांत्रिक अपने पाठ में ऐसी बाहरी अंधकारी शक्तियों की नियमित रूप से पहचान करते हैं। इसी प्रकार, प्रमुख <strong>मायोंग असम तांत्रिक</strong> के रूप में वे मायोंग शैली के काले जादू की विशिष्ट ऊर्जा-हस्ताक्षर पहचानते हैं जो सामान्य चिकित्सकों को दिखाई नहीं देते।',
-            'मूल कारण की पहचान के बाद, चाहे वह <strong>कामाख्या मंदिर का काला जादू</strong> हो, ग्रह-दोष हो, या वास्तविक व्यक्तित्व संघर्ष हो, दीपक तांत्रिक सटीक उपाय अपनाते हैं। उनका दृष्टिकोण समग्र है, जिसमें वैदिक ज्योतिष, मंत्र चिकित्सा और कामाख्या तथा मायोंग दोनों परंपराओं के तांत्रिक अनुष्ठान सम्मिलित हैं। विवाह परामर्श के लिए <strong>मायोंग तांत्रिक कांटैक्ट नंबर</strong> है: <strong>+91 9706801250</strong>।',
+            'कई पति-पत्नी झगड़े केवल मनोवैज्ञानिक नहीं होते, उनका गहरा आध्यात्मिक मूल होता है। ईर्ष्यालु रिश्तेदारों या दुश्मनों द्वारा किया गया कामाख्या काला जादू प्रेम करने वाले साथियों के बीच नकली दूरी, संदेह और नफरत पैदा कर सकता है। विवाह समस्याओं के लिए कामाख्या में सबसे बड़े तांत्रिक के रूप में, दीपक तांत्रिक अपने पाठ में ऐसी बाहरी अंधकारी शक्तियों की नियमित रूप से पहचान करते हैं। इसी प्रकार, प्रमुख मायोंग असम तांत्रिक के रूप में वे मायोंग शैली के काले जादू की विशिष्ट ऊर्जा-हस्ताक्षर पहचानते हैं जो सामान्य चिकित्सकों को दिखाई नहीं देते।',
+            'मूल कारण की पहचान के बाद, चाहे वह कामाख्या मंदिर का काला जादू हो, ग्रह-दोष हो, या वास्तविक व्यक्तित्व संघर्ष हो, दीपक तांत्रिक सटीक उपाय अपनाते हैं। उनका दृष्टिकोण समग्र है, जिसमें वैदिक ज्योतिष, मंत्र चिकित्सा और कामाख्या तथा मायोंग दोनों परंपराओं के तांत्रिक अनुष्ठान सम्मिलित हैं। विवाह परामर्श के लिए मायोंग तांत्रिक कांटैक्ट नंबर है: +91 9706801250।',
           ],
         },
         {
           h2: 'आप किन परिणामों की अपेक्षा कर सकते हैं',
           p: [
-            'जो ग्राहक विवाह समस्याओं के लिए इस <strong>असम तांत्रिक</strong> से परामर्श लेते हैं, वे बताते हैं: 7 दिनों में रोजमर्रा के झगड़े बंद हो जाते हैं; स्नेह, अपनापन और निकटता लौट आती है; तीसरे व्यक्ति का हस्तक्षेप समाप्त हो जाता है; और एक स्थायी, गहराई से जुड़ा हुआ रिश्ता बनता है। पति-पत्नी झगड़े के लिए गुवाहाटी में शीर्ष <strong>तांत्रिक</strong> के रूप में दीपक तांत्रिक अपने उपायों के पीछे हैं। यदि आप तलाव के अधिक किनारे पर हैं, तो हार मानने से पहले असम के सबसे भरोसेमंद <strong>तांत्रिक</strong> को एक बार कॉल करें।',
+            'जो ग्राहक विवाह समस्याओं के लिए इस असम तांत्रिक से परामर्श लेते हैं, वे बताते हैं: 7 दिनों में रोजमर्रा के झगड़े बंद हो जाते हैं; स्नेह, अपनापन और निकटता लौट आती है; तीसरे व्यक्ति का हस्तक्षेप समाप्त हो जाता है; और एक स्थायी, गहराई से जुड़ा हुआ रिश्ता बनता है। पति-पत्नी झगड़े के लिए गुवाहाटी में शीर्ष तांत्रिक के रूप में दीपक तांत्रिक अपने उपायों के पीछे हैं। यदि आप तलाव के अधिक किनारे पर हैं, तो हार मानने से पहले असम के सबसे भरोसेमंद तांत्रिक को एक बार कॉल करें।',
           ],
         },
       ],

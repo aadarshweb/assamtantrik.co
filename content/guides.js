@@ -31,11 +31,11 @@ const GUIDES = [
       'best kamakhya tantrik',
     ],
     h1: 'About Kamakhya Temple, Guwahati',
-    sub: "The sacred seat of Shakti, a complete guide to India's most powerful spiritual destination and its resident tantriks.",
+    sub: "The sacred seat of Shakti in Guwahati, and a guide to its history, its festivals and the tantric practice associated with it.",
     h2: 'About Kamakhya Temple: The Shakti Peetha of Assam',
     intro: [
-      'Kamakhya Temple, located atop Nilachal Hill in Guwahati, Assam, is one of the 51 Shakti Peethas, the most sacred sites of goddess worship in Hinduism. According to the <em>Kalika Purana</em>, this is the spot where the <em>yoni</em> (womb) of the goddess Sati fell to earth after Lord Vishnu used his Sudarshana Chakra to dismember her body. This divine origin gives Kamakhya Temple a unique cosmological significance unmatched anywhere in India.',
-      'The temple complex is not just a place of devotion. It is the living epicenter of Tantrik Hinduism. <strong>Kamakhya temple tantriks</strong> have practiced here continuously since the 8th century CE. The Ambubachi Mela, held annually in June, draws hundreds of thousands of devotees and is called the "Tantrik Kumbh Mela" because it is the single largest gathering of genuine <strong>tantrik in kamakhya temple</strong> practitioners anywhere in the world.',
+      'Kamakhya Temple, located atop Nilachal Hill in Guwahati, Assam, is one of the 51 Shakti Peethas, the most sacred sites of goddess worship in Hinduism. According to the <em>Kalika Purana</em>, this is the spot where the <em>yoni</em> (womb) of the goddess Sati fell to earth after Lord Vishnu used his Sudarshana Chakra to dismember her body. That origin is why the site is treated as one of the most important Shakti centres in eastern India.',
+      'The temple complex is also the historic centre of tantric practice in the region. The Ambubachi Mela, held annually in June, draws large numbers of devotees and is sometimes called the Tantrik Kumbh Mela. If you are visiting for a consultation rather than darshan, the Mela is the busiest and most expensive period of the year.',
     ],
     image: '/images/religious.jpg',
     imageAlt: 'Shrine lamps burning at Kamakhya Temple on Nilachal Hill, Guwahati, Assam',
@@ -46,8 +46,8 @@ const GUIDES = [
         // and links; it does not compete for the term.
         h2: 'On Claims of "Kamakhya Temple Black Magic"',
         p: [
-          'The phrase generates enormous curiosity and fear in equal measure, and it is worth being clear about what it means. Kamakhya is a site of very great power that can be directed either way. Authentic <strong>kamakhya temple tantriks</strong> use it for healing and protection. The dark reputation comes from its misuse by a small number of unscrupulous practitioners, not from the temple itself.',
-          'Whether you are looking for <strong>kamakhya black magic</strong> removal specifically, what the warning signs are, and how the process works is set out on the <a href="/black-magic-removal-kamakhya">black magic removal page</a>. If you want to check that a practitioner is legitimate before approaching anyone, start with the <a href="/verify">verification page</a> instead.',
+          'The phrase generates enormous curiosity and fear in equal measure, and it is worth being clear about what it means. Kamakhya is a site of very great power that can be directed either way. Authentic kamakhya temple tantriks use it for healing and protection. The dark reputation comes from its misuse by a small number of unscrupulous practitioners, not from the temple itself.',
+          'Whether you are looking for kamakhya black magic removal specifically, what the warning signs are, and how the process works is set out on the <a href="/black-magic-removal-kamakhya">black magic removal page</a>. If you want to check that a practitioner is legitimate before approaching anyone, start with the <a href="/verify">verification page</a> instead.',
         ],
       },
       {
@@ -56,14 +56,14 @@ const GUIDES = [
         // writing 700 words each about the Mela compete with each other.
         h2: 'The Ambubachi Mela, in Brief',
         p: [
-          'Once a year the <strong>kamakhya temple tantriks</strong> who normally work in private emerge to perform public rituals during the Ambubachi Mela, which is the largest annual gathering of practitioners anywhere in the world. Deepak Tantrik takes part every year. The dates, the rules on Nilachal Hill and how to plan a visit are covered in full on the <a href="/ambubachi-mela-kamakhya">Ambubachi Mela guide</a> rather than repeated here.',
+          'Once a year the kamakhya temple tantriks who normally work in private emerge to perform public rituals during the Ambubachi Mela, which is the largest annual gathering of practitioners anywhere in the world. Deepak Tantrik takes part every year. The dates, the rules on Nilachal Hill and how to plan a visit are covered in full on the <a href="/ambubachi-mela-kamakhya">Ambubachi Mela guide</a> rather than repeated here.',
         ],
       },
       {
         h2: 'How to Find a Genuine Tantrik at Kamakhya',
         p: [
-          'Finding the <strong>best kamakhya tantrik</strong> is unfortunately more difficult than it appears. The area around the temple hosts hundreds of individuals claiming to be spiritual guides, but genuine practitioners are rare. The key markers of authenticity are: verifiable lineage of at least two or three generations of practice, initiation from a recognized guru, and a track record of resolved cases with client testimonials.',
-          'Deepak Tantrik meets all three criteria as the <strong>best tantrik in guwahati</strong>. His family lineage in Mayong, combined with his formal initiation at Kamakhya, makes him the most credentialed <strong>tantrik in guwahati</strong> available for consultation today. His phone number serves as the most reliable <strong>mayong tantrik contact</strong> and Kamakhya tantrik contact in one.',
+          'Finding a genuine tantrik at Kamakhya is harder than it looks. The area around the temple hosts many people claiming to be spiritual guides. The useful checks are a lineage of at least two or three generations, initiation from a named guru, a physical address, and a track record that can be verified rather than simply asserted.',
+          'Deepak Tantrik\'s family has practised in Mayong for seven generations, and he was initiated at Kamakhya Temple. Both facts are stated on the about page, and both can be checked against the two addresses published on this site. His phone number is the same one used for every kind of consultation.',
         ],
       },
       {
@@ -135,8 +135,8 @@ const GUIDES = [
     sub: "The complete story of India's most mysterious village, the ancient capital of tantra and black magic.",
     h2: 'What is Mayong, Assam?',
     intro: [
-      'Nestled on the banks of the Brahmaputra River in the Morigaon district of Assam, <strong>Mayong</strong> is a small village that carries an enormous historical and spiritual weight. Known as the <strong>land of black magic</strong>, Mayong has been synonymous with ancient Indian occult knowledge for over two millennia. The very name "Mayong" is believed to derive from the Sanskrit word <em>maya</em>, meaning illusion or supernatural power.',
-      'For anyone who has searched for a <strong>mayong assam black magic video</strong> online, the footage only scratches the surface of what this village truly represents. The real power of <strong>mayong assam tantrik</strong> tradition lies not in dramatic performances, but in centuries of preserved manuscripts, transmitted oral knowledge, and an unbroken lineage of practitioners who have safeguarded these secrets across generations.',
+      'Mayong is a village in the Morigaon district of Assam with a long reputation in Assamese folklore as a place associated with tantra and the occult. The name is traditionally linked to maya, meaning illusion. The historical record is thinner than the popular stories suggest, and that gap is worth understanding before treating any claim about the village as fact.',
+      'The useful history is not the dramatic footage but the surviving material: palm-leaf manuscripts, family oral traditions, and a continuous practice that has been passed down in the area. Some of that material is held by families, some is in the Mayong Museum, and some claims about it are exaggerated.',
     ],
     image: '/images/religious.jpg',
     imageAlt: 'Palm-leaf tantra manuscripts and ritual lamps from the Mayong tantra tradition in Assam',
@@ -146,35 +146,35 @@ const GUIDES = [
         p: [
           'Archaeological evidence suggests that the occult tradition of Mayong dates back to the pre-Vedic era. References to Mayong appear in the <em>Kalika Purana</em> and the <em>Yogini Tantra</em>, two of the most sacred texts of Tantrik Hinduism. These texts describe Mayong as a seat of <em>Kamakhya Shakti</em>, linking it directly to the Kamakhya Temple tradition in Guwahati.',
           'Medieval traders and explorers from China, Tibet and Southeast Asia wrote with awe about visiting Mayong and witnessing healers who could cure diseases, control animals, make objects float in the air, and neutralize the most potent poisons simply by touch. Marco Polo\'s contemporaries referenced "the magicians of lower Assam" in their journals.',
-          'The <strong>mayong assam tantrik contact number</strong> you find on modern websites like this one represents the end of a very long chain of transmission. Every authentic <strong>mayong tantrik</strong> is a living archive of this ancient knowledge.',
+          'The mayong assam tantrik contact number you find on modern websites like this one represents the end of a very long chain of transmission. Every authentic mayong tantrik is a living archive of this ancient knowledge.',
         ],
       },
       {
         h2: 'The Palm Leaf Manuscripts of Mayong',
         p: [
-          'One of the most remarkable aspects of the <strong>mayong assam</strong> tradition is the physical documentation of its knowledge. Hundreds of palm-leaf manuscripts discovered in Mayong describe in precise detail: rituals for healing snakebite without antivenom, techniques for communicating with ancestral spirits, methods for identifying and breaking curses, and procedures for conducting Tantrik weddings and blessings.',
-          'The Mayong Museum in Assam houses some of these manuscripts, though the most sensitive ones remain in the custody of lineage holders like Deepak Tantrik, the <strong>best mayong tantrik</strong> alive today who can still read and apply these original texts. This makes the <strong>mayong tantrik contact</strong> number on this website uniquely valuable: it connects you directly to a living practitioner of this unbroken tradition.',
+          'Mayong has a substantial body of palm-leaf material associated with the tantric tradition, and some of it is held by families and by the Mayong Museum. The more dramatic claims made about these manuscripts are difficult to verify, and it is worth treating them with caution rather than as settled history.',
+          'The museum houses part of the material, while other texts remain with lineage holders. Deepak Tantrik is one of the practitioners who can still read the script and apply the family method. The number on this site reaches him directly.',
         ],
       },
       {
         h2: 'Mayong and Kamakhya: A Sacred Twin Power',
         p: [
-          'To understand Mayong fully, one must understand its relationship with the Kamakhya Temple in Guwahati. Scholars of <strong>assam tantrik</strong> tradition describe these two sites as the two poles of a single spiritual axis. Kamakhya is the goddess-force (Shakti), and Mayong is where that force is channeled through human practitioners.',
-          'This is precisely why Deepak Tantrik, born in Mayong and initiated at Kamakhya, represents the ultimate synthesis of this tradition. As the <strong>best tantrik in kamakhya</strong> and the most authentic <strong>mayong tantrik</strong>, his authority spans both sacred poles. He is the most complete <strong>tantrik in assam</strong> practicing today.',
+          'To understand Mayong fully, one must understand its relationship with the Kamakhya Temple in Guwahati. Scholars of assam tantrik tradition describe these two sites as the two poles of a single spiritual axis. Kamakhya is the goddess-force (Shakti), and Mayong is where that force is channeled through human practitioners.',
+          'Deepak Tantrik was born in Mayong and initiated at Kamakhya, and the two locations are the basis of his practice. That combination is the claim the site makes; the reader can check the addresses and the lineage against it.',
         ],
       },
       {
         h2: 'Modern Mayong: Tourism, Documentaries, and Authenticity',
         p: [
-          'In recent years, Mayong has attracted significant media attention. Documentaries, travel shows, and countless <strong>mayong assam black magic video</strong> recordings have been made here. While this tourism is welcome, it has also created a problem: a flood of fake practitioners claiming to be <strong>mayong assam tantrik</strong> guides who perform theatrical shows for visitors with no genuine knowledge.',
-          'Finding a real <strong>mayong tantrik contact number</strong> is now harder than ever. If you are seeking genuine help, for love problems, black magic protection, or spiritual guidance, always verify the lineage of the person you consult. Deepak Tantrik\'s family has lived and practiced in Mayong for seven generations. His initiation at the Kamakhya Temple adds an additional layer of authentic authority that no theatrical performer can replicate.',
+          'In recent years, Mayong has attracted significant media attention. Documentaries, travel shows, and countless mayong assam black magic video recordings have been made here. While this tourism is welcome, it has also created a problem: a flood of fake practitioners claiming to be mayong assam tantrik guides who perform theatrical shows for visitors with no genuine knowledge.',
+          'Finding a real mayong tantrik contact number is now harder than ever. If you are seeking genuine help, for love problems, black magic protection, or spiritual guidance, always verify the lineage of the person you consult. Deepak Tantrik\'s family has lived and practiced in Mayong for seven generations. His initiation at the Kamakhya Temple adds an additional layer of authentic authority that no theatrical performer can replicate.',
         ],
       },
       {
         h2: 'Mayong Today: What the Village Is Actually Like',
         p: [
           'Because the village has become a subject of online curiosity, it is worth being clear about what it is. Mayong remains a small settlement in Morigaon district with a population counted in a few hundred households, and the overwhelming majority of residents are ordinary families living ordinary lives. The rituals associated with the place are performed by lineage families, not as a public performance, and are not staged for visitors.',
-          'The Mayong Museum holds a collection of the palm-leaf manuscripts and related artefacts, and is the one place where the written tradition can be seen properly. Outside the museum and the ashram of a lineage practitioner, there is very little to see, and anyone promising you a guided experience of live magic is not being straight with you. That gap between the online image and the real place is precisely why so many fraudulent <strong>mayong assam tantrik</strong> operators operate under the name.',
+          'The Mayong Museum holds a collection of the palm-leaf manuscripts and related artefacts, and is the one place where the written tradition can be seen properly. Outside the museum and the ashram of a lineage practitioner, there is very little to see, and anyone promising you a guided experience of live magic is not being straight with you. That gap between the online image and the real place is precisely why so many fraudulent mayong assam tantrik operators operate under the name.',
         ],
       },
       {
@@ -231,8 +231,8 @@ const GUIDES = [
     sub: 'Your complete guide to identifying genuine practitioners in Kamakhya Temple and Mayong, and avoiding fraud.',
     h2: 'Why Finding a Real Assam Tantrik Is So Difficult',
     intro: [
-      'The demand for genuine spiritual help has never been higher, and neither has the number of fraudulent practitioners. Anyone who searches for an <strong>assam tantrik</strong> or looks up a <strong>mayong tantrik contact number</strong> online will be flooded with hundreds of results, most of them fake. This guide, written from the perspective of a genuine <strong>tantrik in assam</strong>, will help you separate authentic practitioners from charlatans.',
-      'The <strong>kamakhya temple tantriks</strong> and <strong>mayong assam tantrik</strong> traditions are among India\'s most powerful and sacred. They deserve to be approached with discernment and respect. This guide will give you the tools to do that.',
+      'The demand for spiritual help is high, and so is the number of people willing to exploit it. Anyone searching for a tantrik in Assam will find hundreds of results, many of them fake. This guide sets out the checks that separate a genuine practitioner from a fraudulent one, and it applies to this site as much as to any other.',
+      'The Kamakhya and Mayong traditions deserve to be approached with discernment. The checks below are practical: a physical address, a stated lineage, a free first conversation, a fixed fee, and a refusal to promise a guaranteed result.',
     ],
     image: '/images/portrait.jpg',
     imageAlt: 'Deepak Tantrik, seventh-generation Mayong tantra practitioner and Kamakhya initiated, Assam',
@@ -240,28 +240,28 @@ const GUIDES = [
       {
         h2: '5 Red Flags of a Fake Tantrik or Astrologer',
         p: [
-          '<strong>1. Upfront money demands before any consultation.</strong> A genuine <strong>best kamakhya tantrik</strong> will speak with you first to understand your situation before discussing any fees. Fraudsters demand large sums immediately, claiming the ritual is urgent.',
-          '<strong>2. Guaranteed results in unrealistically short times.</strong> A real <strong>tantrik in kamakhya temple</strong> will give you an honest timeline, typically 7 to 21 days for most remedies, not 24 hours.',
-          '<strong>3. No verifiable lineage or location.</strong> Any authentic <strong>mayong assam tantrik</strong> will be able to state their family background, their guru\'s name, and their physical location clearly. Ask for these before paying anything.',
-          '<strong>4. Claims to be the only or most powerful.</strong> Genuine practitioners of <strong>tantrik in assam</strong> tradition are deeply humble. Arrogant claims of exclusive power are a hallmark of fraud.',
-          '<strong>5. No physical office or verifiable address.</strong> The <strong>best tantrik in guwahati</strong> will have a real, physical location, at the Kamakhya Temple, in Mayong, or elsewhere, that you can visit in person.',
+          '1. Upfront money demands before any consultation. A genuine best kamakhya tantrik will speak with you first to understand your situation before discussing any fees. Fraudsters demand large sums immediately, claiming the ritual is urgent.',
+          '2. Guaranteed results in unrealistically short times. A real tantrik in kamakhya temple will give you an honest timeline, typically 7 to 21 days for most remedies, not 24 hours.',
+          '3. No verifiable lineage or location. Any authentic mayong assam tantrik will be able to state their family background, their guru\'s name, and their physical location clearly. Ask for these before paying anything.',
+          '4. Claims to be the only or most powerful. Genuine practitioners of tantrik in assam tradition are deeply humble. Arrogant claims of exclusive power are a hallmark of fraud.',
+          '5. No physical office or verifiable address. The best tantrik in guwahati will have a real, physical location, at the Kamakhya Temple, in Mayong, or elsewhere, that you can visit in person.',
         ],
       },
       {
         h2: '5 Signs of a Genuine Assam Tantrik or Astrologer',
         p: [
-          '<strong>1. Multi-generational family lineage.</strong> The most trustworthy <strong>mayong tantrik</strong> practitioners have been in the same family for generations. Deepak Tantrik\'s family has practiced in Mayong for seven generations, verifiable through community elders.',
-          '<strong>2. Formal initiation (diksha) from a recognized guru.</strong> Deepak Tantrik received his formal initiation at the Kamakhya Temple, making him one of the few truly initiated <strong>kamakhya temple tantriks</strong>.',
-          '<strong>3. Verifiable client testimonials and case histories.</strong> The <strong>best tantrik in kamakhya</strong> will have dozens, ideally hundreds, of verifiable success stories from real clients.',
-          '<strong>4. Ethical framework and confidentiality.</strong> A real <strong>tantrik in guwahati</strong> will never ask you to harm anyone, never perform unethical rituals, and will maintain absolute confidentiality about your personal situation.',
-          '<strong>5. Transparent pricing with no hidden escalation.</strong> A genuine <strong>assam tantrik</strong> explains all costs upfront. No surprise escalations or "extra rituals needed" after you have paid.',
+          '1. Multi-generational family lineage. The most trustworthy mayong tantrik practitioners have been in the same family for generations. Deepak Tantrik\'s family has practiced in Mayong for seven generations, verifiable through community elders.',
+          '2. Formal initiation (diksha) from a recognized guru. Deepak Tantrik received his formal initiation at the Kamakhya Temple, making him one of the few truly initiated kamakhya temple tantriks.',
+          '3. Verifiable client testimonials and case histories. The best tantrik in kamakhya will have dozens, ideally hundreds, of verifiable success stories from real clients.',
+          '4. Ethical framework and confidentiality. A real tantrik in guwahati will never ask you to harm anyone, never perform unethical rituals, and will maintain absolute confidentiality about your personal situation.',
+          '5. Transparent pricing with no hidden escalation. A genuine assam tantrik explains all costs upfront. No surprise escalations or "extra rituals needed" after you have paid.',
         ],
       },
       {
         h2: 'Why Deepak Tantrik Is the Safest Choice',
         p: [
-          'Among all practitioners across the <strong>tantrik in assam</strong> landscape, Deepak Tantrik stands out for four specific reasons. First, his dual authority: born in Mayong, the most credentialed <strong>best mayong tantrik</strong> background possible, and initiated at Kamakhya, cementing his status as a <strong>best kamakhya tantrik</strong>. Second, his 25+ year track record with 10,000+ solved cases. Third, his commitment to ethical practice; he has never performed a ritual intended to harm. Fourth, his accessibility: the <strong>mayong tantrik contact number</strong> +91 9706801250 connects you directly to him, not to an intermediary.',
-          'Whether you need <strong>kamakhya temple black magic</strong> removal, love problem solutions, vashikaran, or guidance for business and career, Deepak Tantrik\'s combination of Mayong lineage and Kamakhya initiation gives you access to the most powerful authentic spiritual help in India.',
+          'Deepak Tantrik has practised for more than 25 years. He was born into a seven-generation Mayong tantra lineage and was initiated at Kamakhya Temple. He publishes two physical addresses and a direct phone number, and he states plainly that no genuine practitioner can guarantee a result. The number +91 9706801250 reaches him directly rather than an intermediary.',
+          'The practice covers relationship and marriage problems, family conflict, business difficulties and situations described as a negative presence. The combination of the Mayong lineage and the Kamakhya initiation is the basis of the practice, not a claim of exclusivity.',
         ],
       },
       {

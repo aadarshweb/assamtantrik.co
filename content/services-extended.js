@@ -378,7 +378,7 @@ const SERVICES_EXT = [
       },
       {
         q: 'Is my problem confidential?',
-        a: 'Yes. Everything discussed is confidential as a working rule of the practice, not a courtesy. No visitor is asked to be named or photographed, and the testimonials on this site carry only a first name and a city because that is what clients agreed to give.',
+        a: 'Yes. Everything discussed is confidential as a working rule of the practice, not a courtesy. No visitor is asked to be named or photographed, and case details are not published.',
       },
     ],
     testimonial: {

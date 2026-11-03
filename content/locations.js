@@ -26,47 +26,47 @@ const LOCATIONS = [
       'mayong tantrik contact number',
     ],
     h1: 'Best Tantrik in Mayong, Assam',
-    sub: "Experience the ancient, authentic spiritual remedies of Mayong with the region's most trusted practitioner.",
+    sub: "A family practice in Mayong, Assam, with initiation at Kamakhya Temple in Guwahati.",
     h2: 'The Ancient Power of Mayong',
     intro: [
-      'Mayong, the historical capital of magic and mysticism in Assam, is renowned worldwide for its deep spiritual traditions. However, finding genuine guidance here can be challenging. Deepak Tantrik is widely regarded as the best tantrik in Mayong due to his deep ancestral roots and unparalleled expertise in these ancient sciences.',
-      'Serving the people of Mayong and beyond for decades, Deepak Tantrik ensures that the sacred power of Mayong is used solely for the betterment of lives. Whether you are dealing with unsolvable relationship crises, sudden business downfalls, or the heavy burden of negative energies, his Mayong-specific rituals provide fast and permanent relief.',
-      'Connect with the pure spiritual essence of Assam. Contact Deepak Tantrik today for a confidential consultation and step out of the darkness and into a peaceful, prosperous life.',
+      'Mayong in Morigaon district has a long association with tantra in Assamese folklore, and families there have practised it for generations. Deepak Tantrik was born into one of those families. The practice is not a performance: it is a working tradition of assessment, protection and repair, carried out from the family ashram.',
+      'People bring a range of problems: relationships under pressure, business difficulties, family conflict, and situations they describe as a heavy or negative presence. Not all of these call for a remedy. The first conversation is used to separate an ordinary cause from a spiritual one and to explain honestly what, if anything, can be done.',
+      'Consultations are confidential and can be taken by phone or WhatsApp. If you plan to visit, the ashram is in Mayong and the other office is at Kamakhya Temple in Guwahati, about 80 kilometres apart. The contact number is +91 9706801250.',
     ],
     image: '/images/religious.jpg',
     imageAlt: 'Mayong tantra ritual lamps and vermilion, the ancestral seat of the best tantrik in Mayong',
     deep: [
       {
-        h2: 'Mayong: The Land Where Magic Was Born',
+        h2: 'The Mayong Lineage',
         p: [
-          'Every person who has watched a <strong>mayong assam black magic video</strong> understands that Mayong is not just a village. It is a living, breathing archive of some of India\'s most powerful occult knowledge. The <strong>mayong assam tantrik</strong> tradition is spoken of with reverence across India and South East Asia. Ancient texts, passed orally for centuries and later inscribed on palm leaves, describe rituals of transformation, healing and protection that modern science cannot explain. As the most authentic <strong>mayong tantrik</strong> alive today, Deepak Tantrik is the keeper of this tradition.',
-          'His <strong>mayong tantrik contact</strong> is sought by people from Delhi, Mumbai, Kolkata, and even abroad. When you dial the <strong>mayong tantrik contact number</strong> listed on this page, you are connecting directly with a lineage that stretches back over 500 years. There are no middlemen and no false promises, only the pure, ancient power of Mayong.',
+          'Mayong\'s reputation rests on a long oral tradition rather than on a single written text. Families in the area preserved practices for protection, healing and conflict resolution, and some of that material was later recorded on palm leaves. Deepak Tantrik\'s training comes from that family line. It is a practical tradition, and it is presented here without the claim that it can explain everything or solve every problem.',
+          'Clients come from Assam and from other parts of India, and some consult remotely. The number on this page reaches Deepak Tantrik directly. There is no call centre and no middleman, and the first conversation is free. What you will not hear is a promise of a guaranteed outcome, because no honest practitioner can make one.',
         ],
       },
       {
-        h2: 'From Mayong to Kamakhya: A Sacred Journey',
+        h2: 'From Mayong to Kamakhya',
         p: [
-          'What makes Deepak Tantrik unique among all <strong>assam tantrik</strong> practitioners is his combined authority. Born and trained in Mayong, he later moved to Guwahati to deepen his practice at the Kamakhya Temple. This rare combination makes him simultaneously the <strong>best mayong tantrik</strong> and the <strong>tantrik in guwahati</strong> most qualified for the widest range of problems. Whether your issue is love, marriage, business or a spiritual attack, he has the remedy.',
+          'Deepak Tantrik was born and trained in Mayong and later moved to Guwahati, where he was initiated at Kamakhya Temple. The two locations are part of one practice rather than two competing ones. Where a remedy is appropriate, he will tell you which location suits the case and why. He will also tell you when a problem is not a spiritual one.',
         ],
       },
       {
-        h2: 'Top Tantrik in Mayong: Reviews, Distance from Kamakhya, and How to Contact',
+        h2: 'Distance, Access and How to Contact',
         p: [
-          'Consistently ranked as the <strong>top tantrik in mayong</strong>, Deepak Tantrik\'s reputation is built on real results and authentic lineage. <strong>Mayong tantrik reviews</strong> from thousands of satisfied clients across India confirm his status as the most trusted and <strong>mayong famous tantrik</strong> of this generation. His family has practiced in Mayong for seven generations, making him the most authentic spiritual authority in the region. Many seekers travelling for consultation ask about the <strong>mayong to kamakhya temple distance</strong>: it is approximately 80 kilometres. Deepak Tantrik serves both Mayong and the Kamakhya Temple in Guwahati, making it easy to consult him from either location. For consultation, use the <strong>mayong assam tantrik contact number whatsapp</strong>: <strong>+91 9706801250</strong>. WhatsApp and voice calls are both available.',
+          'The practical questions people ask before visiting are usually about distance and access. Mayong is approximately 80 kilometres from Kamakhya Temple in Guwahati, and Deepak Tantrik practises at both locations. His family has practised in Mayong for seven generations, and he was initiated at Kamakhya. For a consultation, call or message +91 9706801250. WhatsApp and voice calls are both available. If you are travelling, say so when you call and you will be told which location is appropriate.',
         ],
       },
     ],
     faqs: [
       {
-        q: 'Who is the best tantrik in Mayong?',
-        a: 'Deepak Tantrik is regarded as the best tantrik in Mayong. His family has practiced Mayong tantra for seven generations and he holds formal diksha from the Kamakhya Temple, so he brings both lineages to every case. Contact: +91 9706801250.',
+        q: 'Who is Deepak Tantrik?',
+        a: 'Deepak Tantrik was born into a family that has practised Mayong tantra for seven generations and was initiated at the Kamakhya Temple. He works from the family ashram in Mayong and an office at Kamakhya Temple in Guwahati. Contact: +91 9706801250.',
       },
       {
         q: 'What is the distance from Mayong to Kamakhya Temple?',
         a: 'Approximately 80 kilometres. Deepak Tantrik practices at both locations, so you can consult him at the Kamakhya Temple in Guwahati or at his Mayong Ashram in Morigaon, whichever suits you.',
       },
       {
-        q: 'Can I consult the best tantrik in Mayong remotely?',
+        q: 'Can I consult remotely?',
         a: 'Yes. The first consultation can be taken by phone or WhatsApp on +91 9706801250. The remedy is then performed at whichever of the two locations is appropriate for the case.',
       },
     ],
@@ -101,20 +101,20 @@ const LOCATIONS = [
         {
           h2: 'मायोंग: जहाँ जादू का जन्म हुआ',
           p: [
-            'जिसने कभी <strong>मायोंग असम काला जादू वीडियो</strong> देखा है, वह जानता है कि मायोंग केवल एक गाँव नहीं है। यह भारत के कुछ सबसे शक्तिशाली ओकल्ट ज्ञान का जीवंत और सजीव अभिलेखागार है। <strong>मायोंग असम तांत्रिक</strong> परंपरा की भारत और दक्षिणपूर्व एशिया में गहरी श्रद्धा है। सदियों तक मौखिक रूप से प्राप्त और बाद में ताड़पत्रों पर लिखित प्राचीन ग्रंथ परिवर्तन, उपचार और सुरक्षा के ऐसे अनुष्ठानों का वर्णन करते हैं जिनकी व्याख्या आधुनिक विज्ञान नहीं कर पाता। आज जीवित सर्वाधिक प्रामाणिक <strong>मायोंग तांत्रिक</strong> के रूप में दीपक तांत्रिक इसी परंपरा के रक्षक हैं।',
-            'दिल्ली, मुंबई, कोलकाता और यहाँ तक कि विदेश से लोग उनका <strong>मायोंग तांत्रिक कांटैक्ट</strong> खोजते हैं। इस पृष्ठ पर दिए <strong>मायोंग तांत्रिक कांटैक्ट नंबर</strong> पर फोन करने पर आप सीधे 500 वर्ष से भी अधिक पुरानी वंश से जुड़ जाते हैं। कोई बिचौलिया नहीं, कोई झूठा वादा नहीं, केवल मायोंग की शुद्ध प्राचीन शक्ति।',
+            'जिसने कभी मायोंग असम काला जादू वीडियो देखा है, वह जानता है कि मायोंग केवल एक गाँव नहीं है। यह भारत के कुछ सबसे शक्तिशाली ओकल्ट ज्ञान का जीवंत और सजीव अभिलेखागार है। मायोंग असम तांत्रिक परंपरा की भारत और दक्षिणपूर्व एशिया में गहरी श्रद्धा है। सदियों तक मौखिक रूप से प्राप्त और बाद में ताड़पत्रों पर लिखित प्राचीन ग्रंथ परिवर्तन, उपचार और सुरक्षा के ऐसे अनुष्ठानों का वर्णन करते हैं जिनकी व्याख्या आधुनिक विज्ञान नहीं कर पाता। आज जीवित सर्वाधिक प्रामाणिक मायोंग तांत्रिक के रूप में दीपक तांत्रिक इसी परंपरा के रक्षक हैं।',
+            'दिल्ली, मुंबई, कोलकाता और यहाँ तक कि विदेश से लोग उनका मायोंग तांत्रिक कांटैक्ट खोजते हैं। इस पृष्ठ पर दिए मायोंग तांत्रिक कांटैक्ट नंबर पर फोन करने पर आप सीधे 500 वर्ष से भी अधिक पुरानी वंश से जुड़ जाते हैं। कोई बिचौलिया नहीं, कोई झूठा वादा नहीं, केवल मायोंग की शुद्ध प्राचीन शक्ति।',
           ],
         },
         {
           h2: 'मायोंग से कामाख्या तक: एक पवित्र यात्रा',
           p: [
-            'सभी <strong>असम तांत्रिक</strong> चिकित्सकों में दीपक तांत्रिक की विशिष्टता उनकी संयुक्त प्राधिकारिता में है। मायोंग में जन्मे और प्रशिक्षित हुए, वे बाद में अपने अभ्यास को गहरा करने और कामाख्या मंदिर की दीक्षा पाने के लिए गुवाहाटी गए। यह दुर्लभ संयोजन उन्हें एक साथ <strong>मायोंग के सर्वश्रेष्ठ तांत्रिक</strong> और <strong>गुवाहाटी में तांत्रिक</strong> बनाता है। चाहे आपकी समस्या प्रेम हो, विवाह हो, व्यापार हो या आध्यात्मिक आक्रमण, उनके पास उपाय है।',
+            'सभी असम तांत्रिक चिकित्सकों में दीपक तांत्रिक की विशिष्टता उनकी संयुक्त प्राधिकारिता में है। मायोंग में जन्मे और प्रशिक्षित हुए, वे बाद में अपने अभ्यास को गहरा करने और कामाख्या मंदिर की दीक्षा पाने के लिए गुवाहाटी गए। यह दुर्लभ संयोजन उन्हें एक साथ मायोंग के सर्वश्रेष्ठ तांत्रिक और गुवाहाटी में तांत्रिक बनाता है। चाहे आपकी समस्या प्रेम हो, विवाह हो, व्यापार हो या आध्यात्मिक आक्रमण, उनके पास उपाय है।',
           ],
         },
         {
           h2: 'मायोंग में शीर्ष तांत्रिक: समीक्षाएं, कामाख्या से दूरी और संपर्क कैसे करें',
           p: [
-            'लगातार <strong>मायोंग में शीर्ष तांत्रिक</strong> के रूप में सूचीबद्ध, दीपक तांत्रिक की प्रतिष्ठा वास्तविक परिणामों और प्रामाणिक वंश पर आधारित है। भारत भर से हजारों संतुष्ट ग्राहकों की <strong>मायोंग तांत्रिक समीक्षाएं</strong> पुष्टि करती हैं कि वे इस पीढ़ी के सबसे भरोसेमंद और <strong>मायोंग प्रसिद्ध तांत्रिक</strong> हैं। उनका परिवार सात पीढ़ियों से मायोंग में रहा है, जो उन्हें क्षेत्र का सर्वाधिक प्रामाणिक आध्यात्मिक प्राधिकारी बनाता है। परामर्श के लिए यात्रा करने वाले अनेक लोग <strong>मायोंग से कामाख्या मंदिर की दूरी</strong> पूछते हैं: यह लगभग 80 किलोमीटर है। दीपक तांत्रिक दोनों स्थानों पर सेवा देते हैं, इसलिए आप कहीं से भी परामर्श ले सकते हैं। संपर्क के लिए <strong>मायोंग असम तांत्रिक कांटैक्ट नंबर व्हाट्सएप</strong> का उपयोग करें: <strong>+91 9706801250</strong>। व्हाट्सएप और वॉइस कॉल दोनों उपलब्ध हैं।',
+            'लगातार मायोंग में शीर्ष तांत्रिक के रूप में सूचीबद्ध, दीपक तांत्रिक की प्रतिष्ठा वास्तविक परिणामों और प्रामाणिक वंश पर आधारित है। भारत भर से हजारों संतुष्ट ग्राहकों की मायोंग तांत्रिक समीक्षाएं पुष्टि करती हैं कि वे इस पीढ़ी के सबसे भरोसेमंद और मायोंग प्रसिद्ध तांत्रिक हैं। उनका परिवार सात पीढ़ियों से मायोंग में रहा है, जो उन्हें क्षेत्र का सर्वाधिक प्रामाणिक आध्यात्मिक प्राधिकारी बनाता है। परामर्श के लिए यात्रा करने वाले अनेक लोग मायोंग से कामाख्या मंदिर की दूरी पूछते हैं: यह लगभग 80 किलोमीटर है। दीपक तांत्रिक दोनों स्थानों पर सेवा देते हैं, इसलिए आप कहीं से भी परामर्श ले सकते हैं। संपर्क के लिए मायोंग असम तांत्रिक कांटैक्ट नंबर व्हाट्सएप का उपयोग करें: +91 9706801250। व्हाट्सएप और वॉइस कॉल दोनों उपलब्ध हैं।',
           ],
         },
       ],
@@ -162,40 +162,40 @@ const LOCATIONS = [
       'aghori tantrik in guwahati',
     ],
     h1: 'Authentic Tantrik Baba in Guwahati & Mayong',
-    sub: "Consult Guwahati's most trusted spiritual guide for genuine, life-changing Vedic solutions.",
-    h2: 'Genuine Spiritual Healing in Guwahati',
+    sub: "A Mayong lineage practice, with initiation at Kamakhya Temple in Guwahati.",
+    h2: 'A Practice Based at Kamakhya',
     intro: [
-      'In a fast-paced city like Guwahati, stress, relationship breakups, and business failures are common. But when these problems persist despite your best efforts, it is time to seek spiritual intervention. Deepak Tantrik is widely recognized as the most effective Tantrik Baba in Guwahati.',
-      'Serving the people of Guwahati for over 25 years from the sacred grounds of the Kamakhya Temple, he offers profound astrological insights and powerful Tantrik remedies. Unlike many who make false promises, Deepak Tantrik\'s approach is deeply rooted in pure Vedic traditions, ensuring safe and positive outcomes.',
-      'Whether you need a love problem solution, protection from negative energies, or guidance for your career, consult the trusted expert right here in Guwahati. Experience the peace and prosperity that comes from authentic spiritual healing.',
+      'People in Guwahati bring relationship problems, business difficulties and family conflict to a consultation for reasons that are often practical as well as spiritual. Deepak Tantrik practises at Kamakhya Temple and at his family ashram in Mayong. The first step is a conversation about what is actually happening, not a ritual booked in advance.',
+      'He has practised for more than 25 years and was initiated at Kamakhya Temple. The approach is rooted in Jyotish and the Mayong family tradition, and it is deliberately plain: an assessment first, an explanation of what a remedy can and cannot do, and a fixed fee quoted before anything begins. No outcome is guaranteed.',
+      'If you are unsure whether your problem is appropriate for a consultation, describe it in your own words. The first consultation is free, and the answer may be that you need a different kind of help. You will be told that honestly rather than sold a remedy.',
     ],
     image: '/images/portrait.jpg',
     imageAlt: 'Deepak Tantrik, tantrik baba in Guwahati practicing near the Kamakhya Temple, Nilachal Hill',
     deep: [
       {
-        h2: 'About Kamakhya Temple: The Power Source',
+        h2: 'The Kamakhya Temple',
         p: [
-          'Anyone seeking to understand the power behind a genuine <strong>tantrik in guwahati</strong> must first learn <strong>about kamakhya temple</strong>. Situated atop Nilachal Hill in Guwahati, Kamakhya Temple is one of the 51 Shakti Peethas, the most sacred sites of goddess worship in all of India. It is the supreme seat of Shakti, and the annual Ambubachi Mela draws hundreds of thousands of devotees and <strong>kamakhya temple tantriks</strong> from across Asia. The spiritual energy here is unparalleled, making it the ideal location for the most powerful rituals.',
-          'Among the many <strong>kamakhya temple tantriks</strong>, Deepak Tantrik holds a distinct position due to his Mayong heritage. As the <strong>best kamakhya tantrik</strong> who was born in Mayong, he channels both streams of ancient power simultaneously. Whether you need to remove <strong>kamakhya temple black magic</strong>, find love, or achieve success in business, no <strong>tantrik baba in guwahati</strong> is more qualified.',
+          'Kamakhya Temple sits on Nilachal Hill in Guwahati and is one of the 51 Shakti Peethas. The annual Ambubachi Mela draws large numbers of pilgrims, and the site has been central to tantric practice in the region for centuries. Deepak Tantrik was initiated here, and he maintains an office near the temple at Malakhuwa, Guwahati 781010.',
+          'His distinctive position comes from the combination of that initiation and his Mayong family lineage. The two are treated as one practice, not as competing claims. Where a case calls for work at the temple, it is done there; where the family tradition is more appropriate, it is done at the Mayong ashram. You will be told which and why.',
         ],
       },
       {
-        h2: 'Why Choose the Best Tantrik in Guwahati?',
+        h2: 'How to Check a Practitioner Before You Pay',
         p: [
-          'Guwahati is a city of spiritual significance. But with many claiming to be the <strong>best tantrik in guwahati</strong>, finding a genuine practitioner is a challenge. Deepak Tantrik\'s 25+ years of practice at the Kamakhya Temple, combined with his ancestral roots as a <strong>mayong assam tantrik</strong>, set him apart completely. The <strong>mayong assam tantrik contact number</strong> on this website connects you directly to him. No assistants, no delays.',
+          'Guwahati has many people offering spiritual services, and it is reasonable to be cautious. The useful checks are simple: a physical address you can visit, a stated lineage, a free first conversation, and a refusal to promise a guaranteed result. Deepak Tantrik publishes both addresses on this site, and the number reaches him directly rather than an assistant.',
         ],
       },
       {
-        h2: 'Kamakhya Mandir Tantrik: Guwahati\'s Most Reachable Spiritual Authority',
+        h2: 'The Kamakhya Practice',
         p: [
-          'As the foremost <strong>kamakhya mandir tantrik</strong> in Guwahati, Deepak Tantrik has dedicated decades to mastering the sacred rituals of Maa Kamakhya. Revered as the <strong>kamakhya mandir ke sabse bade tantrik</strong>, his authority in <strong>kamakhya mandir tantrik puja</strong> draws seekers from across India and beyond. As a true <strong>maa kamakhya mandir tantric</strong>, he performs rare Tantrik rites that are only possible for someone born into the Mayong lineage and fully initiated at the Kamakhya Temple. Whether you are searching for an <strong>aghori tantrik in guwahati</strong>, a <strong>kamakhya mandir tantrik baba</strong> for a specific ritual, or the most powerful <strong>kamakhya mandir me tantrik</strong> for black magic removal, Deepak Tantrik stands as the established authority. His consultation centre near the Kamakhya Temple makes him the most accessible genuine <strong>tantrik baba guwahati</strong> available today. Get the <strong>kamakhya best tantrik contact number</strong> and the <strong>kamakhya tantrik contact</strong> directly: <strong>+91 9706801250</strong>.',
+          'The Kamakhya practice is centred on the rituals associated with the temple and the family tradition, and it is described in plain language rather than with superlatives. If you are looking for a specific ritual, describe it when you call and you will be told whether it is something he performs, where it would take place, and what it involves. The direct number is +91 9706801250.',
         ],
       },
     ],
     faqs: [
       {
-        q: 'Who is the best tantrik baba in Guwahati?',
-        a: 'Deepak Tantrik is the most widely recommended tantrik baba in Guwahati. He has practiced for 25+ years at the Kamakhya Temple and was born into a seven-generation Mayong tantra lineage, a combination very few practitioners have. Call +91 9706801250.',
+        q: 'Who is Deepak Tantrik?',
+        a: 'Deepak Tantrik has practised for more than 25 years and was initiated at the Kamakhya Temple. He was born into a seven-generation Mayong tantra lineage and works at both Kamakhya and Mayong. Call +91 9706801250.',
       },
       {
         q: 'Where can I meet a tantrik baba in Guwahati in person?',
@@ -238,20 +238,20 @@ const LOCATIONS = [
         {
           h2: 'कामाख्या मंदिर के बारे में: शक्ति का स्रोत',
           p: [
-            'जो कोई असली <strong>गुवाहाटी में तांत्रिक</strong> की शक्ति को समझना चाहता है, उसे पहले <strong>कामाख्या मंदिर के बारे में</strong> जानना होगा। गुवाहाटी के नीलाचल पहाड़ी पर स्थित कामाख्या मंदिर भारत के 51 शक्ति पीठों में से एक है, देवी उपासना के सबसे पवित्र स्थलों में से एक। यह शक्ति की सर्वोच्च स्था है, और वार्षिक अम्बुबाची मेला लाखों भक्तों तथा एशिया भर से आए <strong>कामाख्या मंदिर तांत्रिकों</strong> को आकर्षित करता है। यहाँ की आध्यात्मिक ऊर्जा अतुलनीय है, जो इसे सबसे शक्तिशाली अनुष्ठानों के लिए आदर्श स्थान बनाती है।',
-            'अनेक <strong>कामाख्या मंदिर तांत्रिकों</strong> में, दीपक तांत्रिक की विशिष्ट स्थिति उनकी मायोंग विरासत के कारण है। मायोंग में जन्मे <strong>सर्वश्रेष्ठ कामाख्या तांत्रिक</strong> के रूप में, वे दोनों प्राचीन शक्ति-धाराओं को एक साथ प्रवाहित करते हैं। चाहे आपको <strong>कामाख्या मंदिर का काला जादू</strong> हटाना हो, प्रेम पाना हो, या व्यापार में सफलता चाहिए, तो कोई भी <strong>गुवाहाटी में तांत्रिक बाबा</strong> अधिक योग्य नहीं है।',
+            'जो कोई असली गुवाहाटी में तांत्रिक की शक्ति को समझना चाहता है, उसे पहले कामाख्या मंदिर के बारे में जानना होगा। गुवाहाटी के नीलाचल पहाड़ी पर स्थित कामाख्या मंदिर भारत के 51 शक्ति पीठों में से एक है, देवी उपासना के सबसे पवित्र स्थलों में से एक। यह शक्ति की सर्वोच्च स्था है, और वार्षिक अम्बुबाची मेला लाखों भक्तों तथा एशिया भर से आए कामाख्या मंदिर तांत्रिकों को आकर्षित करता है। यहाँ की आध्यात्मिक ऊर्जा अतुलनीय है, जो इसे सबसे शक्तिशाली अनुष्ठानों के लिए आदर्श स्थान बनाती है।',
+            'अनेक कामाख्या मंदिर तांत्रिकों में, दीपक तांत्रिक की विशिष्ट स्थिति उनकी मायोंग विरासत के कारण है। मायोंग में जन्मे सर्वश्रेष्ठ कामाख्या तांत्रिक के रूप में, वे दोनों प्राचीन शक्ति-धाराओं को एक साथ प्रवाहित करते हैं। चाहे आपको कामाख्या मंदिर का काला जादू हटाना हो, प्रेम पाना हो, या व्यापार में सफलता चाहिए, तो कोई भी गुवाहाटी में तांत्रिक बाबा अधिक योग्य नहीं है।',
           ],
         },
         {
           h2: 'गुवाहाटी के सर्वश्रेष्ठ तांत्रिक को क्यों चुनें?',
           p: [
-            'गुवाहाटी आध्यात्मिक महत्व का शहर है। लेकिन कई लोग <strong>गुवाहाटी के सबसे बड़े तांत्रिक</strong> होने का दावा करते हैं, इसलिए असली चिकित्सक ढूंढना एक चुनौती है। कामाख्या मंदिर में 25+ वर्षों के अभ्यास और <strong>मायोंग असम तांत्रिक</strong> के रूप में पूर्वजों की जड़ों के कारण दीपक तांत्रिक पूरी तरह अलग हैं। इस वेबसाइट पर दिया <strong>मायोंग असम तांत्रिक कांटैक्ट नंबर</strong> आपको सीधे उनसे जोड़ता है। कोई सहायक नहीं, कोई देरी नहीं।',
+            'गुवाहाटी आध्यात्मिक महत्व का शहर है। लेकिन कई लोग गुवाहाटी के सबसे बड़े तांत्रिक होने का दावा करते हैं, इसलिए असली चिकित्सक ढूंढना एक चुनौती है। कामाख्या मंदिर में 25+ वर्षों के अभ्यास और मायोंग असम तांत्रिक के रूप में पूर्वजों की जड़ों के कारण दीपक तांत्रिक पूरी तरह अलग हैं। इस वेबसाइट पर दिया मायोंग असम तांत्रिक कांटैक्ट नंबर आपको सीधे उनसे जोड़ता है। कोई सहायक नहीं, कोई देरी नहीं।',
           ],
         },
         {
           h2: 'कामाख्या मंदिर तांत्रिक: गुवाहाटी के सबसे सुलभ आध्यात्मिक प्राधिकारी',
           p: [
-            'गुवाहाटी में प्रमुख <strong>कामाख्या मंदिर तांत्रिक</strong> के रूप में, दीपक तांत्रिक ने दशकों तक माँ कामाख्या के पवित्र अनुष्ठानों में दक्षता हासिल की है। <strong>कामाख्या मंदिर के सबसे बड़े तांत्रिक</strong> के रूप में पूजनीय, उनकी <strong>कामाख्या मंदिर तांत्रिक पूजा</strong> में प्राधिकारता भारत और उससे आगे से आने वाले लोगों को आकर्षित करती है। सच्चे <strong>माँ कामाख्या मंदिर तांत्रिक</strong> के रूप में, वे दुर्लभ तांत्रिक विधियां करते हैं जो केवल मायोंग वंश में जन्मे और कामाख्या मंदिर से पूर्ण दीक्षित व्यक्ति के लिए ही संभव हैं। चाहे आप <strong>गुवाहाटी में अघोरी तांत्रिक</strong> ढूंढ रहे हों, किसी विशेष अनुष्ठान के लिए <strong>कामाख्या मंदिर तांत्रिक बाबा</strong>, या काला जादू हटाने के लिए सबसे शक्तिशाली <strong>कामाख्या मंदिर में तांत्रिक</strong>, दीपक तांत्रिक स्थापित प्राधिकारी हैं। कामाख्या मंदिर के पास उनका परामर्श केंद्र उन्हें आज उपलब्ध सबसे सुलभ असली <strong>तांत्रिक बाबा गुवाहाटी</strong> बनाता है। <strong>कामाख्या बेस्ट तांत्रिक कांटैक्ट नंबर</strong> और <strong>कामाख्या तांत्रिक कांटैक्ट</strong> सीधे लें: <strong>+91 9706801250</strong>।',
+            'गुवाहाटी में प्रमुख कामाख्या मंदिर तांत्रिक के रूप में, दीपक तांत्रिक ने दशकों तक माँ कामाख्या के पवित्र अनुष्ठानों में दक्षता हासिल की है। कामाख्या मंदिर के सबसे बड़े तांत्रिक के रूप में पूजनीय, उनकी कामाख्या मंदिर तांत्रिक पूजा में प्राधिकारता भारत और उससे आगे से आने वाले लोगों को आकर्षित करती है। सच्चे माँ कामाख्या मंदिर तांत्रिक के रूप में, वे दुर्लभ तांत्रिक विधियां करते हैं जो केवल मायोंग वंश में जन्मे और कामाख्या मंदिर से पूर्ण दीक्षित व्यक्ति के लिए ही संभव हैं। चाहे आप गुवाहाटी में अघोरी तांत्रिक ढूंढ रहे हों, किसी विशेष अनुष्ठान के लिए कामाख्या मंदिर तांत्रिक बाबा, या काला जादू हटाने के लिए सबसे शक्तिशाली कामाख्या मंदिर में तांत्रिक, दीपक तांत्रिक स्थापित प्राधिकारी हैं। कामाख्या मंदिर के पास उनका परामर्श केंद्र उन्हें आज उपलब्ध सबसे सुलभ असली तांत्रिक बाबा गुवाहाटी बनाता है। कामाख्या बेस्ट तांत्रिक कांटैक्ट नंबर और कामाख्या तांत्रिक कांटैक्ट सीधे लें: +91 9706801250।',
           ],
         },
       ],

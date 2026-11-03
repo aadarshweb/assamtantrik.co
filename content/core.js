@@ -41,8 +41,8 @@ module.exports = {
       img: '/images/portrait.jpg',
       imgAlt: 'Deepak Tantrik, best tantrik in Kamakhya Temple and Mayong, during a ritual in Guwahati',
       p: [
-        'Spiritual duniya mein mashhoor, Tantrik Deepak Tantrik ka sambandh Mayong ke rahasyamayi kshetra se hai, jo Bharat ki prachin Tantra capital ke roop mein jaana jaata hai. Saalon ki gahri tantrik sadhana aur shaktishaali devi-devtaon ke aashirwad se, unhone master kiya hai kala jadu, laugh dosh, vivah mein rukawat, parivaarik klesh, business ya naukri mein badha, aur santan se judi samasyaayein jaise issues ka ilaj.',
-        'Unke divine remedies aur accurate spiritual techniques ne hazaaron logon ko shanti aur safalta di hai. Agar aap kisi anjaan negative energy se jujh rahe hain ya life mein bina wajah rukawat mehsoos kar rahe hain, to Tantrik Deepak Tantrik aapko denge asli, result-oriented guidance. Aaj hi sampark karein aur mehsoos karein Mayong ke sahi tantra ka asar.',
+        'Deepak Tantrik was born in Mayong, Assam, a place long associated with tantra in Assamese tradition. He was trained in the family practice there and later initiated at Kamakhya Temple in Guwahati. The work he does covers relationship and marriage problems, family conflict, business difficulties, and situations people describe as a negative or harmful presence.',
+        'He does not promise a guaranteed result, and the first consultation is free so that you can decide whether the practice is right for your situation. If a remedy is appropriate, it is described in full and quoted before anything begins. If the honest answer is that you need a doctor, a lawyer or a different kind of help, you will be told that instead.',
       ],
       linkText: 'Learn about Deepak Tantrik, Mayong tantra lineage',
     },
@@ -63,17 +63,17 @@ module.exports = {
     // was duplicated verbatim on every inner page in v3.
     narrative: [
       {
-        h2: 'The Legacy: Born in Mayong, Empowered at Kamakhya',
+        h2: 'Training in Mayong, Initiation at Kamakhya',
         p: [
-          'Deepak Tantrik\'s spiritual journey is rooted in the most sacred lands of tantra. As the <strong>best mayong tantrik</strong>, his journey began in Mayong, Assam, the undisputed historical capital of magic and mysticism. Born into a highly revered lineage of practitioners, he mastered ancient Vedic astrology and the deepest secrets of tantra right in his birthplace. This rigorous early training shaped him into a <strong>assam tantrik</strong> recognised for his ability to read a situation quickly and act on it precisely.',
-          'Seeking a deeper spiritual awakening, he later established his practice at the Kamakhya Temple. Today he is widely celebrated as the <strong>best tantrik in kamakhya</strong>. His dual presence allows him to perform life-changing rituals at both locations. Whether you are searching for a <strong>tantrik in guwahati</strong> or specifically the <strong>best tantrik in guwahati</strong>, remedies performed at the Kamakhya Temple provide lasting relief. People who come to learn <strong>about kamakhya temple</strong> often seek his guidance, knowing he is among the most trusted <strong>kamakhya temple tantriks</strong>.',
+          'Deepak Tantrik\'s training began in Mayong, Assam, in a family that has practised tantra for seven generations. He learned Jyotish and the family ritual tradition there before moving to Guwahati. That early training is the basis of the practice: a careful reading of the situation first, and a remedy only where one is appropriate.',
+          'He later moved to Guwahati and was initiated at Kamakhya Temple, where he now maintains an office near the temple. He practises at both locations, and the choice of location is part of the assessment rather than a marketing detail. Clients who want to understand the Mayong lineage can read the Mayong page; clients who want the temple practice can read the Kamakhya page.',
         ],
       },
       {
-        h2: 'Master of Black Magic Removal and Vashikaran',
+        h2: 'What the Practice Actually Covers',
         p: [
-          'Dark energies can destroy lives, businesses and marriages. As the premier <strong>tantrik in kamakhya temple</strong>, Deepak Tantrik specialises in reversing <strong>kamakhya temple black magic</strong>. His authentic rituals address all forms of <strong>kamakhya black magic</strong>, protecting families from evil eyes and jealousy. His mastery is not limited to Kamakhya: his roots make him the <strong>mayong assam tantrik</strong> for these intense spiritual cleansings.',
-          'Clients across the world search for the <strong>best kamakhya tantrik</strong> to resolve complex love disputes and business failures. If you have seen a <strong>mayong assam black magic video</strong>, you know the reputation this land carries. Deepak Tantrik applies that knowledge only for positive outcomes. If you are struggling, find the <strong>mayong tantrik contact number</strong> or the <strong>mayong assam tantrik contact number</strong> on this site to reach the most trusted <strong>tantrik in assam</strong>. Your search for a reliable <strong>mayong tantrik contact</strong> ends here.',
+          'The problems most often brought to him are relationship breakdowns, family disputes, business difficulties and a persistent sense that something is wrong. Not all of them are spiritual, and the practice is organised around sorting that out. Where a spiritual cause is assessed as present, the remedy is specific and explained in advance. Where it is not, you will be told.',
+          'The first consultation is free and carries no obligation. Bring your date and time of birth where astrology is relevant, and a plain description of what has happened. You will get an assessment, an explanation of what a remedy would involve, and a clear statement of its limits. The contact number is +91 9706801250.',
         ],
       },
     ],
@@ -81,11 +81,11 @@ module.exports = {
     faqs: [
       {
         q: 'Who is the best tantrik in Kamakhya?',
-        a: 'Deepak Tantrik is widely regarded as the best tantrik in Kamakhya. He has 25+ years of practice, was born into a seven-generation Mayong tantra lineage, and holds formal diksha from the Kamakhya Temple. Contact: +91 9706801250.',
+        a: 'Deepak Tantrik has practised for more than 25 years. He was born into a seven-generation Mayong tantra lineage and received formal diksha at Kamakhya Temple. Contact: +91 9706801250.',
       },
       {
         q: 'Can kamakhya temple black magic be removed?',
-        a: 'Yes. With the help of an authentic kamakhya temple tantrik like Deepak Ji, severe kamakhya black magic and negative energies can be permanently removed, and a protective shield is cast around you and your family.',
+        a: 'A remedy may be appropriate where an ordinary cause has been ruled out and a spiritual cause is assessed as present. No honest practitioner can promise a guaranteed outcome. The first consultation is free and is used to decide whether a remedy makes sense.',
       },
       {
         q: 'Where does Deepak Tantrik practice?',
@@ -143,15 +143,15 @@ module.exports = {
         {
           h2: 'विरासत: मायोंग में जन्म, कामाख्या से सशक्त',
           p: [
-            'दीपक तांत्रिक की आध्यात्मिक यात्रा तंत्र के सबसे पवित्र भूमि से जुड़ी है। <strong>मायोंग के सर्वश्रेष्ठ तांत्रिक</strong> के रूप में उनकी यात्रा मायोंग, असम से शुरू हुई, जो जादू और रहस्य का ऐतिहासिक केंद्र माना जाता है। पूजनीय चिकित्सकों की वंश में जन्मे, उन्होंने प्राचीन वैदिक ज्योतिष और तंत्र के गहन रहस्य अपने ही जन्मस्थान पर सीखे। इस कठोर प्रारंभिक प्रशिक्षण ने उन्हें एक <strong>असम तांत्रिक</strong> बनाया जो परिस्थिति जल्दी पढ़ सकता है और सटीक कार्रवाई कर सकता है।',
-            'गहन आध्यात्मिक जागरण की खोज में उन्होंने बाद में कामाख्या मंदिर में अपनी साधना स्थापित की। आज वे <strong>कामाख्या में सर्वश्रेष्ठ तांत्रिक</strong> के रूप में व्यापक रूप से सम्मानित हैं। उनकी दोहरी उपस्थिति दोनों स्थानों पर जीवन बदलने वाले अनुष्ठान संभव बनाती है। चाहे आप <strong>गुवाहाटी में तांत्रिक</strong> खोज रहे हों या विशेष रूप से <strong>गुवाहाटी के सबसे बड़े तांत्रिक</strong>, कामाख्या मंदिर पर किए गए उपाय स्थायी राहत देते हैं। <strong>कामाख्या मंदिर के बारे में</strong> जानने आने वाले लोग अक्सर उनसे मार्गदर्शन मांगते हैं, क्योंकि वे सबसे भरोसेमंद <strong>कामाख्या मंदिर तांत्रिकों</strong> में से एक हैं।',
+            'दीपक तांत्रिक की आध्यात्मिक यात्रा तंत्र के सबसे पवित्र भूमि से जुड़ी है। मायोंग के सर्वश्रेष्ठ तांत्रिक के रूप में उनकी यात्रा मायोंग, असम से शुरू हुई, जो जादू और रहस्य का ऐतिहासिक केंद्र माना जाता है। पूजनीय चिकित्सकों की वंश में जन्मे, उन्होंने प्राचीन वैदिक ज्योतिष और तंत्र के गहन रहस्य अपने ही जन्मस्थान पर सीखे। इस कठोर प्रारंभिक प्रशिक्षण ने उन्हें एक असम तांत्रिक बनाया जो परिस्थिति जल्दी पढ़ सकता है और सटीक कार्रवाई कर सकता है।',
+            'गहन आध्यात्मिक जागरण की खोज में उन्होंने बाद में कामाख्या मंदिर में अपनी साधना स्थापित की। आज वे कामाख्या में सर्वश्रेष्ठ तांत्रिक के रूप में व्यापक रूप से सम्मानित हैं। उनकी दोहरी उपस्थिति दोनों स्थानों पर जीवन बदलने वाले अनुष्ठान संभव बनाती है। चाहे आप गुवाहाटी में तांत्रिक खोज रहे हों या विशेष रूप से गुवाहाटी के सबसे बड़े तांत्रिक, कामाख्या मंदिर पर किए गए उपाय स्थायी राहत देते हैं। कामाख्या मंदिर के बारे में जानने आने वाले लोग अक्सर उनसे मार्गदर्शन मांगते हैं, क्योंकि वे सबसे भरोसेमंद कामाख्या मंदिर तांत्रिकों में से एक हैं।',
           ],
         },
         {
           h2: 'काला जादू हटाने और वशीकरण में मास्टर',
           p: [
-            'अंधकारी ऊर्जा जीवन, व्यापार और विवाह को नष्ट कर सकती है। <strong>कामाख्या मंदिर में तांत्रिक</strong> के रूप में प्रमुख, दीपक तांत्रिक <strong>कामाख्या मंदिर के काले जादू</strong> को दूर करने में विशेषज्ञ हैं। उनके प्रामाणिक अनुष्ठान <strong>कामाख्या काला जादू</strong> के सभी रूपों से निपटते हैं और परिवारों को बुरी नज़र और ईर्ष्या से बचाते हैं। उनकी दक्षता केवल कामाख्या तक सीमित नहीं है: उनकी जड़ें उन्हें इन गहन आध्यात्मिक शुद्धियों के लिए <strong>मायोंग असम तांत्रिक</strong> बनाती हैं।',
-            'दुनिया भर के ग्राहक जटिल प्रेम विवाद और व्यापार की विफलता हल करने के लिए <strong>कामाख्या के सर्वश्रेष्ठ तांत्रिक</strong> की तलाश करते हैं। यदि आपने कभी <strong>मायोंग असम काला जादू वीडियो</strong> देखा है, तो आप जानते हैं कि इस भूमि की क्या प्रतिष्ठा है। दीपक तांत्रिक उसी ज्ञान का उपयोग केवल सकारात्मक परिणामों के लिए करते हैं। यदि आप संघर्ष में हैं, तो इस साइट पर दिए <strong>मायोंग तांत्रिक कांटैक्ट नंबर</strong> या <strong>मायोंग असम तांत्रिक कांटैक्ट नंबर</strong> ढूंढें और असम के सबसे भरोसेमंद <strong>तांत्रिक</strong> तक पहुँचें। भरोसेमंद <strong>मायोंग तांत्रिक कांटैक्ट</strong> की आपकी खोज यहीं समाप्त होती है।',
+            'अंधकारी ऊर्जा जीवन, व्यापार और विवाह को नष्ट कर सकती है। कामाख्या मंदिर में तांत्रिक के रूप में प्रमुख, दीपक तांत्रिक कामाख्या मंदिर के काले जादू को दूर करने में विशेषज्ञ हैं। उनके प्रामाणिक अनुष्ठान कामाख्या काला जादू के सभी रूपों से निपटते हैं और परिवारों को बुरी नज़र और ईर्ष्या से बचाते हैं। उनकी दक्षता केवल कामाख्या तक सीमित नहीं है: उनकी जड़ें उन्हें इन गहन आध्यात्मिक शुद्धियों के लिए मायोंग असम तांत्रिक बनाती हैं।',
+            'दुनिया भर के ग्राहक जटिल प्रेम विवाद और व्यापार की विफलता हल करने के लिए कामाख्या के सर्वश्रेष्ठ तांत्रिक की तलाश करते हैं। यदि आपने कभी मायोंग असम काला जादू वीडियो देखा है, तो आप जानते हैं कि इस भूमि की क्या प्रतिष्ठा है। दीपक तांत्रिक उसी ज्ञान का उपयोग केवल सकारात्मक परिणामों के लिए करते हैं। यदि आप संघर्ष में हैं, तो इस साइट पर दिए मायोंग तांत्रिक कांटैक्ट नंबर या मायोंग असम तांत्रिक कांटैक्ट नंबर ढूंढें और असम के सबसे भरोसेमंद तांत्रिक तक पहुँचें। भरोसेमंद मायोंग तांत्रिक कांटैक्ट की आपकी खोज यहीं समाप्त होती है।',
           ],
         },
       ],
@@ -202,7 +202,7 @@ module.exports = {
 
     title: 'About Deepak Tantrik: Mayong Lineage, Kamakhya',
     desc:
-      'About Deepak Tantrik: seventh-generation Mayong tantra practitioner, initiated at Kamakhya Temple, 25+ years, 10,000+ cases. Call +91 9706801250.',
+      'About Deepak Tantrik: seventh-generation Mayong tantra practitioner, initiated at Kamakhya Temple, 25+ years of practice. Call +91 9706801250.',
     keywords: [
       'about deepak tantrik',
       'mayong tantra expert',
@@ -221,9 +221,9 @@ module.exports = {
       imgAlt: 'Deepak Tantrik, Mayong tantra practitioner initiated at Kamakhya Temple, Guwahati',
       p: [
         'Deepak Tantrik\'s journey began in the ancient, sacred lands of Mayong and Kamakhya Temple, Assam. Born into a long lineage of powerful tantrik practitioners, he was introduced to the mysteries of Vedic astrology and spiritual healing from a very young age. His early years were spent mastering complex mantras, rituals, and the science of cosmic energies under the guidance of elder masters.',
-        'With over 25 years of relentless practice and devotion, he has transformed the lives of more than 10,000 individuals worldwide. People travel from all over India and abroad to Guwahati just to seek his wisdom and powerful remedies.',
-        'Deepak Tantrik strongly believes in ethical practice. He uses his knowledge not to harm, but to heal. Whether it is removing negative energies, resolving deep-seated marital conflicts, or attracting abundance in business, his methods are safe, effective, and deeply rooted in authentic ancient scriptures.',
-        'When you consult Deepak Tantrik, you are not just speaking to an astrologer. You are connecting with a guide who will stay with you through the hardest parts until the situation turns.',
+        'He has practised for more than 25 years and works with clients from Assam and other parts of India. People travel to Guwahati and Mayong for consultations, and some consult by phone or WhatsApp.',
+        'The practice is presented as ethical and non-harmful: it is used for protection and repair, not for harming anyone. It is rooted in Jyotish and the family tradition, and it does not replace medical, legal or financial advice.',
+        'A consultation is a conversation about what is actually happening. If a remedy is appropriate, it is explained and quoted before anything begins. No outcome is guaranteed, and the limits are stated before you commit.',
       ],
     },
 
@@ -231,23 +231,23 @@ module.exports = {
     // contact and every service page in v3. Each page now has its own copy.
     deep: [
       {
-        h2: 'The Most Authentic Tantrik in Kamakhya and Mayong',
+        h2: 'Lineage, Training and Limits',
         p: [
-          'Whether you are searching for the <strong>best tantrik in kamakhya</strong> or the ultimate <strong>best mayong tantrik</strong>, Deepak Tantrik bridges the ancient powers of both sacred lands. Born in the mystical lands of Mayong, often depicted in <strong>mayong assam black magic video</strong> documentaries as the heart of Indian magic, he inherited centuries-old secrets. He later established his practice at the Kamakhya Temple, making him the most sought-after <strong>tantrik in kamakhya temple</strong>. People from all over the world seek his <strong>mayong tantrik contact number</strong> because of that dual authority.',
-          'He specialises in <strong>kamakhya temple black magic</strong> removal and positive vashikaran. For those looking to learn <strong>about kamakhya temple</strong> and its genuine healers, Deepak Tantrik stands as a marker of authenticity. As the leading <strong>tantrik in guwahati</strong>, his dual presence as a <strong>mayong assam tantrik</strong> means you receive remedies drawn from two locations rather than one. Every <strong>assam tantrik</strong> ritual he performs is done with a single intention: your benefit.',
+          'Deepak Tantrik was born in Mayong, Assam, into a family that has practised tantra for seven generations. He later moved to Guwahati and was initiated at Kamakhya Temple. His practice is based on both locations, and the two are treated as one tradition rather than as competing claims. This page sets out the lineage, the training and the limits of the practice.',
+          'The work covers relationship and marriage problems, family conflict, business difficulties and situations described as a negative presence. It is rooted in Jyotish and the Mayong family tradition. The practice does not promise guaranteed results, and it does not claim to replace medical, legal or financial advice. Those limits are stated here because they are part of how the work is done.',
         ],
       },
       {
         h2: 'Born in Mayong, Empowered at Kamakhya',
         p: [
-          'To understand <strong>about kamakhya temple</strong> and its tantriks, one must trace their lineage. Deepak Tantrik\'s family has been practising in <strong>mayong assam</strong> for seven generations. The word "Mayong" itself relates to <em>maya</em>, illusion, and every <strong>mayong assam tantrik</strong> is born into a culture where the sacred and the supernatural are everyday realities. He grew up watching his elders heal the sick, resolve conflicts, and protect families from <strong>kamakhya black magic</strong> attacks.',
-          'Upon reaching adulthood, he journeyed to Guwahati to seek initiation at the supreme power centre, the Kamakhya Temple. Here he received his formal diksha from senior <strong>kamakhya temple tantriks</strong>, merging two great lineages of power. Today his <strong>mayong tantrik contact number</strong> receives calls from across India and the world. He is simultaneously the <strong>best tantrik in kamakhya</strong> and the most trusted <strong>mayong tantrik</strong>, a combination no other <strong>tantrik in assam</strong> can claim.',
+          'Deepak Tantrik\'s family has practised in Mayong for seven generations. The name Mayong is traditionally linked to maya, or illusion, and the families there grew up with the sacred and the supernatural as ordinary parts of life. He was trained by his elders in assessment, protection and ritual, and he continues to work from the family ashram.',
+          'He later moved to Guwahati and received formal diksha at Kamakhya Temple, which joined the family lineage with the temple tradition. Clients contact him from Assam and from other parts of India. The combination of the two locations is the practical basis of the practice, not a claim of exclusivity.',
         ],
       },
       {
-        h2: 'A Track Record That Speaks for Itself',
+        h2: 'What the Practice Does and Does Not Claim',
         p: [
-          '10,000+ solved cases. Clients across 27 states of India and 12 countries. Zero harmful side effects. Complete confidentiality guaranteed. As the <strong>best tantrik in guwahati</strong> and the top <strong>assam tantrik</strong>, Deepak Tantrik\'s results are verifiable and consistent. His dual practice at the Kamakhya Temple in Guwahati and his ancestral ashram in Mayong ensures you get the right remedy for your specific problem rather than a generic one.',
+          'The practice has run for more than 25 years, and clients come from Assam and from other parts of India. Consultations are confidential as a working rule, not as a marketing promise. The two locations allow the work to be matched to the case: Kamakhya for the temple practice, Mayong for the family tradition. What is not offered is a generic remedy applied to every problem.',
         ],
       },
     ],
@@ -255,7 +255,7 @@ module.exports = {
     faqs: [
       {
         q: 'How long has Deepak Tantrik been practising?',
-        a: 'Over 25 years. He belongs to a seven-generation family tantra lineage in Mayong, and he received his formal diksha at the Kamakhya Temple, Guwahati. He has handled more than 10,000 cases across 27 Indian states and 12 countries.',
+        a: 'Over 25 years. He belongs to a seven-generation family tantra lineage in Mayong and received formal diksha at the Kamakhya Temple, Guwahati.',
       },
       {
         q: 'Is Deepak Tantrik a genuine Mayong tantra practitioner?',
@@ -272,7 +272,7 @@ module.exports = {
     hi: {
       title: 'मायोंग तंत्र आचार्य दीपक तांत्रिक के बारे में | 25 वर्ष',
       desc:
-        'दीपक तांत्रिक के बारे में: सात पीढ़ियों के मायोंग तंत्र वंश, कामाख्या मंदिर से दीक्षित, 25+ वर्ष और 10,000+ मामले। +91 9706801250 पर कॉल करें।',
+        'दीपक तांत्रिक के बारे में: सात पीढ़ियों के मायोंग तंत्र वंश, कामाख्या मंदिर से दीक्षित, 25+ वर्ष का अभ्यास। +91 9706801250 पर कॉल करें।',
       keywords: [
         'दीपक तांत्रिक के बारे में',
         'मायोंग तंत्र विशेषज्ञ',
@@ -289,7 +289,7 @@ module.exports = {
         imgAlt: 'दीपक तांत्रिक, मायोंग तंत्र आचार्य, कामाख्या मंदिर गुवाहाटी से दीक्षित',
         p: [
           'दीपक तांत्रिक की यात्रा मायोंग और कामाख्या मंदिर, असम के प्राचीन पवित्र भूमि में शुरू हुई। शक्तिशाली तांत्रिक चिकित्सकों की लंबी वंश में जन्मे, उन्हें बहुत कम उम्र से ही वैदिक ज्योतिष और आध्यात्मिक चिकित्सा के रहस्यों से परिचित किया गया। उनके प्रारंभिक वर्ष वरिष्ठ गुरुओं के मार्गदर्शन में जटिल मंत्र, अनुष्ठान और ब्रह्मांडीय ऊर्जा का विज्ञान सीखने में बीते।',
-          '25 वर्षों से अधिक के निरंतर अभ्यास और भक्ति के साथ, उन्होंने दुनिया भर में 10,000 से अधिक लोगों के जीवन को बदला है। लोग पूरे भारत और विदेश से गुवाहाटी आते हैं, केवल उनकी प्रज्ञा और शक्तिशाली उपाय पाने के लिए।',
+          '25 वर्षों से अधिक के निरंतर अभ्यास के साथ, वे असम और देश के अन्य हिस्सों से आने वाले लोगों का मार्गदर्शन करते हैं। लोग गुवाहाटी और मायोंग दोनों जगह परामर्श के लिए आते हैं।',
           'दीपक तांत्रिक नैतिक अभ्यास में दृढ़ विश्वास रखते हैं। वे अपने ज्ञान का उपयोग हानि पहुँचाने के लिए नहीं, उपचार के लिए करते हैं। चाहे नकारात्मक ऊर्जा हटाना हो, गहरे पारिवारिक संघर्ष सुलझाना हो, या व्यापार में समृद्धि चाहिए, उनके उपाय सुरक्षित, प्रभावी और प्राचीन धर्मग्रंथों पर आधारित हैं।',
           'जब आप दीपक तांत्रिक से परामर्श करते हैं, तो आप केवल किसी ज्योतिषी से बात नहीं कर रहे होते। आप एक मार्गदर्शक से जुड़ रहे हैं जो सबसे कठिन समय में भी आपके साथ रहता है जब तक परिस्थिति नहीं बदलती।',
         ],
@@ -298,28 +298,28 @@ module.exports = {
         {
           h2: 'कामाख्या और मायोंग में सबसे प्रामाणिक तांत्रिक',
           p: [
-            'चाहे आप <strong>कामाख्या में सर्वश्रेष्ठ तांत्रिक</strong> खोज रहे हों या <strong>मायोंग के सर्वश्रेष्ठ तांत्रिक</strong>, दीपक तांत्रिक दोनों पवित्र भूमियों की प्राचीन शक्तियों को जोड़ते हैं। मायोंग के रहस्यमयी भूमि में जन्मे, जिसे <strong>मायोंग असम काला जादू वीडियो</strong> वृत्तचित्रों में भारतीय जादू का हृदय बताया जाता है, वे सदियों पुराने रहस्य विरासत में पाए। बाद में उन्होंने कामाख्या मंदिर में अपनी साधना स्थापित की, जिससे वे सबसे मांगे जाने वाले <strong>कामाख्या मंदिर में तांत्रिक</strong> बने। दुनिया भर से लोग उनके <strong>मायोंग तांत्रिक कांटैक्ट नंबर</strong> पर इसी दोहरी प्राधिकारिता के कारण संपर्क करते हैं।',
-            'वे <strong>कामाख्या मंदिर के काले जादू</strong> हटाने और सकारात्मक वशीकरण में विशेषज्ञ हैं। जो लोग <strong>कामाख्या मंदिर के बारे में</strong> और उसके असली चिकित्सकों के बारे में जानना चाहते हैं, उनके लिए दीपक तांत्रिक प्रामाणिकता का प्रतीक हैं। <strong>गुवाहाटी में तांत्रिक</strong> के रूप में अग्रणी, उनकी <strong>मायोंग असम तांत्रिक</strong> के रूप में दोहरी उपस्थिति का अर्थ है कि आपको एक नहीं, दो स्थानों से उपाय मिलते हैं। उनका हर <strong>असम तांत्रिक</strong> अनुष्ठान केवल एक इरादे से किया जाता है: आपका कल्याण।',
+            'चाहे आप कामाख्या में सर्वश्रेष्ठ तांत्रिक खोज रहे हों या मायोंग के सर्वश्रेष्ठ तांत्रिक, दीपक तांत्रिक दोनों पवित्र भूमियों की प्राचीन शक्तियों को जोड़ते हैं। मायोंग के रहस्यमयी भूमि में जन्मे, जिसे मायोंग असम काला जादू वीडियो वृत्तचित्रों में भारतीय जादू का हृदय बताया जाता है, वे सदियों पुराने रहस्य विरासत में पाए। बाद में उन्होंने कामाख्या मंदिर में अपनी साधना स्थापित की, जिससे वे सबसे मांगे जाने वाले कामाख्या मंदिर में तांत्रिक बने। दुनिया भर से लोग उनके मायोंग तांत्रिक कांटैक्ट नंबर पर इसी दोहरी प्राधिकारिता के कारण संपर्क करते हैं।',
+            'वे कामाख्या मंदिर के काले जादू हटाने और सकारात्मक वशीकरण में विशेषज्ञ हैं। जो लोग कामाख्या मंदिर के बारे में और उसके असली चिकित्सकों के बारे में जानना चाहते हैं, उनके लिए दीपक तांत्रिक प्रामाणिकता का प्रतीक हैं। गुवाहाटी में तांत्रिक के रूप में अग्रणी, उनकी मायोंग असम तांत्रिक के रूप में दोहरी उपस्थिति का अर्थ है कि आपको एक नहीं, दो स्थानों से उपाय मिलते हैं। उनका हर असम तांत्रिक अनुष्ठान केवल एक इरादे से किया जाता है: आपका कल्याण।',
           ],
         },
         {
           h2: 'मायोंग में जन्म, कामाख्या से सशक्त',
           p: [
-            '<strong>कामाख्या मंदिर के बारे में</strong> और उसके तांत्रिकों को समझने के लिए उनकी वंश जानना आवश्यक है। दीपक तांत्रिक का परिवार <strong>मायोंग असम</strong> में सात पीढ़ियों से अभ्यास कर रहा है। "मायोंग" शब्द स्वयं <em>माया</em>, यानी माया/मोह, से संबंधित है, और हर <strong>मायोंग असम तांत्रिक</strong> ऐसी संस्कृति में जन्मता है जहां पवित्र और अलौकिक दैनिक वास्तविकताएं हैं। वे बड़े हुए तो अपने बड़ों को बीमारों का इलाज करते, झगड़े सुलझाते और परिवारों को <strong>कामाख्या काला जादू</strong> के हमलों से बचाते देखते थे।',
-            'वयस्क होने पर, वे सर्वोच्च शक्ति केंद्र कामाख्या मंदिर में दीक्षा के लिए गुवाहाटी गए। यहां उन्हें वरिष्ठ <strong>कामाख्या मंदिर तांत्रिकों</strong> से औपचारिक दीक्षा मिली, जिससे शक्ति की दो महान परंपराएं एक हो गईं। आज उनके <strong>मायोंग तांत्रिक कांटैक्ट नंबर</strong> पर पूरे भारत और दुनिया से कॉल आती हैं। वे एक साथ <strong>कामाख्या में सर्वश्रेष्ठ तांत्रिक</strong> और सबसे भरोसेमंद <strong>मायोंग तांत्रिक</strong> हैं, यह संयोजन असम के किसी अन्य <strong>तांत्रिक</strong> के पास नहीं है।',
+            'कामाख्या मंदिर के बारे में और उसके तांत्रिकों को समझने के लिए उनकी वंश जानना आवश्यक है। दीपक तांत्रिक का परिवार मायोंग असम में सात पीढ़ियों से अभ्यास कर रहा है। "मायोंग" शब्द स्वयं <em>माया</em>, यानी माया/मोह, से संबंधित है, और हर मायोंग असम तांत्रिक ऐसी संस्कृति में जन्मता है जहां पवित्र और अलौकिक दैनिक वास्तविकताएं हैं। वे बड़े हुए तो अपने बड़ों को बीमारों का इलाज करते, झगड़े सुलझाते और परिवारों को कामाख्या काला जादू के हमलों से बचाते देखते थे।',
+            'वयस्क होने पर, वे सर्वोच्च शक्ति केंद्र कामाख्या मंदिर में दीक्षा के लिए गुवाहाटी गए। यहां उन्हें वरिष्ठ कामाख्या मंदिर तांत्रिकों से औपचारिक दीक्षा मिली, जिससे शक्ति की दो महान परंपराएं एक हो गईं। आज उनके मायोंग तांत्रिक कांटैक्ट नंबर पर पूरे भारत और दुनिया से कॉल आती हैं। वे एक साथ कामाख्या में सर्वश्रेष्ठ तांत्रिक और सबसे भरोसेमंद मायोंग तांत्रिक हैं, यह संयोजन असम के किसी अन्य तांत्रिक के पास नहीं है।',
           ],
         },
         {
           h2: 'ऐसा प्रमाण जो स्वयं बोलता है',
           p: [
-            '10,000+ हल किए गए मामले। भारत के 27 राज्यों और 12 देशों के ग्राहक। शून्य हानिकारक दुष्प्रभाव। पूर्ण गोपनीयता की गारंटी। <strong>गुवाहाटी में सर्वश्रेष्ठ तांत्रिक</strong> और शीर्ष <strong>असम तांत्रिक</strong> के रूप में दीपक तांत्रिक के परिणाम सत्यापनीय और सुसंगत हैं। गुवाहाटी के कामाख्या मंदिर और मायोंग के पारिवारिक आश्रम में उनकी दोहरी साधना सुनिश्चित करती है कि आपको अपनी विशेष समस्या के लिए सही उपाय मिले, न कि एक सामान्य सलाह।',
+            '25 वर्षों से अधिक का अभ्यास, दो स्थायी पते और एक सीधा फोन नंबर। परामर्श गोपनीय है और पहली बातचीत निःशुल्क है। गुवाहाटी के कामाख्या मंदिर और मायोंग के पारिवारिक आश्रम, दोनों जगह की साधना एक ही परंपरा का हिस्सा है। किसी भी उपाय का परिणाम पहले से तय नहीं किया जा सकता।',
           ],
         },
       ],
       faqs: [
         {
           q: 'दीपक तांत्रिक कितने वर्षों से अभ्यास कर रहे हैं?',
-          a: '25 वर्षों से अधिक। वे मायोंग में सात पीढ़ियों के पारिवारिक तंत्र वंश से हैं और उन्हें कामाख्या मंदिर, गुवाहाटी से आधिकारिक दीक्षा मिली है। उन्होंने भारत के 27 राज्यों और 12 देशों में 10,000 से अधिक मामले संभाले हैं।',
+          a: '25 वर्षों से अधिक। वे मायोंग में सात पीढ़ियों के पारिवारिक तंत्र वंश से हैं और उन्हें कामाख्या मंदिर, गुवाहाटी से आधिकारिक दीक्षा मिली है।',
         },
         {
           q: 'क्या दीपक तांत्रिक असली मायोंग तंत्र आचार्य हैं?',
@@ -391,7 +391,7 @@ module.exports = {
         h2: 'Why the Location Matters as Much as the Ritual',
         p: [
           'The same ritual performed in an ordinary room and the same ritual performed at a Shakti Peetha are not equivalent. Kamakhya is one of the 51 Shakti Peethas and the supreme seat of Shakti in the region; Mayong is where tantra has been practised continuously for over two millennia and where its palm-leaf texts are preserved. Deepak Tantrik holds a Mayong family lineage and formal initiation at Kamakhya, so he can draw on both.',
-          'That is also the practical reason <a href="/best-tantrik-mayong">the best tantrik in Mayong</a> and the <strong>best tantrik in kamakhya</strong> can often be the same person, and why clients travelling from outside Assam frequently ask about the <strong>mayong to kamakhya temple distance</strong> before they visit. It is about 80 kilometres, and he practises at both ends.',
+          'That is also the practical reason <a href="/best-tantrik-mayong">the best tantrik in Mayong</a> and the best tantrik in kamakhya can often be the same person, and why clients travelling from outside Assam frequently ask about the mayong to kamakhya temple distance before they visit. It is about 80 kilometres, and he practises at both ends.',
         ],
       },
     ],
@@ -447,7 +447,7 @@ module.exports = {
           h2: 'अनुष्ठान जितना महत्वपूर्ण स्थान भी उतना',
           p: [
             'एक सामान्य कमरे में किया गया वही अनुष्ठान और शक्ति पीठ पर किया गया वही अनुष्ठान समतुल्य नहीं होते। कामाख्या 51 शक्ति पीठों में से एक है और इस क्षेत्र में शक्ति की सर्वोच्च स्था है; मायोंग वह स्थान है जहां दो सहस्राब्दियों से अधिक समय से तंत्र का अभ्यास होता रहा है और जहां उसके ताड़पत्र ग्रंथ सुरक्षित हैं। दीपक तांत्रिक के पास मायोंग का पारिवारिक वंश और कामाख्या की औपचारिक दीक्षा दोनों हैं, इसलिए वे दोनों से लाभ ले सकते हैं।',
-            'यह व्यावहारिक कारण भी है कि <a href="/hi/best-tantrik-mayong">मायोंग के सर्वश्रेष्ठ तांत्रिक</a> और <strong>कामाख्या में सर्वश्रेष्ठ तांत्रिक</strong> अक्सर एक ही व्यक्ति हो सकते हैं, और यह भी कि असम से बाहर से आने वाले ग्राहक आने से पहले <strong>मायोंग से कामाख्या मंदिर की दूरी</strong> पूछते हैं। यह लगभग 80 किलोमीटर है, और वे दोनों स्थानों पर अभ्यास करते हैं।',
+            'यह व्यावहारिक कारण भी है कि <a href="/hi/best-tantrik-mayong">मायोंग के सर्वश्रेष्ठ तांत्रिक</a> और कामाख्या में सर्वश्रेष्ठ तांत्रिक अक्सर एक ही व्यक्ति हो सकते हैं, और यह भी कि असम से बाहर से आने वाले ग्राहक आने से पहले मायोंग से कामाख्या मंदिर की दूरी पूछते हैं। यह लगभग 80 किलोमीटर है, और वे दोनों स्थानों पर अभ्यास करते हैं।',
           ],
         },
       ],
@@ -497,7 +497,7 @@ module.exports = {
     lead: {
       h2: 'Get in Touch with Deepak Tantrik',
       p: [
-        'The <strong>kamakhya tantrik contact number</strong> and the <strong>mayong assam tantrik contact number</strong> are the same number, because there is only one practitioner: <strong>+91 9706801250</strong>. Call it or WhatsApp it and you reach Deepak Tantrik directly. There is no assistant, no call centre, and no agent taking a cut of any fee.',
+        'The kamakhya tantrik contact number and the mayong assam tantrik contact number are the same number, because there is only one practitioner: +91 9706801250. Call it or WhatsApp it and you reach Deepak Tantrik directly. There is no assistant, no call centre, and no agent taking a cut of any fee.',
         'Do not suffer in silence. The ancient wisdom of Kamakhya and Mayong has the power to solve many difficult problems, but only if it is applied correctly to your situation. The first consultation is free and carries no obligation. Use it.',
       ],
     },
@@ -518,15 +518,15 @@ module.exports = {
       {
         h2: 'Both Locations, One Number',
         p: [
-          'Deepak Tantrik practises at two physical locations and both are walk-in. The first is the <strong>kamakhya mandir tantrik</strong> office at Malakhuwa, Guwahati, postal code 781010, a short walk from the temple on Nilachal Hill. The second is his ancestral <strong>mayong assam tantrik</strong> ashram in Mayong, Morigaon, postal code 782411, about 80 kilometres away.',
-          'Because the <strong>kamakhya mandir tantrik contact number</strong> and the <strong>mayong assam tantrik contact number whatsapp number</strong> are both +91 9706801250, you do not need to work out which location suits you. Describe the problem, and he will tell you where the remedy should be performed and why.',
+          'Deepak Tantrik practises at two physical locations and both are walk-in. The first is the kamakhya mandir tantrik office at Malakhuwa, Guwahati, postal code 781010, a short walk from the temple on Nilachal Hill. The second is his ancestral mayong assam tantrik ashram in Mayong, Morigaon, postal code 782411, about 80 kilometres away.',
+          'Because the kamakhya mandir tantrik contact number and the mayong assam tantrik contact number whatsapp number are both +91 9706801250, you do not need to work out which location suits you. Describe the problem, and he will tell you where the remedy should be performed and why.',
         ],
       },
       {
         h2: 'What to Expect When You Call',
         p: [
           'The first call is a consultation, not a transaction. Expect to describe what is happening in your own words, to be asked about how long it has been going on and what has already been tried, and to be asked for your date and time of birth where astrology is relevant. You will then get an honest assessment and, if a remedy makes sense, a clear explanation of what it involves and what it costs.',
-          'Be aware of one thing. If a caller demands a large sum before speaking to you, promises results in 24 hours, claims to be the only powerful practitioner, or has no physical address you can visit, that is a warning sign. A genuine <strong>kamakhya mandir tantrik</strong> and a genuine <strong>assam tantrik</strong> will give you a lineage, a location, and a realistic timeline of 7 to 21 days. Read <a href="/real-tantrik-astrologer-assam">how to identify a real tantrik in Assam</a> before you pay anyone.',
+          'Be aware of one thing. If a caller demands a large sum before speaking to you, promises results in 24 hours, claims to be the only powerful practitioner, or has no physical address you can visit, that is a warning sign. A genuine kamakhya mandir tantrik and a genuine assam tantrik will give you a lineage, a location, and a realistic timeline of 7 to 21 days. Read <a href="/real-tantrik-astrologer-assam">how to identify a real tantrik in Assam</a> before you pay anyone.',
         ],
       },
       {
@@ -582,7 +582,7 @@ module.exports = {
       lead: {
         h2: 'दीपक तांत्रिक से संपर्क करें',
         p: [
-          '<strong>कामाख्या तांत्रिक कांटैक्ट नंबर</strong> और <strong>मायोंग असम तांत्रिक कांटैक्ट नंबर</strong> एक ही नंबर हैं, क्योंकि चिकित्सक एक ही हैं: <strong>+91 9706801250</strong>। इस पर कॉल करें या व्हाट्सएप करें और आप सीधे दीपक तांत्रिक तक पहुँचते हैं। न कोई सहायक, न कोई कॉल सेंटर, और न ही किसी शुल्क का कोई हिस्सा लेने वाला एजेंट।',
+          'कामाख्या तांत्रिक कांटैक्ट नंबर और मायोंग असम तांत्रिक कांटैक्ट नंबर एक ही नंबर हैं, क्योंकि चिकित्सक एक ही हैं: +91 9706801250। इस पर कॉल करें या व्हाट्सएप करें और आप सीधे दीपक तांत्रिक तक पहुँचते हैं। न कोई सहायक, न कोई कॉल सेंटर, और न ही किसी शुल्क का कोई हिस्सा लेने वाला एजेंट।',
           'चुपचाप सहने के बजाय, कामाख्या और मायोंग की प्राचीन बुद्धि आपकी कई कठिन समस्याओं का हल कर सकती है, लेकिन तभी जब वह आपकी स्थिति के अनुसार सही तरीके से लागू की जाए। पहली बातचीत निःशुल्क है और कोई बाध्यता नहीं है। इसका उपयोग करें।',
         ],
       },
@@ -599,15 +599,15 @@ module.exports = {
         {
           h2: 'दो स्थान, एक नंबर',
           p: [
-            'दीपक तांत्रिक दो भौतिक स्थानों पर अभ्यास करते हैं और दोनों में सीधे जाया जा सकता है। पहला गुवाहाटी के मलाखुवा में <strong>कामाख्या मंदिर तांत्रिक</strong> कार्यालय है, पिन कोड 781010, जो नीलाचल पहाड़ी पर मंदिर से थोड़ी दूर है। दूसरा उनका पारिवारिक <strong>मायोंग असम तांत्रिक</strong> आश्रम मोरिगांव में है, पिन कोड 782411, लगभग 80 किलोमीटर दूर।',
-            'चूंकि <strong>कामाख्या मंदिर तांत्रिक कांटैक्ट नंबर</strong> और <strong>मायोंग असम तांत्रिक कांटैक्ट नंबर व्हाट्सएप नंबर</strong> दोनों +91 9706801250 हैं, इसलिए आपको यह निर्धारित नहीं करना है कि कौन सा स्थान उपयुक्त है। समस्या बताइए, और वे बताएंगे कि उपाय कहां किया जाना चाहिए और क्यों।',
+            'दीपक तांत्रिक दो भौतिक स्थानों पर अभ्यास करते हैं और दोनों में सीधे जाया जा सकता है। पहला गुवाहाटी के मलाखुवा में कामाख्या मंदिर तांत्रिक कार्यालय है, पिन कोड 781010, जो नीलाचल पहाड़ी पर मंदिर से थोड़ी दूर है। दूसरा उनका पारिवारिक मायोंग असम तांत्रिक आश्रम मोरिगांव में है, पिन कोड 782411, लगभग 80 किलोमीटर दूर।',
+            'चूंकि कामाख्या मंदिर तांत्रिक कांटैक्ट नंबर और मायोंग असम तांत्रिक कांटैक्ट नंबर व्हाट्सएप नंबर दोनों +91 9706801250 हैं, इसलिए आपको यह निर्धारित नहीं करना है कि कौन सा स्थान उपयुक्त है। समस्या बताइए, और वे बताएंगे कि उपाय कहां किया जाना चाहिए और क्यों।',
           ],
         },
         {
           h2: 'कॉल करने पर क्या अपेक्षा करें',
           p: [
             'पहली कॉल एक परामर्श है, कोई लेन-देन नहीं। आपको अपनी ही शब्दों में बताना होगा कि क्या हो रहा है, पूछा जाएगा कि यह कब से चल रहा है और पहले क्या किया गया है, और जहां ज्योतिष प्रासंगिक हो वहां आपकी जन्म तिथि और समय पूछा जाएगा। इसके बाद आपको ईमानदार आकलन मिलेगा और, यदि उपाय उपयुक्त हो, तो इसकी स्पष्ट व्याख्या और लागत।',
-            'एक बात का ध्यान रखें। यदि कोई कॉलर आपसे बात किए बिना बड़ी रकम मांगता है, 24 घंटे में परिणाम का वादा करता है, दावा करता है कि वह एकमात्र शक्तिशाली चिकित्सक है, या उसका कोई भौतिक पता नहीं है जहां आप जा सकें, तो यह चेतावनी का संकेत है। असली <strong>कामाख्या मंदिर तांत्रिक</strong> और असली <strong>असम तांत्रिक</strong> आपको वंश, स्थान और 7 से 21 दिन का यथार्थवादी समय-सीमा बताएंगे। किसी को भुगतान करने से पहले <a href="/hi/best-tantrik-mayong">असली तांत्रिक की पहचान</a> कैसे करें, यह पढ़ें।',
+            'एक बात का ध्यान रखें। यदि कोई कॉलर आपसे बात किए बिना बड़ी रकम मांगता है, 24 घंटे में परिणाम का वादा करता है, दावा करता है कि वह एकमात्र शक्तिशाली चिकित्सक है, या उसका कोई भौतिक पता नहीं है जहां आप जा सकें, तो यह चेतावनी का संकेत है। असली कामाख्या मंदिर तांत्रिक और असली असम तांत्रिक आपको वंश, स्थान और 7 से 21 दिन का यथार्थवादी समय-सीमा बताएंगे। किसी को भुगतान करने से पहले <a href="/hi/best-tantrik-mayong">असली तांत्रिक की पहचान</a> कैसे करें, यह पढ़ें।',
           ],
         },
         {
@@ -682,8 +682,8 @@ module.exports = {
     lead: {
       h2: 'There is only one number',
       p: [
-        'If you are reading this because you were contacted by someone claiming to be Deepak Tantrik, treat that as a warning sign. <strong>The only number for this practice is +91 9706801250.</strong> Call it yourself. Do not use a number handed to you by a stranger, a WhatsApp forward, a social media message, or a "consultant" offering to arrange an appointment.',
-        'Impersonation in this field is common and it is getting worse. Fake practitioners use a real person\'s name, lift their photographs and their written descriptions, publish a convincing-looking site, and collect payments. Some of the material written about him has been copied verbatim onto other websites. <strong>Copied text is a reliable tell.</strong> If a page about Deepak Tantrik appears on a domain that is not assamtantrik.co, it is not him.',
+        'If you are reading this because you were contacted by someone claiming to be Deepak Tantrik, treat that as a warning sign. The only number for this practice is +91 9706801250. Call it yourself. Do not use a number handed to you by a stranger, a WhatsApp forward, a social media message, or a "consultant" offering to arrange an appointment.',
+        'Impersonation in this field is common and it is getting worse. Fake practitioners use a real person\'s name, lift their photographs and their written descriptions, publish a convincing-looking site, and collect payments. Some of the material written about him has been copied verbatim onto other websites. Copied text is a reliable tell. If a page about Deepak Tantrik appears on a domain that is not assamtantrik.co, it is not him.',
       ],
     },
 
@@ -693,7 +693,7 @@ module.exports = {
       {
         h2: '1. Payment before any conversation',
         p: [
-          'A genuine practitioner speaks with you first, understands the situation, and then explains what is involved and what it costs. A fraudster wants money before that happens, and manufactures urgency to get it. <strong>Nobody who has not first discussed your situation has any basis for quoting you anything.</strong> If a payment link, UPI request or QR code arrives before a conversation, stop there.',
+          'A genuine practitioner speaks with you first, understands the situation, and then explains what is involved and what it costs. A fraudster wants money before that happens, and manufactures urgency to get it. Nobody who has not first discussed your situation has any basis for quoting you anything. If a payment link, UPI request or QR code arrives before a conversation, stop there.',
         ],
       },
       {
@@ -736,7 +736,7 @@ module.exports = {
       {
         h2: 'How this site is different from the others',
         p: [
-          'It publishes a permanent address at two locations rather than "available worldwide", it names a lineage that local elders in Mayong can confirm, and it states plainly on the <a href="/about">about page</a> that no genuine practitioner guarantees results. The testimonials on this site are attributed to a first name and a city because that is the only information clients agreed to give, and they are presented as what clients said rather than as evidence of anything beyond that.',
+          'It publishes a permanent address at two locations rather than "available worldwide", it names a lineage that local elders in Mayong can confirm, and it states plainly on the <a href="/about">about page</a> that no genuine practitioner guarantees results. This site does not publish client testimonials that it cannot independently verify. What it does publish is the lineage, the two addresses, the direct number and the limits of the practice, because those are the things a person can actually check.',
           'None of that is a marketing position. It is simply what happens when a site is built to be accurate rather than to win a search. You can judge the rest of this site by the same standard: every page is written and checked by an automated audit, the Hindi pages are real pages rather than a translation widget, and the contact details on every single page are the same two addresses and the same one number.',
         ],
       },
@@ -780,15 +780,15 @@ module.exports = {
       lead: {
         h2: 'केवल एक ही नंबर है',
         p: [
-          'यदि आप यह पढ़ रहे हैं क्योंकि किसी ने दीपक तांत्रिक बनकर आपसे संपर्क किया है, तो इसे चेतावनी का संकेत मानें। <strong>इस अभ्यास के लिए केवल एक नंबर है: +91 9706801250।</strong> इसे स्वयं कॉल करें। किसी अजनबी, व्हाट्सएप फॉरवर्ड, सोशल मीडिया संदेश या "कंसल्टेंट" द्वारा दिया गया नंबर न उपयोग करें।',
-          'इस क्षेत्र में प्रतिरूपण सामान्य है और बढ़ता जा रहा है। नकली चिकित्सक किसी वास्तविक व्यक्ति का नाम, उसकी तस्वीरें और लिखा गया विवरण लेकर एक आकर्षक वेबसाइट बनाते हैं और भुगतान लेते हैं। दीपक तांत्रिक के बारे में लिखा गया कुछ सामग्री शब्दशः दूसरी वेबसाइटों पर कॉपी की गई है। <strong>कॉपी किया गया टेक्स्ट एक भरोसेमंद संकेत है।</strong> यदि assamtantrik.co के अलावा किसी अन्य डोमेन पर दीपक तांत्रिक का पेज दिखे, तो वह उनका नहीं है।',
+          'यदि आप यह पढ़ रहे हैं क्योंकि किसी ने दीपक तांत्रिक बनकर आपसे संपर्क किया है, तो इसे चेतावनी का संकेत मानें। इस अभ्यास के लिए केवल एक नंबर है: +91 9706801250। इसे स्वयं कॉल करें। किसी अजनबी, व्हाट्सएप फॉरवर्ड, सोशल मीडिया संदेश या "कंसल्टेंट" द्वारा दिया गया नंबर न उपयोग करें।',
+          'इस क्षेत्र में प्रतिरूपण सामान्य है और बढ़ता जा रहा है। नकली चिकित्सक किसी वास्तविक व्यक्ति का नाम, उसकी तस्वीरें और लिखा गया विवरण लेकर एक आकर्षक वेबसाइट बनाते हैं और भुगतान लेते हैं। दीपक तांत्रिक के बारे में लिखा गया कुछ सामग्री शब्दशः दूसरी वेबसाइटों पर कॉपी की गई है। कॉपी किया गया टेक्स्ट एक भरोसेमंद संकेत है। यदि assamtantrik.co के अलावा किसी अन्य डोमेन पर दीपक तांत्रिक का पेज दिखे, तो वह उनका नहीं है।',
         ],
       },
       redFlags: [
         {
           h2: '1. बातचीत से पहले भुगतान',
           p: [
-            'असली चिकित्सक पहले आपकी बात सुनता है, परिस्थिति समझता है, फिर बताता है कि इसमें क्या शामिल है और उसकी लागत क्या होगी। ठगी बातचीत से पहले पैसा चाहता है और जल्दबाजी बनाकर लेता है। <strong>जिसने आपकी परिस्थिति पर पहले चर्चा नहीं की है, उसके पास शुल्क बताने का कोई आधार नहीं है।</strong> यदि बातचीत से पहले कोई भुगतान लिंक, UPI अनुरोध या QR कोड आए, तो वहीं रुक जाएं।',
+            'असली चिकित्सक पहले आपकी बात सुनता है, परिस्थिति समझता है, फिर बताता है कि इसमें क्या शामिल है और उसकी लागत क्या होगी। ठगी बातचीत से पहले पैसा चाहता है और जल्दबाजी बनाकर लेता है। जिसने आपकी परिस्थिति पर पहले चर्चा नहीं की है, उसके पास शुल्क बताने का कोई आधार नहीं है। यदि बातचीत से पहले कोई भुगतान लिंक, UPI अनुरोध या QR कोड आए, तो वहीं रुक जाएं।',
           ],
         },
         {

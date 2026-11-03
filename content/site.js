@@ -22,7 +22,6 @@ const SITE = {
   jobTitle: 'Tantrik and Vedic Astrologer',
   experience: '25+ years',
   founded: '2001',
-  casesSolved: '10,000+',
   lineage: 'Seven-generation Mayong tantra lineage',
 
   // --- Locations: TWO physical addresses. Both are PostalAddress objects,

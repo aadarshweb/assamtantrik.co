@@ -9,6 +9,9 @@ const SITE = require('./site');
 const { GLYPH, ICONS, esc, rich, stars, isHi, L } = UI;
 const ALL_SERVICES = [...UI.services, ...UI.servicesExtended];
 
+// Testimonials are not rendered unless they can be independently verified.
+const SHOW_TESTIMONIALS = false;
+
 const cta = (hi) => `
     <div class="cta-group">
       <a href="${SITE.phoneHref}" class="btn-primary">
@@ -44,7 +47,7 @@ function faqBlock(faqs, hi) {
 }
 
 function testimonialBlock(t, titleHi) {
-  if (!t) return '';
+  if (!SHOW_TESTIMONIALS || !t) return '';
   return `
   <section class="testimonials-section">
     <div class="container">
@@ -240,17 +243,7 @@ function homePage(page) {
 
 ${faqBlock(c.faqs, hi)}
 
-  <section class="testimonials-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>${hi ? 'लोग क्या कहते हैं' : 'What People Say'}</h2>
-        <p>${hi ? 'उन लोगों की वास्तविक कहानियां जिनके जीवन को बदला गया।' : 'Real stories from people whose lives were transformed.'}</p>
-      </div>
-      <div class="testimonials-grid">
-        ${story(c.testimonials)}
-      </div>
-    </div>
-  </section>
+  
 
 ${relatedBlock(s.about ? ['black-magic-removal-kamakhya', 'love-problem-solution-kamakhya', 'vashikaran-specialist-mayong', 'husband-wife-dispute-mayong', 'best-tantrik-mayong', 'tantrik-baba-guwahati'] : [], hi)}
 </main>`;
