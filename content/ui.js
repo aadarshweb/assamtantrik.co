@@ -569,8 +569,8 @@ function footer(slug) {
           </div>
           <p>${rich(
             hi
-              ? 'आध्यात्मिक दुनिया में प्रसिद्ध, तांत्रिक दीपक तांत्रिक की जड़ें मायोंग में हैं, भारत की प्राचीन तंत्र राजधानी में। सालों की गहरी साधना और शक्तिशाली देवताओं के आशीर्वाद से, उन्होंने हजारों लोगों के लिए शांति और सफलता के उपायों में दक्षता हासिल की है।'
-              : 'Renowned in the spiritual world, Tantrik Deepak Tantrik has roots in Mayong, the ancient tantra capital of India. With years of deep sadhana and the blessings of powerful deities, he has mastered spiritual remedies that have brought peace and success to thousands.'
+              ? 'दीपक तांत्रिक का जन्म मायोंग, असम में सात पीढ़ियों के तंत्र परिवार में हुआ और उन्हें कामाख्या मंदिर, गुवाहाटी में दीक्षा मिली। परामर्श गुवाहाटी और मायोंग दोनों स्थानों पर उपलब्ध है।'
+              : 'Deepak Tantrik was born in Mayong, Assam, into a family that has practised tantra for seven generations, and was initiated at Kamakhya Temple in Guwahati. Consultations are available at both locations.'
           )}</p>
         </div>
 

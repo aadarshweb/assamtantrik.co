@@ -93,7 +93,7 @@ module.exports = {
       },
       {
         q: 'What is Mayong, Assam famous for?',
-        a: 'Mayong, in Morigaon district, is the ancient capital of tantra and occult practice in India, referenced in the Kalika Purana and the Yogini Tantra and preserved in centuries-old palm-leaf manuscripts. Deepak Tantrik was born into that lineage.',
+        a: 'Mayong, in Morigaon district, has a long association with tantra in Assamese folklore, and families there have practised it for generations. Deepak Tantrik was born into one of those families.',
       },
       {
         q: 'How do I get the Mayong tantrik contact number?',
