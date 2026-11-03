@@ -81,6 +81,7 @@ function head(page, kind) {
   <meta property="og:type" content="${kind === 'article' ? 'article' : 'website'}">
   <meta property="og:site_name" content="${SITE.name}">
   <meta property="og:locale" content="${hi ? SITE.altLocale : SITE.locale}">
+  ${!hi && twin ? `<meta property="og:locale:alternate" content="${SITE.altLocale}">` : ''}
   <meta property="og:title" content="${page.title}">
   <meta property="og:description" content="${page.desc}">
   <meta property="og:url" content="${canonical}">
