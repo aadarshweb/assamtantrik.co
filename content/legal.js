@@ -526,7 +526,7 @@ module.exports = [
       {
         h2: 'The developer is not responsible for the contact details, or for enquiries',
         p: [
-          'The telephone number, the WhatsApp number, the email address, the postal addresses and the opening hours published on this website all belong to the client and are managed by the client alone. The developer does not own, operate, answer, monitor or administer any of them, and has no access to the telephones, the inbox or the accounts behind them.',
+          'The telephone number, the WhatsApp number, the email address and the postal addresses published on this website all belong to the client and are managed by the client alone. The developer does not own, operate, answer, monitor or administer any of them, and has no access to the telephones, the inbox or the accounts behind them.',
           'Whoever telephones, messages, emails or calls in person is contacting the client, not the developer. The developer does not receive such an enquiry, does not see the sender\'s details, and cannot answer a question about a service, forward the message, arrange an appointment, accept a payment or act on anybody\'s behalf. An enquiry that reaches the developer cannot be dealt with by the developer, and will be passed to the client only if the client separately asks for that.',
         ],
       },

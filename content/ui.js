@@ -177,19 +177,10 @@ function schemaLocalBusiness() {
     '@type': 'LocalBusiness',
     '@id': SITE.ids.business,
     name: SITE.name,
-    alternateName: [
-      'Best Tantrik in Kamakhya Temple',
-      'Best Tantrik in Mayong',
-      'Tantrik Baba in Guwahati',
-    ],
     description: SITE.description,
     telephone: SITE.phone,
     email: SITE.email,
     url: SITE.url(''),
-    priceRange: 'Rs-Rs',
-    currenciesAccepted: 'INR',
-    paymentAccepted: 'Cash, UPI, Bank Transfer',
-    foundingDate: SITE.founded,
     image: SITE.domain + '/images/logo.png',
     logo: SITE.domain + '/images/logo.png',
     address: SITE.addresses.map((a) => ({
@@ -200,18 +191,7 @@ function schemaLocalBusiness() {
       postalCode: a.postal,
       addressCountry: a.country,
     })),
-    geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lng },
-    hasMap: 'https://www.google.com/maps/search/?api=1&query=Kamakhya+Temple+Guwahati',
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        opens: SITE.hours.opens,
-        closes: SITE.hours.closes,
-      },
-    ],
     areaServed: SITE.areaServed.map((a) => ({ '@type': 'Place', name: a })),
-    sameAs: [SITE.waHref],
     // aggregateRating is emitted ONLY when real, citable review data is
     // configured in site.js. Shipping a number nobody can verify is a
     // structured-data violation, and it is what several competitors here do.
@@ -238,7 +218,7 @@ function schemaWebSite() {
     name: SITE.name,
     url: SITE.url(''),
     description: SITE.description,
-    inLanguage: 'en',
+    inLanguage: ['en', 'hi'],
     publisher: { '@id': SITE.ids.business },
   });
 }
@@ -262,12 +242,13 @@ function schemaPerson() {
       addressRegion: 'Assam',
       addressCountry: 'IN',
     },
-    sameAs: [SITE.waHref, SITE.url('about')],
   });
 }
 
 function schemaBreadcrumb(slug) {
-  const label = sourceFor(slug).src.h1.replace(/&amp;/g, '&');
+  const s = sourceFor(slug).src;
+  const body = s.hi && isHi(slug) ? s.hi : s;
+  const label = body.h1.replace(/&amp;/g, '&');
   const trail = [{ name: 'Home', item: SITE.url('') }];
   if (slug !== '') {
     trail.push({ name: label, item: SITE.url(slug) });
@@ -318,22 +299,27 @@ function schemaArticle(slug) {
 }
 
 function schemaItemList(slug) {
+  const hi = isHi(slug);
   const s = sourceFor(slug).src;
-  const items = (s.cards || s.order || []).map((c, i) => {
+  const body = s.hi && hi ? s.hi : s;
+  const list = body.cards || body.order || s.cards || s.order || [];
+  const items = list.map((c, i) => {
     const slugOf = typeof c === 'string' ? c : c.slug;
     const entry = [...ALL_SERVICES, ...LOCATIONS].find((x) => x.slug === slugOf);
+    const name = entry ? (hi && entry.hi ? entry.hi.h1 : entry.h1) : slugOf;
+    const path = localizedPath(slugOf, hi).replace(/^\//, '');
     return {
       '@type': 'ListItem',
       position: i + 1,
-      name: entry ? entry.h1.replace(/&amp;/g, '&') : slugOf,
-      url: SITE.url(slugOf),
+      name: name.replace(/&amp;/g, '&'),
+      url: SITE.url(path),
     };
   });
   if (!items.length) return '';
   return ld({
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: s.h1.replace(/&amp;/g, '&'),
+    name: body.h1.replace(/&amp;/g, '&'),
     itemListElement: items,
   });
 }
@@ -385,8 +371,6 @@ function schemaPlaces() {
           postalCode: a.postal,
           addressCountry: a.country,
         },
-        geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lng },
-        containedInPlace: { '@id': SITE.ids.business },
       })
     )
     .join('\n');
@@ -397,7 +381,7 @@ function schemaFor(slug, kind) {
   const s = sourceFor(slug).src;
   const body = s.hi && isHi(slug) ? s.hi : s;
   const blocks = [schemaLocalBusiness()];
-  if (kind === 'home') blocks.push(schemaWebSite(), schemaPerson());
+  if (kind === 'home') blocks.push(schemaWebSite());
   if (kind === 'home' || kind === 'about' || kind === 'article') blocks.push(schemaPerson());
   if (slug !== '') blocks.push(schemaBreadcrumb(slug));
   if (body.faqs && body.faqs.length) blocks.push(schemaFaqPage(body.faqs));

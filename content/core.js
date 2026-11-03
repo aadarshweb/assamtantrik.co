@@ -651,7 +651,7 @@ module.exports = {
 
     title: 'Verify Deepak Tantrik | Beware of Fake Tantriks',
     desc:
-      'How to confirm you are talking to the real Deepak Tantrik, Mayong and Kamakhya. One number only: +91 9706801250. Full address, hours and scam warnings here.',
+      'How to confirm you are talking to the real Deepak Tantrik, Mayong and Kamakhya. One number only: +91 9706801250. Both addresses and scam warnings.',
     // This page owns: is THIS person real, and how do I check.
     // /real-tantrik-astrologer-assam owns: how do I evaluate ANY practitioner.
     // They must not share terms or they compete for the same query.

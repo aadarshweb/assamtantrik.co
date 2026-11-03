@@ -21,7 +21,6 @@ const SITE = {
   // --- Credentials (all previously published on the site) ---
   jobTitle: 'Tantrik and Vedic Astrologer',
   experience: '25+ years',
-  founded: '2001',
   lineage: 'Seven-generation Mayong tantra lineage',
 
   // --- Locations: TWO physical addresses. Both are PostalAddress objects,
@@ -46,9 +45,7 @@ const SITE = {
       labelHi: 'मायोंग आश्रम, असम',
     },
   ],
-  geo: { lat: '26.1445', lng: '92.1018' },
   areaServed: ['Guwahati', 'Mayong', 'Morigaon', 'Assam', 'Kamakhya'],
-  hours: { opens: '06:00', closes: '22:00' },
 
   // --- Reviews. OFF BY DEFAULT. ---------------------------------------
   // Google requires aggregateRating to reflect reviews that are genuinely
